@@ -10,6 +10,8 @@ from aiogram.filters import Command, CommandStart
 from aiogram.types import Message, URLInputFile, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.formatting import Text
 from aiogram.enums import ParseMode
+from dotenv import load_dotenv
+import os
 
 # Настройка логирования
 logging.basicConfig(
@@ -21,10 +23,17 @@ logging.basicConfig(
     ]
 )
 
-# Токены API (замените на свои)
-TELEGRAM_TOKEN = "7535140306:AAFnLeMqpBZ2InWFIDKj1l-konE00uFpD8s"
-VK_TOKEN = "vk1.a.tmH9qxkUWhegC1jZRBcK0ftleRaPZz1SUyRej10M98pdtYFG_HGYhld314C38K8GIIqXujXKyALQcfb6AFZ73qE717xMOaTQ2dt9SaBVLfIar5dHuGw6nxUy1yT9si1Xy2aYfn93T5eCBe-YbpUQlJXoh2vP_iIN21PZ4zhknHvbMF5hIDd2fR_SYf3Qhm6t"
-KINOPOISK_TOKEN = "9WRPDRS-045468B-NMBJEWA-KJG7GS2"
+# Загрузка переменных окружения
+load_dotenv()
+
+# Токены API из переменных окружения
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+VK_TOKEN = os.getenv("VK_TOKEN")
+KINOPOISK_TOKEN = os.getenv("KINOPOISK_TOKEN")
+
+if not all([TELEGRAM_TOKEN, VK_TOKEN, KINOPOISK_TOKEN]):
+    logging.error("Не все токены найдены в .env файле!")
+    exit(1)
 
 vk_id = 53531262
 

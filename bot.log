@@ -4978,3 +4978,524 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2025-05-08 17:42:30,174 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
 2025-05-08 17:42:30,176 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7535140306)
 2025-05-08 17:42:41,329 - INFO - Connection established (tryings = 1, bot id = 7535140306)
+2025-05-09 23:48:30,970 - INFO - Запуск бота
+2025-05-09 23:48:30,974 - INFO - Start polling
+2025-05-09 23:48:31,136 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-09 23:48:31,185 - INFO - Получена команда /start от 886376781
+2025-05-09 23:48:31,185 - INFO - HTML ответа приветствия: 🎬 <b>Кино-бот приветствует вас!</b>
+
+────────────
+Отправьте мне название фильма или сериала,
+и я найду информацию и ссылки для просмотра.
+
+────── Доступные команды ──────
+/help - Показать справку
+/settings - Настройки поиска
+/new - Показать новинки кино
+/best - Топ 10 фильмов всех времён
+/history - История поиска
+/stats - Статистика предложенных фильмов
+2025-05-09 23:48:31,186 - INFO - Получена команда /help от 886376781
+2025-05-09 23:48:31,188 - INFO - HTML ответа справки: 🛠 <b>Справка по использованию бота</b>
+
+────────────
+Просто отправьте название фильма или сериала,
+и бот найдет информацию о нем и ссылки для просмотра.
+
+────── Команды ──────
+/start - Начальное приветствие
+/turn_vk - Вкл/выкл поиск в VK
+/turn_kp - Вкл/выкл поиск в Кинопоиске
+/settings - Текущие настройки
+/new - Показать новинки кино
+/best - Топ 10 фильмов всех времён
+/history - История поиска
+/stats - Статистика предложенных фильмов
+
+────── Статус поиска ──────
+✅ Поиск в VK
+✅ Поиск в Кинопоиске
+2025-05-09 23:48:31,351 - INFO - Update id=965057792 is handled. Duration 166 ms by bot id=7535140306
+2025-05-09 23:48:31,378 - INFO - Update id=965057793 is handled. Duration 191 ms by bot id=7535140306
+2025-05-09 23:48:51,182 - INFO - Поиск фильма: гол для пользователя 1601735530
+2025-05-09 23:48:51,403 - ERROR - VK API ошибка: User authorization failed
+2025-05-09 23:48:51,611 - INFO - Update id=965057794 is handled. Duration 431 ms by bot id=7535140306
+2025-05-09 23:49:01,475 - INFO - Поиск по VK выключен пользователем 1601735530
+2025-05-09 23:49:01,551 - INFO - Update id=965057795 is handled. Duration 79 ms by bot id=7535140306
+2025-05-09 23:49:04,254 - INFO - Поиск по Кинопоиску включен пользователем 1601735530
+2025-05-09 23:49:04,322 - INFO - Update id=965057796 is handled. Duration 72 ms by bot id=7535140306
+2025-05-09 23:49:05,881 - INFO - Поиск фильма: гоол для пользователя 1601735530
+2025-05-09 23:49:06,106 - INFO - HTML ответа Кинопоиск: 🎬 <b>Головоломка</b> (2015)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.079/10</b>
+🌍 <i>Страны:</i> США
+🎭 <i>Жанры:</i> мультфильм, семейный, комедия
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/645118/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:49:06,600 - INFO - Update id=965057797 is handled. Duration 722 ms by bot id=7535140306
+2025-05-09 23:49:14,014 - INFO - Поиск по Кинопоиску выключен пользователем 1601735530
+2025-05-09 23:49:14,082 - INFO - Update id=965057798 is handled. Duration 71 ms by bot id=7535140306
+2025-05-09 23:49:19,201 - INFO - Поиск по VK включен пользователем 1601735530
+2025-05-09 23:49:19,273 - INFO - Update id=965057799 is handled. Duration 74 ms by bot id=7535140306
+2025-05-09 23:49:22,379 - INFO - Поиск по Кинопоиску включен пользователем 1601735530
+2025-05-09 23:49:22,468 - INFO - Update id=965057800 is handled. Duration 92 ms by bot id=7535140306
+2025-05-09 23:49:26,806 - INFO - Поиск фильма: гол для пользователя 1601735530
+2025-05-09 23:49:27,022 - INFO - HTML ответа Кинопоиск: 🎬 <b>Гол!</b> (2005)
+
+────────────
+⭐⭐⭐✨☆ <b>7.743/10</b>
+🌍 <i>Страны:</i> Великобритания, США
+🎭 <i>Жанры:</i> мелодрама, спорт, драма
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/50225/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:49:27,092 - ERROR - VK API ошибка: User authorization failed
+2025-05-09 23:49:27,496 - INFO - Update id=965057801 is handled. Duration 691 ms by bot id=7535140306
+2025-05-09 23:50:52,245 - INFO - Поиск фильма: Груз 200 для пользователя 886376781
+2025-05-09 23:50:52,569 - INFO - HTML ответа Кинопоиск: 🎬 <b>Груз 200</b> (2007)
+
+────────────
+⭐⭐⭐✨☆ <b>6.762/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> триллер, драма
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/259251/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:50:52,632 - ERROR - VK API ошибка: User authorization failed
+2025-05-09 23:50:53,253 - INFO - Update id=965057802 is handled. Duration 1011 ms by bot id=7535140306
+2025-05-09 23:51:03,721 - INFO - Запрос истории поиска от 886376781
+2025-05-09 23:51:03,723 - INFO - HTML ответа истории: 📜 <b>Последние поиски:</b>
+
+────────────
+- Груз 200 (в 2025-05-09 20:50:52)
+
+2025-05-09 23:51:03,802 - INFO - Update id=965057803 is handled. Duration 81 ms by bot id=7535140306
+2025-05-09 23:51:06,682 - INFO - Запрос истории поиска от 886376781
+2025-05-09 23:51:06,684 - INFO - HTML ответа истории: 📜 <b>Последние поиски:</b>
+
+────────────
+- Груз 200 (в 2025-05-09 20:50:52)
+
+2025-05-09 23:51:06,769 - INFO - Update id=965057804 is handled. Duration 87 ms by bot id=7535140306
+2025-05-09 23:51:10,574 - INFO - Поиск фильма: /best для пользователя 886376781
+2025-05-09 23:51:10,858 - INFO - HTML ответа Кинопоиск: 🎬 <b>Бест</b> (2000)
+
+────────────
+☆☆☆☆☆ <b>0/10</b>
+🌍 <i>Страны:</i> Великобритания
+🎭 <i>Жанры:</i> драма, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/23268/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:51:10,939 - ERROR - VK API ошибка: User authorization failed
+2025-05-09 23:51:11,565 - INFO - Update id=965057805 is handled. Duration 994 ms by bot id=7535140306
+2025-05-09 23:51:25,516 - WARNING - Received SIGINT signal
+2025-05-09 23:51:25,518 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-09 23:51:25,518 - INFO - Polling stopped
+2025-05-09 23:51:56,107 - INFO - Запуск бота
+2025-05-09 23:51:56,111 - INFO - Start polling
+2025-05-09 23:51:56,276 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-09 23:51:56,331 - INFO - Получена команда /start от 1092590786
+2025-05-09 23:51:56,331 - INFO - HTML ответа приветствия: 🎬 <b>Кино-бот приветствует вас!</b>
+
+────────────
+Отправьте мне название фильма или сериала,
+и я найду информацию и ссылки для просмотра.
+
+────── Доступные команды ──────
+/help - Показать справку
+/settings - Настройки поиска
+/new - Показать новинки кино
+/best - Топ 10 фильмов всех времён
+/history - История поиска
+/stats - Статистика предложенных фильмов
+2025-05-09 23:51:56,333 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:51:56,526 - INFO - Update id=965057807 is handled. Duration 195 ms by bot id=7535140306
+2025-05-09 23:51:56,731 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:51:57,457 - INFO - Поиск фильма: Перемога для пользователя 886376781
+2025-05-09 23:51:57,702 - INFO - HTML ответа Кинопоиск: 🎬 <b>Победить темноту</b> (1939)
+
+────────────
+⭐⭐⭐✨☆ <b>7.099/10</b>
+🌍 <i>Страны:</i> США
+🎭 <i>Жанры:</i> драма, мелодрама
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/12935/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:51:58,066 - INFO - VK API ответ: {'count': 21, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1453638540, 'description': 'Молодая красавица Джудит Трэйхерн находится в центре внимания окружающих, когда доктор Фредерик Стил ставит ей страшный диагноз — опухоль мозга. После операции между Джудит и Фредериком начинается роман. Но вскоре выясняется, что болезнь вернулась и на этот раз ничто уже не поможет…(драма)\nВ главных ролях: Бетт Дэвис, Джордж Брент, Хамфри Богарт.\nФильмография группы "Классика зарубежного кино" - http://vk.com/club74449405', 'duration': 6243, 'photo_130': 'https://sun9-58.userapi.com/c628230/v628230405/350ec/XGUUOBrlT_M.jpg', 'photo_320': 'https://sun9-79.userapi.com/c628230/v628230405/350ea/SUJOiAHnBCk.jpg', 'photo_800': 'https://sun9-38.userapi.com/c628230/v628230405/350e9/ckesdQc8bGI.jpg', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1056383371855&idx=0&type=39&tkn=ogxHvpwQVa2sddIb2mESSnOUsD8&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1056383371855&idx=0&type=39&tkn=ogxHvpwQVa2sddIb2mESSnOUsD8&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1056383371855&idx=0&type=39&tkn=ogxHvpwQVa2sddIb2mESSnOUsD8&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1056383371855&idx=0&type=39&tkn=ogxHvpwQVa2sddIb2mESSnOUsD8&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1056383371855&idx=0&type=39&tkn=ogxHvpwQVa2sddIb2mESSnOUsD8&fn=vid_w', 'width': 512, 'height': 384, 'id': 171422300, 'owner_id': -74449405, 'user_id': 16447394, 'ov_id': '2201927952463', 'title': 'Победить темноту (1939)', 'player': 'https://vk.com/video_ext.php?oid=-74449405&id=171422300&hash=8c65496a5076ee31&__ref=vk.api&api_hash=1746823918ca8df155d7beee55e7_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_843c6485gckW9J5C3C8Fypyl6uiXgmlXf_kQ21ExqTL8NlaeaMnntTvDqnbMxo4qFypqDxNm77X0GKIGrn8Zwk_r2VTREFJk6kF79cMnCMmQ-tvfprZbZUxauWH3qgyGDwEI6AGtgto7w6p2F-nOBVYFJCBZtw', 'views': 584, 'local_views': 584, 'likes': {'count': 16, 'user_likes': 0}, 'reposts': {'count': 6, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:51:58,067 - INFO - VK видео найдено: Победить темноту (1939), URL: https://vk.com/video_ext.php?oid=-74449405&id=171422300&hash=8c65496a5076ee31&__ref=vk.api&api_hash=1746823918ca8df155d7beee55e7_GM2TSNRWG4ZDQMI
+2025-05-09 23:51:58,223 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823918c1a6ff547efc44fea9_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_b5807cc8z9BDyr4g69yQUs_lmccRaoZGJPH8QLhpXyweAqvhnI6prHb4hhLSOi60Q2oYIppzgEYm-cxMyww-Xn1qKgVmOXlD5H_UE9_rqWT4uq3yJ6dNies3M7M08z8', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:51:58,224 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823918c1a6ff547efc44fea9_GM2TSNRWG4ZDQMI
+2025-05-09 23:51:58,758 - INFO - Update id=965057806 is handled. Duration 2428 ms by bot id=7535140306
+2025-05-09 23:51:58,799 - INFO - Update id=965057808 is handled. Duration 1343 ms by bot id=7535140306
+2025-05-09 23:52:04,831 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:04,963 - INFO - Поиск фильма: Раша гудбай для пользователя 886376781
+2025-05-09 23:52:05,078 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:05,184 - INFO - HTML ответа Кинопоиск: 🎬 <b>Оружейный барон</b> (2005)
+
+────────────
+⭐⭐⭐✨☆ <b>7.729/10</b>
+🌍 <i>Страны:</i> США, Германия, Франция
+🎭 <i>Жанры:</i> драма, криминал
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/77439/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:05,989 - INFO - VK API ответ: {'count': 283, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 37, 'date': 1682510258, 'description': '[https://vk.com/kinobro|🔥Всегда доступные фильмы! Подписывайся!🔥]\n\nОружейный барон (2005)\n\nЖанр: драма, криминал\n\nОписание: Родители Юрия и Виталия Орловых покинули Украину и обосновались в Америке: у них маленький ресторанчик на Брайтон-Бич. Дети же не стремятся идти по родительским стопам. Юрий начинает торговать оружием и с помощью брата быстро завоевывает свое место под солнцем. Но чем выше он поднимается, тем ближе к нему подбирается агент Интерпола.', 'duration': 7310, 'photo_130': 'https://sun1-24.userapi.com/A7aZFp6_7aTzr9aCtJSqw706sk7REbiIAITxiw/hYk2KeG0qeg.jpg', 'photo_320': 'https://sun1-27.userapi.com/1Xyh6K5bLNthR2Tdwrnd1d9bFgyCLzP-NFKR3w/Svk2RSzCbys.jpg', 'photo_800': 'https://sun1-18.userapi.com/_bzPtpSSKFWCNfCSUEJEwJq5kg-NstJrM9IJug/PiRKYZUOd4c.jpg', 'photo_1280': 'https://sun1-27.userapi.com/Jlhim_fvW2-HV10lHXSGNQ5ZKaDCGH98zGXwKQ/Zg8SDuGsNGk.jpg', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=4660650642056&idx=0&type=39&tkn=swbsB3Br9_6G-j6yLmT3PsL5nlE&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=4660650642056&idx=0&type=39&tkn=swbsB3Br9_6G-j6yLmT3PsL5nlE&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=4660650642056&idx=0&type=39&tkn=swbsB3Br9_6G-j6yLmT3PsL5nlE&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=4660650642056&idx=0&type=39&tkn=swbsB3Br9_6G-j6yLmT3PsL5nlE&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=4660650642056&idx=0&type=39&tkn=swbsB3Br9_6G-j6yLmT3PsL5nlE&fn=vid_w', 'width': 1920, 'height': 1080, 'id': 456239270, 'owner_id': -220018529, 'ov_id': '5173470898312', 'title': 'Оружейный барон | Lord of War (2005)', 'player': 'https://vk.com/video_ext.php?oid=-220018529&id=456239270&hash=a2ee21389d850fcb&__ref=vk.api&api_hash=1746823926c65febe5ccaafed249_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_01b80090oaeztN4TzeR_GJRoL6L4eVRatOHhRMqes5hnP93BFiXG1vGG7CP995eTd9GhFR35ttxdagbJF2YGQD6MBE7QnSJjIFZRCM_ldximUXCWzU9maUhfSrw0P11FTV21nmBMorOehuzcAiq40lmuj2nM', 'views': 410137, 'local_views': 410137, 'likes': {'count': 1903, 'user_likes': 0}, 'reposts': {'count': 2449, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:05,989 - INFO - VK видео найдено: Оружейный барон | Lord of War (2005), URL: https://vk.com/video_ext.php?oid=-220018529&id=456239270&hash=a2ee21389d850fcb&__ref=vk.api&api_hash=1746823926c65febe5ccaafed249_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:06,060 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823926b703f9be3c9d48d40b_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_8d24bab6lSIkqU7vngqPHr7BsSPU1NRYiDBYxJIW2spWXxZJoYbzXhGbdt2n7DH4Mk4wxl_N0liKOGjI4XO7uDU32IkEHBv5gB5N3Ko9tiiJnoUW4hkfl0f2lzcejLo', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:06,061 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823926b703f9be3c9d48d40b_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:06,906 - INFO - Update id=965057809 is handled. Duration 2076 ms by bot id=7535140306
+2025-05-09 23:52:06,939 - INFO - Update id=965057810 is handled. Duration 1978 ms by bot id=7535140306
+2025-05-09 23:52:07,593 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:07,958 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:08,925 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823928bcb99b4e070929ff4d_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_0c84d726bq-nCX_XwfMWcEW94i3UqfsT_Jqzs1xhspgdFd2nk7cI05I7R-X4FaiWyTJjyF-w_RP-koO_LwTT6n59OXgGQvF6RckS5PXEL0Zy4tYY4mQw3DNcfEDQ-9I', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:08,926 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823928bcb99b4e070929ff4d_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:09,303 - INFO - Update id=965057811 is handled. Duration 1711 ms by bot id=7535140306
+2025-05-09 23:52:09,414 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:09,702 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:10,751 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393013f90f0ecee8575f11_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_6337da44eYqB-WgvQV-c6Xsyo3ttGi7sSuoJzFABQvIs2-Mq6uAf9rTLUB14uSIP970inuYDKOxI4jnAI2QjgE-zC-Ylf_Y6Uyl2HHVopd9MbZdOW9flI4Usxj_cmyI', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:10,751 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393013f90f0ecee8575f11_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:11,118 - INFO - Update id=965057812 is handled. Duration 1707 ms by bot id=7535140306
+2025-05-09 23:52:11,496 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:11,795 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:12,814 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393204fc9406ae3ac85a88_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_273364e1iHqFBTONizP6c-jX8dkNUj7dqp5G2VPJm_zCTUEPUe7uBrA3C7-y1USVZFhwPIZLON2olnbVIKz6jqElxsvwelG-IYoSvr8Ew0XfiMXsO5_1EmVYiSrfU_s', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:12,815 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393204fc9406ae3ac85a88_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:13,221 - INFO - Update id=965057813 is handled. Duration 1727 ms by bot id=7535140306
+2025-05-09 23:52:14,555 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:14,870 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:15,886 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393564a5c7321581be056e_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_abed31aehC75PkVwvlejl56GCsqjmI6irRQ8iC3Lj5LG79TQuv_iUswMfUKHsR1xEgmLLyiBiKKvHAyEXq7u4KWHG0dWWzyZdbEvQ4pgmqGp2T7_lVVFbWLS83uhUe8', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:15,886 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=174682393564a5c7321581be056e_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:16,174 - INFO - Update id=965057814 is handled. Duration 1619 ms by bot id=7535140306
+2025-05-09 23:52:22,447 - INFO - Поиск фильма: Член Артёма для пользователя 1092590786
+2025-05-09 23:52:22,703 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:23,566 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823943315b5debd58ef80316_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_6bf8e32b7iYA03ORmGtbB5gLze0rd0j3GOJKJVL38SfI_BH0BUSIWjXhS6OhjeXhFIRMCKBuTvca6nopIZKQVauUljaozy2IzgYZoqxcYjGvVPnYHbqDONckhdbebZE', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:23,567 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823943315b5debd58ef80316_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:23,617 - ERROR - Ошибка отправки фото: HTTP Client says - ClientConnectionError: Failed to send bytes into the underlying connection Connection<ConnectionKey(host='api.telegram.org', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-05-09 23:52:23,919 - INFO - Update id=965057815 is handled. Duration 1477 ms by bot id=7535140306
+2025-05-09 23:52:25,432 - INFO - Поиск фильма: гол для пользователя 1601735530
+2025-05-09 23:52:25,650 - INFO - HTML ответа Кинопоиск: 🎬 <b>Гол!</b> (2005)
+
+────────────
+⭐⭐⭐✨☆ <b>7.743/10</b>
+🌍 <i>Страны:</i> Великобритания, США
+🎭 <i>Жанры:</i> мелодрама, спорт, драма
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/50225/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:27,150 - INFO - VK API ответ: {'count': 15119, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 28, 'date': 1682588570, 'description': '[https://vk.com/kinobro|🔥Всегда доступные фильмы! Подписывайся!🔥]\n\nГол! (2005)\n\nЖанр: мелодрама, спорт, драма\n\nОписание: Воплотить свои мечты в жизнь, стать профессиональным футболистом — вот чем руководствуется Сантьяго Муньес, направляясь в Англию. Любовь и дружба, мужество и обаяние — встречаются на его пути…', 'duration': 7091, 'photo_130': 'https://sun1-21.userapi.com/oLWBVHgKrFzAoKVha31HuaDlkhdthg4WNMuE_Q/-niotmRv8FQ.jpg', 'photo_320': 'https://sun1-25.userapi.com/afe3-XJnyaHmKKhDZFnP8UkTk0Vo3Mf-EhaftQ/XliYyAa_z0w.jpg', 'photo_800': 'https://sun1-14.userapi.com/sNR9PpD3L1fXrIQSSWAVo_ELWyAO9MPdCZ5eVQ/a7vWiqAikTA.jpg', 'photo_1280': 'https://sun1-25.userapi.com/W0UmA4GK93jguL-9s1iDAR5a3HiaIcgq-ExbgQ/BnEihZ3yAJQ.jpg', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=4949779417834&idx=0&type=39&tkn=dcSwI_vxNvV9vBY4GnUzVnS2lSE&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=4949779417834&idx=0&type=39&tkn=dcSwI_vxNvV9vBY4GnUzVnS2lSE&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=4949779417834&idx=0&type=39&tkn=dcSwI_vxNvV9vBY4GnUzVnS2lSE&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=4949779417834&idx=0&type=39&tkn=dcSwI_vxNvV9vBY4GnUzVnS2lSE&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=4949779417834&idx=0&type=39&tkn=dcSwI_vxNvV9vBY4GnUzVnS2lSE&fn=vid_w', 'width': 1920, 'height': 1080, 'id': 456239375, 'owner_id': -220018529, 'ov_id': '5753036286186', 'title': 'Гол! | Goal! (2005)', 'player': 'https://vk.com/video_ext.php?oid=-220018529&id=456239375&hash=f7ced113ffd45dc3&__ref=vk.api&api_hash=17468239478269efcb77cb479f6d_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_5201a646NPH_Lc1JYoVQ88Ak9pRNqlKlCNh04FB39QuGMbSadwdTgL0f_3lSpLh1IqN5G16_U6UKwHHlbDGQavRS3MUBbqp4KPYWpIcKbsfyHamgeJxgljEUvCqj-2-VC63d', 'views': 662114, 'local_views': 662114, 'likes': {'count': 1404, 'user_likes': 0}, 'reposts': {'count': 1047, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:27,151 - INFO - VK видео найдено: Гол! | Goal! (2005), URL: https://vk.com/video_ext.php?oid=-220018529&id=456239375&hash=f7ced113ffd45dc3&__ref=vk.api&api_hash=17468239478269efcb77cb479f6d_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:27,488 - INFO - Update id=965057816 is handled. Duration 2058 ms by bot id=7535140306
+2025-05-09 23:52:32,581 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:32,906 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:33,909 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823953e48891158126653637_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_0e41ba2aBBD6aMQiD4Y4YW6GymeVSupljvX0KBSnNy1f6r747_dibM9a_BA2YIaH4glLgh5T7GWM_cQkZ8JWXzyCVSx6EqK1a6zpETuxAVdZ2f5So4chqkEzO9uYPVc', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:33,910 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823953e48891158126653637_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:34,306 - INFO - Update id=965057817 is handled. Duration 1727 ms by bot id=7535140306
+2025-05-09 23:52:35,754 - INFO - Поиск фильма: Хуй для пользователя 1092590786
+2025-05-09 23:52:36,117 - INFO - HTML ответа Кинопоиск: 🎬 <b>Проклятая работа</b> (2021)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.065/10</b>
+🌍 <i>Страны:</i> Великобритания, Германия
+🎭 <i>Жанры:</i> документальный, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4645598/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:36,942 - INFO - VK API ответ: {'count': 269, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1642932770, 'description': 'Из-за того что мама всё время на работе, 13-летняя Анна проводит много времени со своей бебиситтершей и её приятелями. Однажды компания становится свидетелем страшного случая и после решает проверить правдивость старинной русской легенды о пиковой даме. Ребята уговаривают Анну провести ритуал со свечой и зеркалом, и когда злобная сущность начинает сильно портить им жизнь, они обращаются за помощью к русскому эмигранту, написавшему книгу о пиковой даме.', 'duration': 5535, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_w', 'width': 1920, 'height': 804, 'id': 456239147, 'owner_id': -208913235, 'ov_id': '3140390234203', 'title': 'Проклятие пиковой дамы 2021', 'player': 'https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=1746823956d4f0bd315fbedcc7f1_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_bc857f80gA7O5qEWm6G1C_G4MDrTaUZIOn8GG4GqwIQd0UcgQEznf4zUkS6itFaGEw2_sDblpMDSweOuXWl0akRjr6-G9TLKXQUT_hK7tAnwvG8O5l90ewNOzJVqbTsdoRMOfjYlgxrj1JEuom95xj1ykPEZoHU', 'views': 3804, 'local_views': 3804, 'likes': {'count': 13, 'user_likes': 0}, 'reposts': {'count': 15, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:36,942 - INFO - VK видео найдено: Проклятие пиковой дамы 2021, URL: https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=1746823956d4f0bd315fbedcc7f1_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:37,307 - INFO - Update id=965057818 is handled. Duration 1554 ms by bot id=7535140306
+2025-05-09 23:52:43,332 - INFO - Поиск фильма: Хуй для пользователя 1092590786
+2025-05-09 23:52:43,634 - INFO - HTML ответа Кинопоиск: 🎬 <b>Проклятая работа</b> (2021)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.065/10</b>
+🌍 <i>Страны:</i> Великобритания, Германия
+🎭 <i>Жанры:</i> документальный, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4645598/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:43,944 - INFO - VK API ответ: {'count': 269, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1642932770, 'description': 'Из-за того что мама всё время на работе, 13-летняя Анна проводит много времени со своей бебиситтершей и её приятелями. Однажды компания становится свидетелем страшного случая и после решает проверить правдивость старинной русской легенды о пиковой даме. Ребята уговаривают Анну провести ритуал со свечой и зеркалом, и когда злобная сущность начинает сильно портить им жизнь, они обращаются за помощью к русскому эмигранту, написавшему книгу о пиковой даме.', 'duration': 5535, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_w', 'width': 1920, 'height': 804, 'id': 456239147, 'owner_id': -208913235, 'ov_id': '3140390234203', 'title': 'Проклятие пиковой дамы 2021', 'player': 'https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=17468239647b214e8d97a094d144_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_5eeb0960P8VyZvh71E9KabqAAkVxFeRc7eQs0sgdwVJXP4zihjBYtDBUyEPtWqnkWDWNz5SZBtQFWslnFN51vA6NZG1AiY0B4YVKk11VS2u7hF1xRCPWb9TVxhwqwFn7wq6ovPBZPNFfVMhD7YGGpHZKoo673Nc', 'views': 3804, 'local_views': 3804, 'likes': {'count': 13, 'user_likes': 0}, 'reposts': {'count': 15, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:43,945 - INFO - VK видео найдено: Проклятие пиковой дамы 2021, URL: https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=17468239647b214e8d97a094d144_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:44,273 - INFO - Update id=965057819 is handled. Duration 943 ms by bot id=7535140306
+2025-05-09 23:52:46,302 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:52:46,568 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:47,836 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823967f5d186d41d7c42aeb0_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_5967d83fsVjGbmgRS_xTQlg2NPr7rMnUpDVstRQn1-IawzhEYCnXJPNcUCNyGu2k1Lm1H3C1z9SmPVy5Z0K2kHmr_f2uxl-sKYEbIn_LanRvaQDPzWECG2vzo0aYvbc', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:47,838 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823967f5d186d41d7c42aeb0_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:48,435 - INFO - Update id=965057820 is handled. Duration 2135 ms by bot id=7535140306
+2025-05-09 23:52:48,523 - INFO - Поиск фильма: Хуй для пользователя 1092590786
+2025-05-09 23:52:48,807 - INFO - HTML ответа Кинопоиск: 🎬 <b>Проклятая работа</b> (2021)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.065/10</b>
+🌍 <i>Страны:</i> Великобритания, Германия
+🎭 <i>Жанры:</i> документальный, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4645598/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:48,994 - INFO - VK API ответ: {'count': 269, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1642932770, 'description': 'Из-за того что мама всё время на работе, 13-летняя Анна проводит много времени со своей бебиситтершей и её приятелями. Однажды компания становится свидетелем страшного случая и после решает проверить правдивость старинной русской легенды о пиковой даме. Ребята уговаривают Анну провести ритуал со свечой и зеркалом, и когда злобная сущность начинает сильно портить им жизнь, они обращаются за помощью к русскому эмигранту, написавшему книгу о пиковой даме.', 'duration': 5535, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_w', 'width': 1920, 'height': 804, 'id': 456239147, 'owner_id': -208913235, 'ov_id': '3140390234203', 'title': 'Проклятие пиковой дамы 2021', 'player': 'https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=1746823969f407390390128ea664_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_dfeee2abhl2PLxtkZkS5jalhFEjm6OnxqCuLG79Owwiac8CImAzhLM0dK1xfUVoAS9SbwgNkC3lAlW6uY4135sPBKAdetTSZHMypjO9euI-oZUt8097bwpEaOIhNmEzMFrf71u5lhUmiHStcX4p1QGWrtIMsIdo', 'views': 3804, 'local_views': 3804, 'likes': {'count': 13, 'user_likes': 0}, 'reposts': {'count': 15, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:48,995 - INFO - VK видео найдено: Проклятие пиковой дамы 2021, URL: https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=1746823969f407390390128ea664_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:49,387 - INFO - Update id=965057821 is handled. Duration 865 ms by bot id=7535140306
+2025-05-09 23:52:50,500 - INFO - Поиск фильма: Как витька чеснок вез для пользователя 886376781
+2025-05-09 23:52:50,782 - INFO - HTML ответа Кинопоиск: 🎬 <b>Как Витька Чеснок вёз Лёху Штыря в дом инвалидов</b> (2017)
+
+────────────
+⭐⭐⭐✨☆ <b>7.205/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> драма, комедия, криминал
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/909700/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:51,420 - INFO - VK API ответ: {'count': 110, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 4, 'date': 1624122515, 'description': '[club147460678|Black Crow | Страшные истории Хомо ту Сапиенс]\n[club137530379|True Story | Реальные истории из жизни людей]\n[club148489386|Преступник | Мысли преступника]\n[club164929177|Новостъ | Содеянное в Явъ]\n[club154862589|Фотоаппарат | Моменты прошлого]\n[club131149441|Просмотрено | Годный поток иллюзий…]\n\n27-летний Витька Чеснок − парень с детдомовским прошлым, который мечтает сбежать от мешающих ему жить жены и сына. Недолюбленный в детстве и очерствевший сердцем парень встречает отца-уголовника, а теперь ещё и калеку. Витька решает отвезти отца в дом инвалидов, не подозревая, какие приключения и опасности ждут их по дороге.\n\nСлоган: «Стань тем, что ты есть»\nРежиссер: Александр Хант\nСценарий: Алексей Бородачёв', 'duration': 5381, 'photo_130': 'https://sun9-50.userapi.com/jP7nSq96rCd1FPE4semN-i-rs1iDH7Zeu2FeWQ/hp-pCE2CrfU.jpg', 'photo_320': 'https://sun9-28.userapi.com/9DHjE-Q6bdSe553kO58PPVuWMVnkEE54TBXscg/_3JzEcKX3Uw.jpg', 'photo_800': 'https://sun9-57.userapi.com/gahDqpjwb9r5lXM64Glp2DUp1pGc0wNRwAlPWA/gHVfmfBuqTg.jpg', 'photo_1280': 'https://sun9-39.userapi.com/6osb1-6T3O9HsJBN8fgfzU2reh-z6bWFMGJyIA/oIgYXPvOsIY.jpg', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1250070039224&idx=0&type=39&tkn=l-35WZm_0y0ULna5XvM3RUvtb6Y&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1250070039224&idx=0&type=39&tkn=l-35WZm_0y0ULna5XvM3RUvtb6Y&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1250070039224&idx=0&type=39&tkn=l-35WZm_0y0ULna5XvM3RUvtb6Y&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1250070039224&idx=0&type=39&tkn=l-35WZm_0y0ULna5XvM3RUvtb6Y&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1250070039224&idx=0&type=39&tkn=l-35WZm_0y0ULna5XvM3RUvtb6Y&fn=vid_w', 'width': 1280, 'height': 720, 'id': 456240014, 'owner_id': -147460678, 'ov_id': '2628583303366', 'title': 'Как Витька Чеснок вёз Лёху Штыря в дом инвалидов (2017) | драма, криминал | Россия', 'player': 'https://vk.com/video_ext.php?oid=-147460678&id=456240014&hash=dd0904e2d28a6642&__ref=vk.api&api_hash=1746823971bffbe14196c14044f9_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_5c4d660fGRtT1KQAVJrfHmjVIXGzvKlAAPdN9llmtjgWGTCJdmd-ahHlkDdg8T-Sj12u_61aKaSIFv4T2cVpidRRiVHQu8uOrlhAibAWxPjtPO-VMaFLz-FWrUeElviI7KvaB4vfmt7xzkCFS3xb-OE9wm5WMkvJ4HWscoWuA-G0zoho0LwxPU7UpzdgrO8oX-1-l2FVTpChZtybVBXTWWR6WNYADuXwgRpvyJ9TECk', 'views': 24504, 'local_views': 24504, 'likes': {'count': 120, 'user_likes': 0}, 'reposts': {'count': 100, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:51,421 - INFO - VK видео найдено: Как Витька Чеснок вёз Лёху Штыря в дом инвалидов (2017) | драма, криминал | Россия, URL: https://vk.com/video_ext.php?oid=-147460678&id=456240014&hash=dd0904e2d28a6642&__ref=vk.api&api_hash=1746823971bffbe14196c14044f9_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:51,868 - INFO - Update id=965057822 is handled. Duration 1370 ms by bot id=7535140306
+2025-05-09 23:52:51,975 - INFO - Поиск фильма: Хуй для пользователя 1092590786
+2025-05-09 23:52:52,273 - INFO - HTML ответа Кинопоиск: 🎬 <b>Проклятая работа</b> (2021)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.065/10</b>
+🌍 <i>Страны:</i> Великобритания, Германия
+🎭 <i>Жанры:</i> документальный, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4645598/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:52,459 - INFO - VK API ответ: {'count': 269, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1642932770, 'description': 'Из-за того что мама всё время на работе, 13-летняя Анна проводит много времени со своей бебиситтершей и её приятелями. Однажды компания становится свидетелем страшного случая и после решает проверить правдивость старинной русской легенды о пиковой даме. Ребята уговаривают Анну провести ритуал со свечой и зеркалом, и когда злобная сущность начинает сильно портить им жизнь, они обращаются за помощью к русскому эмигранту, написавшему книгу о пиковой даме.', 'duration': 5535, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_w', 'width': 1920, 'height': 804, 'id': 456239147, 'owner_id': -208913235, 'ov_id': '3140390234203', 'title': 'Проклятие пиковой дамы 2021', 'player': 'https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=174682397249930844dca85a8542_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_0d15fc9dbzNVZpy32aviOXXHU9SR3ZX9h-wv5qMwgr1pHdUBZjMIQhdUrI_gvgG0l3LcXnRRd3VvUspTf_M2UzCvPY6git33xoUuX1Cx4zt0wwzgpOunzr7doB9a2A1K5L6HXxBabCd4VKyP4GUu9LkN8x9bFKY', 'views': 3804, 'local_views': 3804, 'likes': {'count': 13, 'user_likes': 0}, 'reposts': {'count': 15, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:52,459 - INFO - VK видео найдено: Проклятие пиковой дамы 2021, URL: https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=174682397249930844dca85a8542_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:52,752 - INFO - Update id=965057823 is handled. Duration 779 ms by bot id=7535140306
+2025-05-09 23:52:54,491 - INFO - Поиск фильма: Хуй для пользователя 1092590786
+2025-05-09 23:52:54,870 - INFO - HTML ответа Кинопоиск: 🎬 <b>Проклятая работа</b> (2021)
+
+────────────
+⭐⭐⭐⭐☆ <b>8.065/10</b>
+🌍 <i>Страны:</i> Великобритания, Германия
+🎭 <i>Жанры:</i> документальный, биография
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4645598/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:52:55,036 - INFO - VK API ответ: {'count': 269, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1642932770, 'description': 'Из-за того что мама всё время на работе, 13-летняя Анна проводит много времени со своей бебиситтершей и её приятелями. Однажды компания становится свидетелем страшного случая и после решает проверить правдивость старинной русской легенды о пиковой даме. Ребята уговаривают Анну провести ритуал со свечой и зеркалом, и когда злобная сущность начинает сильно портить им жизнь, они обращаются за помощью к русскому эмигранту, написавшему книгу о пиковой даме.', 'duration': 5535, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=7&type=39&tkn=-DjqpZvOoecgcbsL-xXgc3Ixqvw&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2158365968968&idx=0&type=39&tkn=ge5AVtPaLnbGfJjSo-usazd4odg&fn=vid_w', 'width': 1920, 'height': 804, 'id': 456239147, 'owner_id': -208913235, 'ov_id': '3140390234203', 'title': 'Проклятие пиковой дамы 2021', 'player': 'https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=174682397586174626a130acb906_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_55330320PlMrxhSjyN-XS9XA3PflL66A0cS-Z8Cg7wXivj0MW_NZImn0JJvxynTGN3VTfQCjTAg5elvSHGNb67sM1YOdSoyXuCWmS0HFlknUxIPD0Bmcs-j1TN1KHXvCYlBfUi2aPUcG9CSb8RFbhhkKfDwv5p0', 'views': 3804, 'local_views': 3804, 'likes': {'count': 13, 'user_likes': 0}, 'reposts': {'count': 15, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:52:55,037 - INFO - VK видео найдено: Проклятие пиковой дамы 2021, URL: https://vk.com/video_ext.php?oid=-208913235&id=456239147&hash=b0815aa0346c9d78&__ref=vk.api&api_hash=174682397586174626a130acb906_GM2TSNRWG4ZDQMI
+2025-05-09 23:52:55,393 - INFO - Update id=965057824 is handled. Duration 903 ms by bot id=7535140306
+2025-05-09 23:52:59,509 - INFO - Поиск фильма: Пидор для пользователя 1092590786
+2025-05-09 23:52:59,730 - INFO - HTML ответа Кинопоиск: 🎬 <b>Пиджак</b> (2004)
+
+────────────
+⭐⭐⭐✨☆ <b>7.758/10</b>
+🌍 <i>Страны:</i> США, Германия
+🎭 <i>Жанры:</i> триллер, фантастика, детектив
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/47382/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:00,533 - INFO - VK API ответ: {'count': 201, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 27, 'date': 1671306334, 'description': 'Пиджак (2004)\n\nВ ходе карательной терапии Джек получает возможность перемещаться в будущее. Сай-фай триллер с Эдрианом Броуди.\n\nРейтинг на Кинопоиске: 7,8', 'duration': 5748, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=6&type=39&tkn=2T2PoUrIi6PXO1u00VnQxnaRMPA&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=6&type=39&tkn=2T2PoUrIi6PXO1u00VnQxnaRMPA&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=6&type=39&tkn=2T2PoUrIi6PXO1u00VnQxnaRMPA&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=6&type=39&tkn=2T2PoUrIi6PXO1u00VnQxnaRMPA&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=0&type=39&tkn=AsSTG7W2k4LI193S8UKMQhTjDSw&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=0&type=39&tkn=AsSTG7W2k4LI193S8UKMQhTjDSw&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=0&type=39&tkn=AsSTG7W2k4LI193S8UKMQhTjDSw&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=0&type=39&tkn=AsSTG7W2k4LI193S8UKMQhTjDSw&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=3302639340217&idx=0&type=39&tkn=AsSTG7W2k4LI193S8UKMQhTjDSw&fn=vid_w', 'width': 1280, 'height': 528, 'id': 456239120, 'owner_id': -215827213, 'ov_id': '5016764360889', 'title': 'Пиджак (2004)', 'player': 'https://vk.com/video_ext.php?oid=-215827213&id=456239120&hash=c0417e7eaddb599e&__ref=vk.api&api_hash=1746823980227da4faf5404c709e_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_7a20fd8dVMOsiQfwGjq9thG8Pm9IGyfIt4rAJuFyWMtc2zeHaUAzsu67NsUiGVo78Dex762bxUteAdkk3TEJqi64X9gfKVc8LxG3HeqaY4Mhj2FbfS0V-467DekS_sJV0Ueg2Q', 'views': 111572, 'local_views': 111572, 'likes': {'count': 518, 'user_likes': 0}, 'reposts': {'count': 581, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:00,534 - INFO - VK видео найдено: Пиджак (2004), URL: https://vk.com/video_ext.php?oid=-215827213&id=456239120&hash=c0417e7eaddb599e&__ref=vk.api&api_hash=1746823980227da4faf5404c709e_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:00,585 - ERROR - Ошибка отправки фото: HTTP Client says - ClientConnectionError: Failed to send bytes into the underlying connection Connection<ConnectionKey(host='api.telegram.org', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-05-09 23:53:00,882 - INFO - Update id=965057825 is handled. Duration 1373 ms by bot id=7535140306
+2025-05-09 23:53:04,232 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:53:04,475 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:05,447 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823985105f0eea20c089bb3a_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_f07e2d8bqXiYVSNwR2nNWDyppeYGF26-8Azz72E5TEWrV9Ox_2jPBK1nG0J-j3O-sCYkA40OaL7yBMPjElwtN8g_Zy5pwDbUG41XQ3Ne9G4L9pHTMNqlcT_KPBztoyw', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:05,448 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746823985105f0eea20c089bb3a_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:05,815 - INFO - Update id=965057826 is handled. Duration 1585 ms by bot id=7535140306
+2025-05-09 23:53:20,405 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:53:20,654 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:21,999 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824002e2ab2a6e79c7bbc294_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_81fc957db6aQ8ZdiBRPQZqUaEujDy3jDj4_oVWSt9YdksMLrX0cJ2qXDr1A89W6AKZWTDUjSfsONh9hZF8iU9QfYUhGJ6ItBCzmGUTEk6VCSRSbd9QazDEBJJ6boN5U', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:22,000 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824002e2ab2a6e79c7bbc294_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:22,553 - INFO - Update id=965057827 is handled. Duration 2150 ms by bot id=7535140306
+2025-05-09 23:53:28,083 - INFO - Поиск фильма: Хуйня для пользователя 1092590786
+2025-05-09 23:53:28,295 - INFO - HTML ответа Кинопоиск: 🎬 <b>Похищение Фредди Хайнекена</b> (2014)
+
+────────────
+⭐⭐⭐☆☆ <b>6.29/10</b>
+🌍 <i>Страны:</i> Нидерланды, Бельгия, Великобритания
+🎭 <i>Жанры:</i> триллер, криминал
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/763722/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:28,798 - INFO - VK API ответ: {'count': 17, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1743135542, 'description': 'Осенью 1983 года Амстердам был потрясен одним из самых известных и дерзких преступлений 20 века: владелец одной из крупнейших в мире пивоварен Heineken – Альфред Хайнекен – был похищен вместе с личным шофером прямо из собственного автомобиля. Несколько друзей, которым очень нужны были деньги, решили не мелочиться и заработать много и сразу, похитив одного из самых богатых людей в стране. Проведя тщательную подготовку, свои намерения они осуществили. Преступники требовали у родственников в качестве выкупа сумасшедшую по тем временам сумму – 35 млн. голландских гульденов (около 16 млн. евро). Взамен обещали сохранить жизни обоим.', 'duration': 5675, 'photo_130': 'https://sun9-23.userapi.com/impg/K_y2VPDYfvaJHm6LrlRMleeVrP_z5ZvYkiyHEw/9fwzXTYkIbk.jpg?size=130x96&quality=95&keep_aspect_ratio=1&background=000000&sign=2babbe75bdc2d2120ca6cf8ee74f09dc&c_uniq_tag=9t_vaWs_r6i-zZ9r1OA6_SsVKEP8XmgEMOEHOg_nCNQ&type=video_thumb', 'photo_320': 'https://sun9-23.userapi.com/impg/K_y2VPDYfvaJHm6LrlRMleeVrP_z5ZvYkiyHEw/9fwzXTYkIbk.jpg?size=320x240&quality=95&keep_aspect_ratio=1&background=000000&sign=106e9723b728c0029ac6b763b01e5e5a&c_uniq_tag=_QlJAunUCdfhDTakcMWhk-krML8emFdx3_fzXHP_itA&type=video_thumb', 'photo_800': 'https://sun9-23.userapi.com/impg/K_y2VPDYfvaJHm6LrlRMleeVrP_z5ZvYkiyHEw/9fwzXTYkIbk.jpg?size=800x450&quality=95&keep_aspect_ratio=1&background=000000&sign=1bf6449e68ccba46c63b4dc6fd0949ef&c_uniq_tag=_0X6oqIWvqnPJNF1hDrY-rI_W8HJdVjY_itjFCpSfdk&type=video_thumb', 'photo_1280': 'https://sun9-23.userapi.com/impg/K_y2VPDYfvaJHm6LrlRMleeVrP_z5ZvYkiyHEw/9fwzXTYkIbk.jpg?size=1280x720&quality=95&sign=349bb3f545d19b6cee5ed9e787636e0e&c_uniq_tag=YXX88lVrm1zB8Eciu3jrXoD3gPdpIx6VNf7GHkjdCPs&type=video_thumb', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=8186095536682&idx=0&type=39&tkn=hrtfweORzGqtcxdtr-am1yj1A7g&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=8186095536682&idx=0&type=39&tkn=hrtfweORzGqtcxdtr-am1yj1A7g&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=8186095536682&idx=0&type=39&tkn=hrtfweORzGqtcxdtr-am1yj1A7g&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=8186095536682&idx=0&type=39&tkn=hrtfweORzGqtcxdtr-am1yj1A7g&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=8186095536682&idx=0&type=39&tkn=hrtfweORzGqtcxdtr-am1yj1A7g&fn=vid_w', 'width': 640, 'height': 270, 'id': 456241118, 'owner_id': -229223442, 'ov_id': '9684157474858', 'title': 'Похищение Фредди Хайнекена - Kidnapping Mr. Heineken (2014)', 'player': 'https://vk.com/video_ext.php?oid=-229223442&id=456241118&hash=040ebfd12895ef67&__ref=vk.api&api_hash=17468240082d160b771e7b2e5682_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_c24144adyKbq6eXh-2P7jmJW6iU03kg-ssGfopCk4aznZOF7dxOv16jb19jJZhgFhtpklNFQq4NTRX4nTG9UeL7WDfWBqn5icwtjCHF6GT-G1GWo0VWqv1NKfi9MalR9vjW5FTV6y7LH29fYyds-D-zDSJ7Pz3sKg_CumpzXhM1q-Hbb_oU0TTja', 'views': 207, 'local_views': 207, 'likes': {'count': 0, 'user_likes': 0}, 'reposts': {'count': 3, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:28,801 - INFO - VK видео найдено: Похищение Фредди Хайнекена - Kidnapping Mr. Heineken (2014), URL: https://vk.com/video_ext.php?oid=-229223442&id=456241118&hash=040ebfd12895ef67&__ref=vk.api&api_hash=17468240082d160b771e7b2e5682_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:29,284 - INFO - Update id=965057828 is handled. Duration 1204 ms by bot id=7535140306
+2025-05-09 23:53:36,685 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:53:36,976 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:38,113 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824018e0f7d5b317b0697b64_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_c5125c12MCxXyvdfMRBA0Jc9S9syALn3KhVNrwBy9dwkNhUI1LZWUGL4z20I9v42G7LKPrkZv_coHX2jcxeUrkdenMYMYYHLoDjpbAUneeagYn_uBM1yOOXTglyM6JU', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:38,114 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824018e0f7d5b317b0697b64_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:38,445 - INFO - Update id=965057829 is handled. Duration 1763 ms by bot id=7535140306
+2025-05-09 23:53:40,268 - INFO - Поиск фильма: Пенис для пользователя 1092590786
+2025-05-09 23:53:40,562 - INFO - HTML ответа Кинопоиск: 🎬 <b>Маленький пенис</b> (2010)
+
+────────────
+☆☆☆☆☆ <b>0/10</b>
+🌍 <i>Страны:</i> Норвегия
+🎭 <i>Жанры:</i> короткометражка, комедия
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/481399/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:40,981 - INFO - VK API ответ: {'count': 7, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 0, 'date': 1310700547, 'description': '16.04.2010.Клуб "Mezzo Forte"\nХуй Забей - Гадёныш', 'duration': 19, 'photo_130': 'https://sun9-74.userapi.com/c851124/v851124525/f0377/zBhYDtWFTCY.jpg', 'photo_320': 'https://sun9-43.userapi.com/c851124/v851124525/f0375/CUbQz3aAO-k.jpg', 'photo_800': 'https://sun9-59.userapi.com/c851124/v851124525/f036f/rR1TE5vIdm8.jpg', 'photo_1280': 'https://sun9-59.userapi.com/c851124/v851124525/f0370/QvEYBc-o_Z0.jpg', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=967740033559&idx=0&type=39&tkn=-jGIome6PSsWm8ssq32ZipcXUYg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=967740033559&idx=0&type=39&tkn=-jGIome6PSsWm8ssq32ZipcXUYg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=967740033559&idx=0&type=39&tkn=-jGIome6PSsWm8ssq32ZipcXUYg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=967740033559&idx=0&type=39&tkn=-jGIome6PSsWm8ssq32ZipcXUYg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=967740033559&idx=0&type=39&tkn=-jGIome6PSsWm8ssq32ZipcXUYg&fn=vid_w', 'width': 480, 'height': 360, 'id': 160732896, 'owner_id': 130752557, 'ov_id': '7226306537517', 'title': 'Маленький участник Хуй Забей', 'player': 'https://vk.com/video_ext.php?oid=130752557&id=160732896&hash=8a9dfdb19cd88938&__ref=vk.api&api_hash=1746824020082300e9c621f9ae89_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_b328baec4Fl5Le6Hn7VPeXfUbMsgF0WpyOyPB_kYhI98UK9FYaiGJUge3rCIV8ac8FvmLaXwy0p8BQPbMq1c1s-HIIbYcTPymZ_1gpq2SkxAi139ECB2A20UCdIbjg6wHjjwMwjM40pIHiFPVXiFs790ovw', 'views': 35, 'local_views': 35, 'likes': {'count': 0, 'user_likes': 0}, 'reposts': {'count': 0, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:40,982 - INFO - VK видео найдено: Маленький участник Хуй Забей, URL: https://vk.com/video_ext.php?oid=130752557&id=160732896&hash=8a9dfdb19cd88938&__ref=vk.api&api_hash=1746824020082300e9c621f9ae89_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:41,196 - INFO - Update id=965057830 is handled. Duration 931 ms by bot id=7535140306
+2025-05-09 23:53:45,287 - INFO - Поиск фильма: Член для пользователя 1092590786
+2025-05-09 23:53:45,543 - INFO - HTML ответа Кинопоиск: 🎬 <b>Член</b> (2021)
+
+────────────
+⭐⭐✨☆☆ <b>5.559/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> документальный, короткометражка
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/4476466/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:53:47,022 - INFO - VK API ответ: {'count': 55045, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 41, 'date': 1640894464, 'description': 'https://rumble.com/c/c-960123', 'duration': 67, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=1&type=39&tkn=1mxgU1dNxbPdrkZ_MGEJuw6SbtI&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=1771874683599&idx=0&type=39&tkn=ySJvtHKV_RlSYaQKxi-81AB0ILg&fn=vid_w', 'width': 424, 'height': 240, 'id': 456240090, 'owner_id': 528247967, 'ov_id': '2944480716959', 'title': '2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник', 'player': 'https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824027c02f5e10efc2a320c0_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_fa5b255cbz_YsTKIYfNJj5ie4IvzAFrmRxyuswMBcAVXstnPd4QJQ-2DCrpYFfdpFBFhbngZXOZFFJ6_cGQRdzTaclOKZ4WVDw4ru1XEcLmvwdS-xc2RKYjaYUCPmxA', 'views': 4380, 'local_views': 4380, 'likes': {'count': 89, 'user_likes': 0}, 'reposts': {'count': 28, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:53:47,023 - INFO - VK видео найдено: 2021-12-30 Москва. Принято решение. Сопли - ковид. Член - насильник, URL: https://vk.com/video_ext.php?oid=528247967&id=456240090&hash=aba99e55e8ae46a6&__ref=vk.api&api_hash=1746824027c02f5e10efc2a320c0_GM2TSNRWG4ZDQMI
+2025-05-09 23:53:47,335 - INFO - Update id=965057831 is handled. Duration 2052 ms by bot id=7535140306
+2025-05-09 23:54:23,089 - INFO - Поиск фильма: В списках не значился для пользователя 886376781
+2025-05-09 23:54:23,330 - INFO - HTML ответа Кинопоиск: 🎬 <b>В списках не значился</b> (2025)
+
+────────────
+⭐⭐⭐✨☆ <b>7.071/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> военный, драма
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/6224943/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:54:23,992 - INFO - VK API ответ: {'count': 226, 'items': [{'response_type': 'full', 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 1, 'date': 1746628795, 'description': 'В списках не значился Фильм 2025', 'duration': 8796, 'photo_130': 'https://sun1-47.userapi.com/impg/1GQmirI07Q3JQ9LzN8Zd9h5xlk-_1NN1PR7DDg/nOb0KAXRbmc.jpg?size=130x96&quality=95&keep_aspect_ratio=1&background=000000&sign=5e677be9137dcb8bf261ceb34c98b6df&c_uniq_tag=HoxMM_jcpCELbv2ii-oaQPLbBd4lbib5al0CIJaLzEs&type=video_thumb', 'photo_320': 'https://sun1-47.userapi.com/impg/1GQmirI07Q3JQ9LzN8Zd9h5xlk-_1NN1PR7DDg/nOb0KAXRbmc.jpg?size=320x240&quality=95&keep_aspect_ratio=1&background=000000&sign=035ec896874c61100eb70683e144bbe9&c_uniq_tag=39oVtFg1feqNPTBL4hU4yZhNzoQmN7cxUuUSww_tGAk&type=video_thumb', 'photo_800': 'https://sun1-47.userapi.com/impg/1GQmirI07Q3JQ9LzN8Zd9h5xlk-_1NN1PR7DDg/nOb0KAXRbmc.jpg?size=800x450&quality=95&keep_aspect_ratio=1&background=000000&sign=ed065f2df32e8746b66cae2a99cb384d&c_uniq_tag=eQn-EmKnD_NJyCHjyQRIdMgVCpnvB9P5TtuGFKL1QVo&type=video_thumb', 'photo_1280': 'https://sun1-47.userapi.com/impg/1GQmirI07Q3JQ9LzN8Zd9h5xlk-_1NN1PR7DDg/nOb0KAXRbmc.jpg?size=1280x720&quality=95&sign=15fac3fc4fa307d2dca86332f24845d1&c_uniq_tag=agSAJaH8Qs07NXD3SbpCBDiD7ipSb9_FSonck7sMgro&type=video_thumb', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=8092806023688&idx=0&type=39&tkn=DUwbdcutfOLnFKcWQmEqZqR8s74&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=8092806023688&idx=0&type=39&tkn=DUwbdcutfOLnFKcWQmEqZqR8s74&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=8092806023688&idx=0&type=39&tkn=DUwbdcutfOLnFKcWQmEqZqR8s74&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=8092806023688&idx=0&type=39&tkn=DUwbdcutfOLnFKcWQmEqZqR8s74&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=8092806023688&idx=0&type=39&tkn=DUwbdcutfOLnFKcWQmEqZqR8s74&fn=vid_w', 'width': 1280, 'height': 720, 'id': 456239017, 'owner_id': -230400745, 'ov_id': '9607621453846', 'title': 'В списках не значился Фильм 2025', 'player': 'https://vk.com/video_ext.php?oid=-230400745&id=456239017&hash=ecb0a143f502db75&__ref=vk.api&api_hash=1746824064a11e686fddf017f4fd_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_753f82caCi23PCOkajY3GlTtKjq02uaD0lmUyJNZntnAD3EZQrVtXPUOEJReKtefSwn03j48bGFquR8vL_t-k2LRyfMfDL7pJ96gRdnWv_3bCfTfDsfmgNlcpf-fKvu4smyzge8v5MtN1k2VXgYHLWDYdQ6BEytPFJZaAGDV-g', 'views': 22882, 'local_views': 22882, 'likes': {'count': 32, 'user_likes': 0}, 'reposts': {'count': 18, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:54:23,992 - INFO - VK видео найдено: В списках не значился Фильм 2025, URL: https://vk.com/video_ext.php?oid=-230400745&id=456239017&hash=ecb0a143f502db75&__ref=vk.api&api_hash=1746824064a11e686fddf017f4fd_GM2TSNRWG4ZDQMI
+2025-05-09 23:54:24,433 - INFO - Update id=965057832 is handled. Duration 1346 ms by bot id=7535140306
+2025-05-09 23:56:35,919 - INFO - Поиск фильма: Зеленый слоник для пользователя 886376781
+2025-05-09 23:56:36,309 - INFO - HTML ответа Кинопоиск: 🎬 <b>Зелёный слоник</b> (1999)
+
+────────────
+⭐⭐✨☆☆ <b>5.652/10</b>
+🌍 <i>Страны:</i> Россия
+🎭 <i>Жанры:</i> ужасы, триллер
+
+────────────
+🔗 <a href='https://www.kinopoisk.ru/film/373314/'>Страница на Кинопоиске</a>
+
+2025-05-09 23:56:37,548 - INFO - VK API ответ: {'count': 157, 'items': [{'response_type': 'full', 'can_comment': 1, 'can_like': 1, 'can_repost': 1, 'can_subscribe': 1, 'can_add_to_faves': 1, 'can_add': 1, 'comments': 19, 'date': 1681401923, 'description': '', 'duration': 5215, 'photo_130': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=13&type=39&tkn=bl3QY8q3mfcFjImejyCktbeFSew&fn=vid_s', 'photo_320': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=13&type=39&tkn=bl3QY8q3mfcFjImejyCktbeFSew&fn=vid_l', 'photo_800': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=13&type=39&tkn=bl3QY8q3mfcFjImejyCktbeFSew&fn=vid_x', 'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=13&type=39&tkn=bl3QY8q3mfcFjImejyCktbeFSew&fn=vid_w', 'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=0&type=39&tkn=ZfaBg0eiKQzYppLjPdOXYY39sYM&fn=vid_sm', 'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=0&type=39&tkn=ZfaBg0eiKQzYppLjPdOXYY39sYM&fn=vid_d', 'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=0&type=39&tkn=ZfaBg0eiKQzYppLjPdOXYY39sYM&fn=vid_md', 'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=0&type=39&tkn=ZfaBg0eiKQzYppLjPdOXYY39sYM&fn=vid_f', 'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=4006279055998&idx=0&type=39&tkn=ZfaBg0eiKQzYppLjPdOXYY39sYM&fn=vid_w', 'width': 900, 'height': 720, 'id': 456239022, 'owner_id': -219916923, 'ov_id': '4693738465406', 'title': 'Зелёный слоник (1999) Епифанцев, Пахомов Режиссер Светлана Баскова', 'player': 'https://vk.com/video_ext.php?oid=-219916923&id=456239022&hash=08be9c56d1be7db2&__ref=vk.api&api_hash=17468241970abf59ee460fa7f8e8_GM2TSNRWG4ZDQMI', 'added': 0, 'track_code': 'video_dea40f38WoAFh0CG25b8C2ETy-u4GKDZilUludXvEI94l-d0T8g98Ue1cb_ihxqFg5VEZFy_Qldi7scy8k30PrEkMfuEceFEkp5AhtueyjJTIJTfjS4uWyCkzFFAIk7vCvSPKzmhWZQoSo5AHVg1zazflQ', 'views': 44859, 'local_views': 44859, 'likes': {'count': 78, 'user_likes': 0}, 'reposts': {'count': 180, 'user_reposted': 0}, 'can_dislike': 1}], 'profiles': [], 'groups': []}
+2025-05-09 23:56:37,549 - INFO - VK видео найдено: Зелёный слоник (1999) Епифанцев, Пахомов Режиссер Светлана Баскова, URL: https://vk.com/video_ext.php?oid=-219916923&id=456239022&hash=08be9c56d1be7db2&__ref=vk.api&api_hash=17468241970abf59ee460fa7f8e8_GM2TSNRWG4ZDQMI
+2025-05-09 23:56:38,045 - INFO - Update id=965057833 is handled. Duration 2131 ms by bot id=7535140306
+2025-05-09 23:56:56,229 - WARNING - Received SIGINT signal
+2025-05-09 23:56:56,232 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-09 23:56:56,233 - INFO - Polling stopped
