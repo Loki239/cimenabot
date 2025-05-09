@@ -1,0 +1,4 @@
+aiogram>=3.0.0
+aiovk>=4.1.0
+aiohttp>=3.8.0
+aiosqlite
