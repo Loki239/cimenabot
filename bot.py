@@ -30,6 +30,8 @@ load_dotenv()
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 VK_TOKEN = os.getenv("VK_TOKEN")
 KINOPOISK_TOKEN = os.getenv("KINOPOISK_TOKEN")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_CX = os.getenv("GOOGLE_CX")
 
 if not all([TELEGRAM_TOKEN, VK_TOKEN, KINOPOISK_TOKEN]):
     logging.error("Не все токены найдены в .env файле!")
@@ -65,7 +67,55 @@ async def get_user_settings(user_id: int) -> tuple[bool, bool]:
 async def send_loading_message(message: Message) -> Message:
     return await message.answer("🔍 <i>Ищу информацию...</i>", parse_mode=ParseMode.HTML)
 
-# Обработчик команды /start
+async def get_movie_description(film_id: int) -> str:
+    url = f"https://api.kinopoisk.dev/v1.4/movie/{film_id}"
+    headers = {
+        "X-API-KEY": KINOPOISK_TOKEN,
+        "Accept": "application/json"
+    }
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, headers=headers) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    logging.info(f"Получены данные о фильме {film_id}: {str(data)[:500]}")
+                    description = data.get('description', '')
+                    if not description:
+                        description = data.get('shortDescription', '')
+                    if not description:
+                        description = "Описание не найдено"
+                    return description
+                else:
+                    logging.error(f"Не удалось получить описание фильма (статус {resp.status})")
+                    return f"Описание не найдено (статус {resp.status})"
+    except Exception as e:
+        logging.error(f"Ошибка при получении описания фильма: {str(e)}")
+        return "Описание не найдено: ошибка запроса"
+
+async def get_watch_link(title: str) -> str:
+    if not GOOGLE_API_KEY or not GOOGLE_CX:
+        return ""
+    search_query = f"{title} смотреть без смс и регистрации"
+    url = f"https://www.googleapis.com/customsearch/v1?key={GOOGLE_API_KEY}&cx={GOOGLE_CX}&q={aiohttp.helpers.quote(search_query)}"
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    if data.get("items"):
+                        first_link = data["items"][0]["link"]
+                        return first_link
+                    else:
+                        return ""
+                else:
+                    logging.error(f"Google API вернул статус {resp.status}")
+                    return ""
+    except Exception as e:
+        logging.error(f"Ошибка при получении ссылки для просмотра: {str(e)}")
+        return ""
+
+########## /start handler ####################
+
 @dp.message(CommandStart())
 async def send_welcome(message: Message):
     logging.info(f"Получена команда /start от {message.from_user.id}")
@@ -77,15 +127,16 @@ async def send_welcome(message: Message):
         f"{separator('Доступные команды')}"
         f"/help - Показать справку\n"
         f"/settings - Настройки поиска\n"
-        f"/new - Показать новинки кино\n"
-        f"/best - Топ 10 фильмов всех времён\n"
+        # f"/new - Показать новинки кино\n"
+        # f"/best - Топ 10 фильмов всех времён\n"
         f"/history - История поиска\n"
         f"/stats - Статистика предложенных фильмов"
     )
     logging.info(f"HTML ответа приветствия: {response}")
     await message.answer(response, parse_mode=ParseMode.HTML)
 
-# Обработчик команды /help
+########## /help handler ####################
+
 @dp.message(Command("help"))
 async def send_help(message: Message):
     logging.info(f"Получена команда /help от {message.from_user.id}")
@@ -112,7 +163,8 @@ async def send_help(message: Message):
     logging.info(f"HTML ответа справки: {response}")
     await message.answer(response, parse_mode=ParseMode.HTML)
 
-# Обработчики команд включения/выключения источников
+########## turn on/off cources ####################
+
 @dp.message(Command("turn_vk"))
 async def toggle_vk(message: Message):
     user_id = message.from_user.id
@@ -147,6 +199,8 @@ async def toggle_kp(message: Message):
     logging.info(f"Поиск по Кинопоиску {status} пользователем {user_id}")
     await message.answer(f"🔘 Поиск в Кинопоиске теперь <b>{status}</b>", parse_mode=ParseMode.HTML)
 
+########## /settings handler ####################
+
 @dp.message(Command("settings"))
 async def show_settings(message: Message):
     user_id = message.from_user.id
@@ -165,103 +219,103 @@ async def show_settings(message: Message):
     logging.info(f"HTML ответа настроек: {response}")
     await message.answer(response, parse_mode=ParseMode.HTML)
 
-# # Обработчик команды /new
-# @dp.message(Command("new"))
-# async def show_new_movies(message: Message):
-#     user_id = message.from_user.id
-#     _, kp_on = await get_user_settings(user_id)
-#     if not kp_on:
-#         logging.info(f"Попытка запроса новинок с отключенным Кинопоиском от {user_id}")
-#         await message.answer("🔎 <b>Поиск в Кинопоиске отключен.</b> Включите его командой /turn_kp", parse_mode=ParseMode.HTML)
-#         return
+# Обработчик команды /new
+@dp.message(Command("new"))
+async def show_new_movies(message: Message):
+    user_id = message.from_user.id
+    _, kp_on = await get_user_settings(user_id)
+    if not kp_on:
+        logging.info(f"Попытка запроса новинок с отключенным Кинопоиском от {user_id}")
+        await message.answer("🔎 <b>Поиск в Кинопоиске отключен.</b> Включите его командой /turn_kp", parse_mode=ParseMode.HTML)
+        return
 
-#     logging.info(f"Запрос новинок от {user_id}")
-#     wait_message = await send_loading_message(message)
+    logging.info(f"Запрос новинок от {user_id}")
+    wait_message = await send_loading_message(message)
     
-#     current_year = datetime.now().year
-#     current_month = datetime.now().strftime("%B").upper()
-#     url = f"https://api.kinopoisk.dev/v2.2/films/premieres?year={current_year}&month={current_month}"
-#     try:
-#         async with aiohttp.ClientSession() as session:
-#             async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
-#                 if resp.status == 200:
-#                     data = await resp.json()
-#                     movies = data.get("items", [])
-#                     if not movies:
-#                         response = "😕 <b>Новые фильмы не найдены.</b>"
-#                         await message.answer(response, parse_mode=ParseMode.HTML)
-#                         await wait_message.delete()
-#                         return
-#                     response = f"🎬 <b>Новые фильмы {current_year} года:</b>\n{separator()}"
-#                     for movie in movies[:10]:
-#                         title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
-#                         year = movie.get('year', 'Нет данных')
-#                         film_id = movie.get('kinopoiskId')
-#                         kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
-#                         vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
-#                         vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
-#                         response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
-#                     logging.info(f"HTML ответа новинок: {response}")
-#                     await message.answer(response, parse_mode=ParseMode.HTML)
-#                 else:
-#                     response = f"⚠ <i>Не удалось получить информацию с Кинопоиска (статус {resp.status})</i>"
-#                     logging.error(f"Kinopoisk API вернул статус {resp.status}")
-#                     await message.answer(response, parse_mode=ParseMode.HTML)
-#     except Exception as e:
-#         logging.error(f"Ошибка при получении новых фильмов: {str(e)}")
-#         response = "⚠ <i>Произошла ошибка при получении данных</i>"
-#         await message.answer(response, parse_mode=ParseMode.HTML)
-#     finally:
-#         await wait_message.delete()
+    current_year = 2024  # Используем 2024 для тестирования, так как 2025 может не иметь данных
+    current_month = datetime.now().strftime("%B").upper()
+    url = f"https://api.kinopoisk.dev/v2.2/films/premieres?year={current_year}&month={current_month}"
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    movies = data.get("items", [])
+                    if not movies:
+                        response = "😕 <b>Новые фильмы не найдены.</b>"
+                        await message.answer(response, parse_mode=ParseMode.HTML)
+                        await wait_message.delete()
+                        return
+                    response = f"🎬 <b>Новые фильмы {current_year} года:</b>\n{separator()}"
+                    for movie in movies[:10]:
+                        title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
+                        year = movie.get('year', 'Нет данных')
+                        film_id = movie.get('kinopoiskId')
+                        kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
+                        vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
+                        vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
+                        response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
+                    logging.info(f"HTML ответа новинок: {response}")
+                    await message.answer(response, parse_mode=ParseMode.HTML)
+                else:
+                    response = f"⚠ <i>Не удалось получить информацию с Кинопоиска (статус {resp.status})</i>"
+                    logging.error(f"Kinopoisk API вернул статус {resp.status}")
+                    await message.answer(response, parse_mode=ParseMode.HTML)
+    except Exception as e:
+        logging.error(f"Ошибка при получении новых фильмов: {str(e)}")
+        response = "⚠ <i>Произошла ошибка при получении данных</i>"
+        await message.answer(response, parse_mode=ParseMode.HTML)
+    finally:
+        await wait_message.delete()
 
 # Обработчик команды /best
-# @dp.message(Command("best"))
-# async def show_best_movies(message: Message):
-#     user_id = message.from_user.id
-#     _, kp_on = await get_user_settings(user_id)
-#     if not kp_on:
-#         logging.info(f"Попытка запроса топ фильмов с отключенным Кинопоиском от {user_id}")
-#         await message.answer("🔎 <b>Поиск в Кинопоиске отключен.</b> Включите его командой /turn_kp", parse_mode=ParseMode.HTML)
-#         return
+@dp.message(Command("best"))
+async def show_best_movies(message: Message):
+    user_id = message.from_user.id
+    _, kp_on = await get_user_settings(user_id)
+    if not kp_on:
+        logging.info(f"Попытка запроса топ фильмов с отключенным Кинопоиском от {user_id}")
+        await message.answer("🔎 <b>Поиск в Кинопоиске отключен.</b> Включите его командой /turn_kp", parse_mode=ParseMode.HTML)
+        return
 
-#     logging.info(f"Запрос топ фильмов от {user_id}")
-#     wait_message = await send_loading_message(message)
+    logging.info(f"Запрос топ фильмов от {user_id}")
+    wait_message = await send_loading_message(message)
     
-#     url = "https://api.kinopoisk.dev/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1"
-#     try:
-#         async with aiohttp.ClientSession() as session:
-#             async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
-#                 if resp.status == 200:
-#                     data = await resp.json()
-#                     movies = data.get("films", [])
-#                     if not movies:
-#                         response = "😕 <b>Фильмы не найдены.</b>"
-#                         await message.answer(response, parse_mode=ParseMode.HTML)
-#                         await wait_message.delete()
-#                         return
-#                     response = f"🎬 <b>Топ 10 фильмов всех времён:</b>\n{separator()}"
-#                     for movie in movies[:10]:
-#                         title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
-#                         year = movie.get('year', 'Нет данных')
-#                         film_id = movie.get('filmId')
-#                         kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
-#                         vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
-#                         vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
-#                         response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
-#                     logging.info(f"HTML ответа топ фильмов: {response}")
-#                     await message.answer(response, parse_mode=ParseMode.HTML)
-#                 else:
-#                     response = f"⚠ <i>Не удалось получить информацию с Кинопоиска (статус {resp.status})</i>"
-#                     logging.error(f"Kinopoisk API вернул статус {resp.status}")
-#                     await message.answer(response, parse_mode=ParseMode.HTML)
-#     except Exception as e:
-#         logging.error(f"Ошибка при получении топ фильмов: {str(e)}")
-#         response = "⚠ <i>Произошла ошибка при получении данных</i>"
-#         await message.answer(response, parse_mode=ParseMode.HTML)
-#     finally:
-#         await wait_message.delete()
+    url = "https://api.kinopoisk.dev/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1"
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    movies = data.get("films", [])
+                    if not movies:
+                        response = "😕 <b>Фильмы не найдены.</b>"
+                        await message.answer(response, parse_mode=ParseMode.HTML)
+                        await wait_message.delete()
+                        return
+                    response = f"🎬 <b>Топ 10 фильмов всех времён:</b>\n{separator()}"
+                    for movie in movies[:10]:
+                        title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
+                        year = movie.get('year', 'Нет данных')
+                        film_id = movie.get('filmId')
+                        kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
+                        vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
+                        vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
+                        response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
+                    logging.info(f"HTML ответа топ фильмов: {response}")
+                    await message.answer(response, parse_mode=ParseMode.HTML)
+                else:
+                    response = f"⚠ <i>Не удалось получить информацию с Кинопоиска (статус {resp.status})</i>"
+                    logging.error(f"Kinopoisk API вернул статус {resp.status}")
+                    await message.answer(response, parse_mode=ParseMode.HTML)
+    except Exception as e:
+        logging.error(f"Ошибка при получении топ фильмов: {str(e)}")
+        response = "⚠ <i>Произошла ошибка при получении данных</i>"
+        await message.answer(response, parse_mode=ParseMode.HTML)
+    finally:
+        await wait_message.delete()
 
-# Обработчик команды /history
+########## /history handler ####################
 @dp.message(Command("history"))
 async def show_history(message: Message):
     user_id = message.from_user.id
@@ -275,11 +329,11 @@ async def show_history(message: Message):
             response = f"📜 <b>Последние поиски:</b>\n{separator()}"
             for row in rows:
                 query, timestamp = row
-                response += f"- {html.escape(query)} (в {timestamp})\n"
+                response += f"- {html.escape(query)} ({timestamp})\n"
         logging.info(f"HTML ответа истории: {response}")
         await message.answer(response, parse_mode=ParseMode.HTML)
 
-# Обработчик команды /stats
+########## /stats handler ####################
 @dp.message(Command("stats"))
 async def show_stats(message: Message):
     user_id = message.from_user.id
@@ -290,7 +344,7 @@ async def show_stats(message: Message):
         if not rows:
             response = "📊 <b>Статистика предложений пуста.</b>"
         else:
-            response = f"📊 <b>Часто предлагаемые фильмы:</b>\n{separator()}"
+            response = f"📊 <b>Часто предлагаемые фильмы:</b>{separator()}"
             for row in rows:
                 movie_title, count = row
                 response += f"- {html.escape(movie_title)}: {count} раз\n"
@@ -334,7 +388,9 @@ async def search_movie(message: Message):
     suggestion_title = None
     video_title = None
     vk_search_query = movie_title
-    
+    description = ""
+    watch_link_google = ""
+
     if kp_on:
         try:
             async with aiohttp.ClientSession() as session:
@@ -371,12 +427,21 @@ async def search_movie(message: Message):
                             suggestion_title = title
                             logging.info(f"HTML ответа Кинопоиск: {movie_details}")
                             vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
+                            
+                            # Получить описание
+                            description = await get_movie_description(film_id)
+                            movie_details += f"\n<b>Описание:</b> {html.escape(description)}\n"
+                            
+                            # Получить ссылку для просмотра
+                            watch_link_google = await get_watch_link(title)
+                            if watch_link_google:
+                                movie_details += f"\n🔗 <a href='{watch_link_google}'>Смотреть онлайн</a>\n"
                     else:
                         logging.error(f"Kinopoisk API вернул статус {resp.status}")
         except Exception as e:
             logging.error(f"Kinopoisk API ошибка: {str(e)}")
             movie_details = "⚠ <i>Не удалось получить информацию с Кинопоиска</i>\n"
-    
+
     vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
     
     if vk_on:
