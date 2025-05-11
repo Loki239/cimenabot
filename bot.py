@@ -232,29 +232,63 @@ async def show_new_movies(message: Message):
     logging.info(f"Запрос новинок от {user_id}")
     wait_message = await send_loading_message(message)
     
-    current_year = 2024  # Используем 2024 для тестирования, так как 2025 может не иметь данных
-    current_month = datetime.now().strftime("%B").upper()
-    url = f"https://api.kinopoisk.dev/v2.2/films/premieres?year={current_year}&month={current_month}"
+    current_year = datetime.now().year
+    # Изменяем параметры запроса для получения новых фильмов
+    url = f"https://api.kinopoisk.dev/v1.4/movie?page=1&limit=10&selectFields=name&selectFields=alternativeName&selectFields=year&selectFields=rating&selectFields=genres&selectFields=countries&selectFields=id&selectFields=premiere&year={current_year}&sortField=year&sortType=-1&notNull=year"
+    headers = {
+        "X-API-KEY": KINOPOISK_TOKEN,
+        "Accept": "application/json"
+    }
+    
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
+            async with session.get(url, headers=headers) as resp:
                 if resp.status == 200:
                     data = await resp.json()
-                    movies = data.get("items", [])
+                    logging.info(f"Получен ответ от API: {str(data)[:200]}...")  # Логируем начало ответа для отладки
+                    movies = data.get("docs", [])
                     if not movies:
                         response = "😕 <b>Новые фильмы не найдены.</b>"
                         await message.answer(response, parse_mode=ParseMode.HTML)
                         await wait_message.delete()
                         return
+                    
+                    # Сортируем фильмы по году (по убыванию)
+                    movies.sort(key=lambda x: x.get('year', 0), reverse=True)
+                    
                     response = f"🎬 <b>Новые фильмы {current_year} года:</b>\n{separator()}"
-                    for movie in movies[:10]:
-                        title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
-                        year = movie.get('year', 'Нет данных')
-                        film_id = movie.get('kinopoiskId')
-                        kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
-                        vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
-                        vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
-                        response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
+                    for movie in movies:
+                        try:
+                            title = movie.get('name', movie.get('alternativeName', 'Нет названия'))
+                            if not title or title == 'Нет названия':
+                                continue
+                                
+                            year = movie.get('year')
+                            if not year:
+                                continue
+                                
+                            rating = movie.get('rating', {})
+                            if isinstance(rating, dict):
+                                rating_value = rating.get('kp', 0)
+                            else:
+                                rating_value = 0
+                                
+                            film_id = movie.get('id')
+                            if not film_id:
+                                continue
+                                
+                            kp_url = f"https://www.kinopoisk.ru/film/{film_id}/"
+                            vk_search_query = f"{title} {year}"
+                            vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
+                            
+                            response += f"- <a href='{kp_url}'>{html.escape(str(title))}</a> ({year}) - {rating_stars(rating_value)} {rating_value}/10 | <a href='{vk_search_url}'>Поиск в VK</a>\n"
+                        except Exception as movie_error:
+                            logging.error(f"Ошибка при обработке фильма: {str(movie_error)}")
+                            continue
+                            
+                    if response == f"🎬 <b>Новые фильмы {current_year} года:</b>\n{separator()}":
+                        response = "😕 <b>Не удалось найти подходящие фильмы.</b>"
+                        
                     logging.info(f"HTML ответа новинок: {response}")
                     await message.answer(response, parse_mode=ParseMode.HTML)
                 else:
@@ -281,27 +315,33 @@ async def show_best_movies(message: Message):
     logging.info(f"Запрос топ фильмов от {user_id}")
     wait_message = await send_loading_message(message)
     
-    url = "https://api.kinopoisk.dev/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1"
+    url = "https://api.kinopoisk.dev/v1.4/movie?page=1&limit=10&selectFields=name&selectFields=alternativeName&selectFields=year&selectFields=rating&selectFields=movieLength&selectFields=genres&selectFields=countries&selectFields=id&sortField=rating.kp&sortType=-1&notNull=name"
+    headers = {
+        "X-API-KEY": KINOPOISK_TOKEN,
+        "Accept": "application/json"
+    }
+    
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(url, headers={"X-API-KEY": KINOPOISK_TOKEN}) as resp:
+            async with session.get(url, headers=headers) as resp:
                 if resp.status == 200:
                     data = await resp.json()
-                    movies = data.get("films", [])
+                    movies = data.get("docs", [])
                     if not movies:
                         response = "😕 <b>Фильмы не найдены.</b>"
                         await message.answer(response, parse_mode=ParseMode.HTML)
                         await wait_message.delete()
                         return
-                    response = f"🎬 <b>Топ 10 фильмов всех времён:</b>\n{separator()}"
-                    for movie in movies[:10]:
-                        title = movie.get('nameRu', movie.get('nameEn', 'Нет названия'))
+                    response = f"🎬 <b>Топ 10 фильмов:</b>\n{separator()}"
+                    for movie in movies:
+                        title = movie.get('name', movie.get('alternativeName', 'Нет названия'))
                         year = movie.get('year', 'Нет данных')
-                        film_id = movie.get('filmId')
+                        rating = movie.get('rating', {}).get('kp', 0)
+                        film_id = movie.get('id')
                         kp_url = f"https://www.kinopoisk.ru/film/{film_id}/" if film_id else None
                         vk_search_query = f"{title} {year}" if year != 'Нет данных' else title
                         vk_search_url = f"https://vk.com/video?q={aiohttp.helpers.quote(vk_search_query)}"
-                        response += f"- <a href='{kp_url}'>{html.escape(title)}</a> | <a href='{vk_search_url}'>Поиск в VK</a>\n"
+                        response += f"- <a href='{kp_url}'>{html.escape(title)}</a> ({year}) - {rating_stars(rating)} {rating}/10 | <a href='{vk_search_url}'>Поиск в VK</a>\n"
                     logging.info(f"HTML ответа топ фильмов: {response}")
                     await message.answer(response, parse_mode=ParseMode.HTML)
                 else:
