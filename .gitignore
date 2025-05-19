@@ -1,13 +1,22 @@
 # Environment variables
 .env
 
-# Python
+# Logs
+*.log
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -22,10 +31,6 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Logs
-*.log
-bot.log
 
 # Database
 *.db

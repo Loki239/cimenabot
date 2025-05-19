@@ -10,7 +10,7 @@ auth_url = f"https://oauth.vk.com/authorize?client_id={APP_ID}&display=page&redi
 print("Перейдите по ссылке:", auth_url)
 
 # 2. После авторизации получите code из URL и обменяйте на токен
-CODE = "0fc760506bcf2bea65"  # из URL после авторизации
+CODE = "1de961d1161351bcd3"  # из URL после авторизации
 
 response = requests.get(
     "https://oauth.vk.com/access_token",
