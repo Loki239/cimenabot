@@ -19,7 +19,7 @@ async def search_rutube_api(title: str):
     cached_links = get_rutube_from_cache(title)
     if cached_links is not None:
         logging.info(f"🔄 Возвращаем кэшированные ссылки на Rutube для '{title}' ({len(cached_links)} ссылок)")
-        # Add a flag to identify cached links (for debugging)
+        # Add a flag to identify cached links
         for link in cached_links:
             link['from_cache'] = True
         return cached_links
@@ -28,52 +28,43 @@ async def search_rutube_api(title: str):
     search_query = f"{title} фильм"
     encoded_query = aiohttp.helpers.quote(search_query)
     url = f"{RUTUBE_API_SEARCH_URL}{encoded_query}"
+    
     logging.info(f"Выполнение запроса к Rutube API: {url}")
+    
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(url, timeout=7) as resp:
+            # Fix: Using proper ClientTimeout object instead of integer
+            timeout = aiohttp.ClientTimeout(total=30)
+            async with session.get(url, timeout=timeout) as resp:
                 if resp.status == 200:
                     data = await resp.json()
+                    
+                    # Process results
                     results = data.get('results', [])
                     logging.info(f"Rutube API: получено {len(results)} результатов")
                     
-                    if results:
-                        # Берем первые 3 результата
-                        for video_item in results[:3]:
-                            video_id = video_item.get('id')
-                            rutube_title = video_item.get('title', 'Видео Rutube')
+                    count = 0
+                    for result in results:
+                        if count >= 3:  # Ограничимся тремя ссылками
+                            break
                             
-                            if video_id:
-                                # Формируем ссылку на страницу видео (не на embed)
-                                video_url = f"https://rutube.ru/video/{video_id}/"
-                                # Validate URL
-                                if not video_url.startswith('http'):
-                                    video_url = 'https://rutube.ru/video/' + video_id + '/'
-                                
-                                # Создаем название БЕЗ префикса "Rutube:"
-                                name = rutube_title[:30] + "..." if len(rutube_title) > 30 else rutube_title
-                                rutube_links.append({
-                                    "name": name,
-                                    "url": video_url,
-                                    "from_cache": False
-                                })
-                                logging.info(f"Найдено видео на Rutube: {video_url} ({name})")
-                            else:
-                                logging.warning(f"Rutube item без video_id: {video_item}")
-                else:
-                    logging.error(f"Rutube API запрос не удался, статус: {resp.status}, ответ: {await resp.text(errors='ignore')}")
-    except asyncio.TimeoutError:
-        logging.error("Таймаут при запросе к Rutube API.")
+                        title = result.get('title', '')
+                        video_url = result.get('video_url', '')
+                        
+                        if video_url:
+                            logging.info(f"Найдено видео на Rutube: {video_url} ({title[:25]}...)")
+                            rutube_links.append({
+                                'name': title,
+                                'url': video_url,
+                                'from_cache': False  # Mark as fresh search result
+                            })
+                            count += 1
     except Exception as e:
-        logging.error(f"Ошибка при поиске через Rutube API: {str(e)}")
+        logging.info(f"Ошибка при поиске на Rutube: {e}")
     
-    if not rutube_links:
-        logging.info("Не найдено видео через Rutube API.")
-    else:
-        # Save to cache if we found results
-        save_rutube_to_cache(title, rutube_links)
-        logging.info(f"Сохранено {len(rutube_links)} ссылок в кэше")
-        
+    logging.info(f"Сохранено {len(rutube_links)} ссылок в кэше")
+    save_rutube_to_cache(title, rutube_links)
+    
     return rutube_links
 
 async def get_kinopoisk_data(movie_title):

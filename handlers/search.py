@@ -1,45 +1,97 @@
-import asyncio
-import aiohttp
-import logging
-import html
+"""
+Search Handler Module for CinemaBot
+
+This module handles the main search functionality, including processing
+user queries, fetching movie data, and displaying results with streaming links.
+"""
+
 import os
+import html
 import random
-from PIL import Image, ImageDraw
-from aiogram import Router, F
-from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, FSInputFile
+import logging
+import aiohttp
+import asyncio
+from typing import List, Dict, Any, Optional, Union
+from PIL import Image, ImageDraw, ImageFont
+from aiogram import Router, F, Bot
+from aiogram.types import Message, FSInputFile
 from aiogram.enums import ParseMode
 
 from database import Database
-from utils.helpers import separator, rating_stars, is_command_without_slash
 from utils.api import search_rutube_api, get_kinopoisk_data
-from utils.cache import save_poster_to_cache, get_cached_poster_path, POSTERS_DIR
+from utils.cache import (
+    get_movie_from_cache, save_movie_to_cache,
+    get_cached_poster_path, save_poster_to_cache,
+    CACHE_DIR, POSTERS_DIR, MOVIE_DATA_CACHE, RUTUBE_CACHE
+)
+from utils.helpers import separator, rating_stars, is_command_without_slash
 from handlers.commands import get_search_settings
 
 router = Router()
 db = Database()
 
 async def send_loading_message(message: Message) -> Message:
+    """Send a loading message when search starts"""
     return await message.answer("🔍 <i>Ищу информацию...</i>", parse_mode=ParseMode.HTML)
 
-@router.message(F.text)
-async def search_movie(message: Message):
-    # Check if message looks like a command without slash
-    if is_command_without_slash(message.text.strip().lower()):
-        command_name = message.text.strip().lower()
-        await message.answer(
-            f"Похоже, вы хотели использовать команду, но забыли слэш.\n\n"
-            f"Попробуйте: <code>/{command_name}</code>",
-            parse_mode=ParseMode.HTML
-        )
+@router.message()
+async def handle_message(message: Message, bot: Bot, db: Optional[Database] = None):
+    """
+    Handle regular text messages and search for movies.
+    
+    This is the main handler that processes user's search queries
+    and returns movie information with streaming links.
+    
+    Args:
+        message: The message object from Telegram
+        bot: The bot instance
+        db: Database instance (injected by middleware)
+    """
+    # Use global database if middleware didn't provide one
+    if db is None:
+        db = Database()
+        
+    # Fix: safely get message text and check if it's None
+    message_text = message.text
+    if message_text is None:
         return
-
+        
+    # Clean and trim the query
+    query = message_text.strip()
+    
+    # Don't process empty messages
+    if not query:
+        return
+        
+    # Check if message looks like a command without slash
+    if is_command_without_slash(query):
+        await message.answer(f"Похоже, вы пытались ввести команду, но забыли добавить слеш (/). Попробуйте: /{query}")
+        return
+    
+    # Fix: Check if user is None
+    if message.from_user is None:
+        await message.answer("Не удалось определить пользователя.")
+        return
+        
+    # Get user ID
+    user_id = message.from_user.id
+        
+    # Log the search
+    logging.info(f"Поиск фильма: '{query}' от пользователя {user_id}")
+    
+    # Add to search history
+    await db.add_search(user_id, query)
+    
+    # Create and send a "loading" message
+    loading_msg = await message.answer("🔍 <b>Ищу фильм...</b>", parse_mode=ParseMode.HTML)
+    
     # Get current search settings
     settings = get_search_settings()
     links_on = settings['links_on']
     kp_on = settings['kp_on']
 
     if not links_on and not kp_on:
-        logging.info(f"Попытка поиска при отключенных источниках от {message.from_user.id}")
+        logging.info(f"Попытка поиска при отключенных источниках от {user_id}")
         response = (
             f"🔎 <b>Все источники поиска отключены!</b>\n"
             f"{separator()}"
@@ -50,14 +102,6 @@ async def search_movie(message: Message):
         await message.answer(response, parse_mode=ParseMode.HTML)
         return
 
-    query = message.text.strip()
-    user_id = message.from_user.id
-    
-    # Сохраняем запрос в историю
-    await db.add_search(user_id, query)
-    
-    loading_msg = await send_loading_message(message)
-    
     tasks = []
     if kp_on:
         tasks.append(asyncio.create_task(get_kinopoisk_data(query)))
@@ -164,7 +208,7 @@ async def search_movie(message: Message):
             movie_id = kinopoisk_data.get("kinopoiskId")
             cached_poster = get_cached_poster_path(movie_id)
         
-        if cached_poster:
+        if cached_poster and kinopoisk_data is not None:
             poster_paths.append(cached_poster)
             poster_loaded = True
             logging.info(f"Using cached poster for movie: {kinopoisk_data.get('nameRu', 'Unknown')}")
@@ -173,46 +217,52 @@ async def search_movie(message: Message):
             try:
                 logging.info(f"Загружаем постер: {image_url}")
                 async with aiohttp.ClientSession() as session:
-                    try:
-                        # Увеличиваем таймаут для постера до 15 секунд
-                        async with session.get(image_url, timeout=15) as resp:
-                            if resp.status == 200:
-                                poster_data = await resp.read()
-                                
-                                # If we have movie ID, save to cache
-                                if kinopoisk_data and kinopoisk_data.get("kinopoiskId"):
-                                    movie_id = kinopoisk_data.get("kinopoiskId")
-                                    cached_path = save_poster_to_cache(movie_id, poster_data)
-                                    if cached_path:
-                                        poster_paths.append(cached_path)
-                                        poster_loaded = True
-                                        logging.info(f"Poster saved to cache and loaded for movie ID: {movie_id}")
-                                    else:
-                                        # Fallback to temporary file if caching fails
-                                        with open(random_filename, "wb") as f:
-                                            f.write(poster_data)
-                                        poster_paths.append(random_filename)
-                                        poster_loaded = True
+                    # Fix timeout parameter to use ClientTimeout object
+                    timeout = aiohttp.ClientTimeout(total=10)
+                    async with session.get(image_url, timeout=timeout) as resp:
+                        if resp.status == 200:
+                            poster_data = await resp.read()
+                            
+                            # If we have movie ID, save to cache
+                            if kinopoisk_data and kinopoisk_data.get("kinopoiskId"):
+                                movie_id = kinopoisk_data.get("kinopoiskId")
+                                cached_path = save_poster_to_cache(movie_id, poster_data)
+                                if cached_path:
+                                    poster_paths.append(cached_path)
+                                    poster_loaded = True
+                                    logging.info(f"Poster saved to cache and loaded for movie ID: {movie_id}")
                                 else:
-                                    # No movie ID, use temporary file
+                                    # Fallback to temporary file if caching fails
                                     with open(random_filename, "wb") as f:
                                         f.write(poster_data)
                                     poster_paths.append(random_filename)
                                     poster_loaded = True
-                                
-                                logging.info(f"Постер успешно загружен: {image_url}")
                             else:
-                                logging.error(f"Ошибка загрузки постера, статус: {resp.status}, URL: {image_url}")
-                    except asyncio.TimeoutError:
-                        logging.error(f"Таймаут при загрузке постера (15 сек): {image_url}")
-                    except Exception as e:
-                        logging.error(f"Ошибка при загрузке постера {image_url}: {str(e)}")
+                                # No movie ID, use temporary file
+                                with open(random_filename, "wb") as f:
+                                    f.write(poster_data)
+                                poster_paths.append(random_filename)
+                                poster_loaded = True
+                            
+                            logging.info(f"Постер успешно загружен: {image_url}")
+                        else:
+                            logging.error(f"Ошибка загрузки постера, статус: {resp.status}, URL: {image_url}")
+            except asyncio.TimeoutError:
+                logging.error(f"Таймаут при загрузке постера (15 сек): {image_url}")
             except Exception as e:
-                logging.error(f"Внешняя ошибка при загрузке постера {image_url}: {str(e)}")
+                logging.error(f"Ошибка при загрузке постера {image_url}: {str(e)}")
 
         # Если не удалось загрузить постер, создаем дефолтный
         if not poster_loaded:
-            logging.warning(f"Не удалось загрузить постер для '{kinopoisk_data.get('nameRu', 'Фильм')}', создаем дефолтный")
+            # Fix: Check if kinopoisk_data is None
+            movie_title = "Фильм"
+            movie_year = ""
+            if kinopoisk_data is not None:
+                movie_title = kinopoisk_data.get("nameRu", "Фильм")
+                movie_year = str(kinopoisk_data.get("year", ""))
+                
+            logging.warning(f"Не удалось загрузить постер для '{movie_title}', создаем дефолтный")
+            
             try:
                 # Создаем более красивое изображение с текстом
                 # Создаем основу постера - темно-синий фон
@@ -220,9 +270,6 @@ async def search_movie(message: Message):
                 draw = ImageDraw.Draw(img)
                 
                 # Получаем название и год фильма
-                movie_title = kinopoisk_data.get("nameRu", "Фильм") if kinopoisk_data else "Фильм"
-                movie_year = str(kinopoisk_data.get("year", "")) if kinopoisk_data else ""
-                
                 logging.info(f"Создаем дефолтный постер для: '{movie_title}' ({movie_year})")
                 
                 # Создаем градиентный фон (от темно-синего до черного)
@@ -244,45 +291,58 @@ async def search_movie(message: Message):
                 
                 try:
                     # Разбиваем длинное название на несколько строк если нужно
-                    title_lines = []
+                    title_lines: List[str] = []
                     if len(movie_title) > 20:
                         words = movie_title.split()
-                        line = []
+                        current_line: List[str] = []
                         for word in words:
-                            line.append(word)
-                            if len(' '.join(line)) > 20:
-                                if len(line) > 1:
-                                    line.pop()  # Remove last word that made it too long
-                                    title_lines.append(' '.join(line))
-                                    line = [word]
+                            current_line.append(word)
+                            if len(' '.join(current_line)) > 20:
+                                if len(current_line) > 1:
+                                    current_line.pop()  # Remove last word that made it too long
+                                    title_lines.append(' '.join(current_line))
+                                    current_line = [word]
                                 else:
-                                    title_lines.append(' '.join(line))
-                                    line = []
-                        if line:  # Add any remaining words
-                            title_lines.append(' '.join(line))
+                                    title_lines.append(' '.join(current_line))
+                                    current_line = []
+                        if current_line:  # Add any remaining words
+                            title_lines.append(' '.join(current_line))
                     else:
                         title_lines = [movie_title]
                     
                     # Рисуем название фильма
                     y_position = 250
+                    # Fix: Create font object for text drawing
+                    # Note: This is placeholder code since we don't have access to the actual font file
+                    # In a real environment, you'd use a font like:
+                    # font = ImageFont.truetype("path/to/font.ttf", size=20)
+                    # For default system font:
+                    font = None
+                    try:
+                        font = ImageFont.load_default()
+                    except:
+                        pass
+                    
                     for line in title_lines:
-                        draw.text((250, y_position), line, fill=text_color, anchor="mm")
+                        # Fix: Add font parameter to draw.text
+                        draw.text((250, y_position), line, fill=text_color, anchor="mm", font=font)
                         y_position += 40
                     
                     # Добавляем год выпуска
                     if movie_year:
-                        draw.text((250, y_position + 20), movie_year, fill=(200, 200, 200), anchor="mm")
+                        # Fix: Add font parameter to draw.text
+                        draw.text((250, y_position + 20), movie_year, fill=(200, 200, 200), anchor="mm", font=font)
                 except Exception as e:
                     logging.error(f"Ошибка при отрисовке текста: {str(e)}")
                     # Простая альтернатива если разбивка текста не сработала
-                    draw.text((250, 250), movie_title[:20], fill=text_color, anchor="mm")
+                    draw.text((250, 250), movie_title[:20], fill=text_color, anchor="mm", font=font)
                     if len(movie_title) > 20:
-                        draw.text((250, 290), movie_title[20:40], fill=text_color, anchor="mm")
+                        draw.text((250, 290), movie_title[20:40], fill=text_color, anchor="mm", font=font)
                     if movie_year:
-                        draw.text((250, 330), movie_year, fill=(200, 200, 200), anchor="mm")
+                        draw.text((250, 330), movie_year, fill=(200, 200, 200), anchor="mm", font=font)
                 
                 # Добавляем надпись "Информация о фильме" внизу
-                draw.text((250, 650), "Информация о фильме", fill=(180, 180, 180), anchor="mm")
+                draw.text((250, 650), "Информация о фильме", fill=(180, 180, 180), anchor="mm", font=font)
                 
                 # Сохраняем дефолтный постер
                 img.save(random_filename)
@@ -296,7 +356,13 @@ async def search_movie(message: Message):
                     # Создаем самый простой постер с фоном и текстом "Фильм"
                     img = Image.new('RGB', (500, 750), color=(15, 30, 60))
                     draw = ImageDraw.Draw(img)
-                    draw.text((250, 375), "Фильм", fill=(255, 255, 255), anchor="mm")
+                    # Get default font
+                    font = None
+                    try:
+                        font = ImageFont.load_default()
+                    except:
+                        pass
+                    draw.text((250, 375), "Фильм", fill=(255, 255, 255), anchor="mm", font=font)
                     img.save(random_filename)
                     poster_paths.append(random_filename)
                     poster_loaded = True
@@ -309,7 +375,9 @@ async def search_movie(message: Message):
                 await loading_msg.delete()
                 if len(final_response) > 1000:
                     # Отправляем сначала фото с кратким описанием
-                    movie_name = kinopoisk_data.get("nameRu", "Фильм") if kinopoisk_data else "Фильм"
+                    movie_name = "Фильм"
+                    if kinopoisk_data is not None:
+                        movie_name = kinopoisk_data.get("nameRu", "Фильм")
                     short_caption = f"🎬 <b>{movie_name}</b>"
                     await message.answer_photo(
                         photo=FSInputFile(poster_paths[0]),

@@ -1,56 +1,95 @@
-# Cinema Bot
+# CinemaBot
 
-A Telegram bot that searches for movies and TV shows, providing information from Kinopoisk and links to watch online for free.
-
-## Setup
-
-1. Clone this repository
-2. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Set up your environment variables by running:
-   ```
-   python create_env.py
-   ```
-   This will create a `.env` file with your API tokens.
-
-4. Run the bot:
-   ```
-   ./run.py
-   ```
-   This script ensures only one instance of the bot is running.
-
-## Running the Bot
-
-The bot can be managed using these commands:
-
-- **Start the bot**: `./run.py`
-- **View logs**: `tail -f bot.log`
-- **Stop the bot**: `pkill -f "python bot.py"`
-
-If you encounter "Conflict" errors, it means multiple instances of the bot are running. Use the run script to automatically handle this.
-
-## API Keys Required
-
-- **Telegram Bot Token**: Get from [BotFather](https://t.me/botfather)
-- **Kinopoisk API Token**: Get from [Kinopoisk API](https://api.kinopoisk.dev/)
+Telegram bot for searching movies and TV shows information via Kinopoisk API with streaming links from Rutube.
 
 ## Features
 
-- Search for movies and TV shows by simply typing the name
-- Get information like title, year, rating, countries, and genres
-- View movie descriptions from Kinopoisk
-- Find links to websites where you can watch content for free without registration
-- View your search history with `/history` command
-- Check statistics of which movies you've looked up most with `/stats` command
-- Enable/disable different search sources with `/turn_links` and `/turn_kp` commands
+- Get movie information from Kinopoisk API (description, rating, genres, etc.)
+- Find streaming links on Rutube
+- View posters for movies
+- Store search history and track movie views
+- Comprehensive caching system to improve performance
 
-## Database
+## Setup
 
-The bot uses SQLite to store:
-- User search history
-- Movie view statistics 
-- Movie descriptions
+1. Clone the repository
+2. Create a virtual environment and install dependencies:
+```bash
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+pip install -r requirements.txt
+```
 
-All data is stored per user, so each user has their own history and statistics. 
+3. Create a `.env` file in the project root with the following variables:
+```
+TELEGRAM_TOKEN=your_telegram_bot_token
+KINOPOISK_TOKEN=your_kinopoisk_api_token
+```
+
+## Running the Bot
+
+### Option 1: Using the start script (recommended)
+
+The bot includes a start script that handles process management and ensures only one instance is running at a time.
+
+```bash
+./start_bot.sh
+```
+
+This script:
+- Checks if any instances are already running
+- Terminates existing instances if found
+- Starts the bot in the background
+- Logs output to `bot_output.log`
+
+### Option 2: Running directly
+
+```bash
+python main.py
+```
+
+## Process Management
+
+The bot now includes a PID file system to prevent multiple instances from running at the same time, which can cause Telegram API conflicts. A file called `bot.pid` stores the process ID of the running instance.
+
+If you see the error: `Conflict: terminated by other getUpdates request; make sure that only one bot instance is running`, it means you have multiple bot instances trying to connect to the Telegram API. Use the start script to resolve this.
+
+## Commands
+
+- `/start` - Begin interaction with the bot
+- `/help` - Display available commands
+- `/settings` - View current search settings
+- `/turn_links` - Toggle Rutube links search on/off
+- `/turn_kp` - Toggle Kinopoisk search on/off
+- `/history` - Show search history
+- `/stats` - Show movie viewing statistics
+- `/clear_cache` - Clear all cache
+- `/clear_posters` - Clear poster cache
+- `/clear_movie_data` - Clear movie data cache
+- `/clear_rutube` - Clear Rutube links cache
+
+## Project Structure
+
+- `main.py` - Entry point and bot initialization
+- `database.py` - Database operations
+- `handlers/` - Command and message handlers
+  - `commands.py` - Basic command handlers
+  - `search.py` - Search functionality
+  - `history.py` - History and stats handlers
+- `utils/` - Utility functions
+  - `api.py` - API communication
+  - `cache.py` - Caching system
+  - `helpers.py` - Helper functions
+
+## Troubleshooting
+
+If you encounter issues starting the bot:
+
+1. Check if another instance is running: `ps aux | grep python`
+2. Kill any existing bot processes: `pkill -f "python main.py"`
+3. Remove the PID file if it exists: `rm bot.pid`
+4. Check the log files for errors: `cat bot.log` and `cat bot_output.log`
+
+## License
+
+This project is licensed under the MIT License. 

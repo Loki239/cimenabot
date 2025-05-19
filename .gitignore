@@ -1,20 +1,11 @@
-# Environment variables
 .env
-
-# Logs
 *.log
-
-# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environment
 venv/
 env/
 .venv/
-
-# Python
 *.so
 .Python
 build/
@@ -31,7 +22,5 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Database
 *.db
 *.sqlite3 

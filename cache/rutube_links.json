@@ -160,5 +160,101 @@
       }
     ],
     "original_query": "начало"
+  },
+  "477bccee072dea8e19b34c5c3afc188f": {
+    "timestamp": 1747679888.125686,
+    "links": [
+      {
+        "name": "Rutube: Как приручить дракона (2010)",
+        "url": "https://rutube.ru/video/6a9b66e4c682581b4c039f0b466f8db4/"
+      },
+      {
+        "name": "Rutube: Как Приручить Дракона. 2010",
+        "url": "https://rutube.ru/video/eda4e609d569f0290b3cf4368d2d27d9/"
+      },
+      {
+        "name": "Rutube: Первый трейлер художественного...",
+        "url": "https://rutube.ru/video/f6f978c2eada9cb479c45119ddb934b1/"
+      }
+    ],
+    "original_query": "как приручить дракона"
+  },
+  "a8aa0d679ebe1ecadd0d147ff83b372c": {
+    "timestamp": 1747680203.8960419,
+    "links": [
+      {
+        "name": "Клинок, рассекающий демонов: Б...",
+        "url": "https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/",
+        "from_cache": false
+      },
+      {
+        "name": "Главные герои ФИЛЬМА Demon Sla...",
+        "url": "https://rutube.ru/video/bee94f2832630d8bbfb1acc3510e5834/",
+        "from_cache": false
+      },
+      {
+        "name": "Аниме Истребитель демонов — 1 ...",
+        "url": "https://rutube.ru/video/234d3b374b133e18a0484f082cd314eb/",
+        "from_cache": false
+      }
+    ],
+    "original_query": "истребитель демонов"
+  },
+  "f850e10e8eb71c054951779c5b6854e9": {
+    "timestamp": 1747681364.308042,
+    "links": [
+      {
+        "name": "Одержимость (фильм, 2009)",
+        "url": "https://rutube.ru/video/07cdd260a50723a49c32a531c65aaa1f/",
+        "from_cache": false
+      },
+      {
+        "name": "Одержимость / Wicker Park (2004)",
+        "url": "https://rutube.ru/video/6e0459bd04b200a7d7080d2fd7f8fee1/",
+        "from_cache": false
+      },
+      {
+        "name": "Гениальность - дар или ежедневный труд? Разбор фильма ОДЕРЖИМОСТЬ. Конфликт двух НАРЦИССОВ",
+        "url": "https://rutube.ru/video/1465f0586039c95f0f7e01ddcc1be008/",
+        "from_cache": false
+      }
+    ],
+    "original_query": "Гениальность - дар или ежедневный труд? Разбор фильма ОДЕРЖИМОСТЬ. Конфликт двух НАРЦИССОВ"
+  },
+  "7339a8ad05943df0381e8b1d14d85ff8": {
+    "timestamp": 1747681677.334696,
+    "links": [
+      {
+        "name": "Rutube: Одержимость (фильм, 2009)",
+        "url": "https://rutube.ru/video/07cdd260a50723a49c32a531c65aaa1f/"
+      },
+      {
+        "name": "Rutube: Одержимость / Wicker Park (200...",
+        "url": "https://rutube.ru/video/6e0459bd04b200a7d7080d2fd7f8fee1/"
+      },
+      {
+        "name": "Rutube: Гениальность - дар или ежеднев...",
+        "url": "https://rutube.ru/video/1465f0586039c95f0f7e01ddcc1be008/"
+      }
+    ],
+    "original_query": "Одержимость"
+  },
+  "664ada3b8366aa469770d0c771e47842": {
+    "timestamp": 1747681752.671922,
+    "links": [
+      {
+        "name": "Rutube: Джейн Эйр (фильм, 1997)",
+        "url": "https://rutube.ru/video/a7ced9ef0c467691573e3fd679e05076/"
+      },
+      {
+        "name": "Rutube: Драма \\ Джейн Эйр \\ 1970 г.",
+        "url": "https://rutube.ru/video/7b7fd63bdbdee687715acab43e02243d/"
+      },
+      {
+        "name": "Rutube: Джейн Эйр 1970",
+        "url": "https://rutube.ru/video/0f4d6c81100a500b4ec531c3578907e1/"
+      }
+    ],
+    "original_query": "джейн эйр"
   }
 }

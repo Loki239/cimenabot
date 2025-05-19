@@ -1,9 +1,18 @@
+"""
+History Handler Module for CinemaBot
+
+This module handles user history and statistics requests, including:
+- Displaying search history
+- Showing movie view statistics
+"""
+
 import logging
 import html
-from aiogram import Router
+from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message
 from aiogram.enums import ParseMode
+from typing import Optional
 
 from utils.helpers import separator, pluralize_times, format_datetime
 from database import Database
@@ -12,42 +21,75 @@ router = Router()
 db = Database()
 
 # Обработчик команды /history
-@router.message(Command("history"))
-async def show_history(message: Message):
-    logging.info(f"Запрос истории поиска от {message.from_user.id}")
-    user_id = message.from_user.id
-    history = await db.get_search_history(user_id)
-    if not history:
-        await message.answer("📝 <b>История поиска пуста</b>", parse_mode=ParseMode.HTML)
+@router.message(F.text == "/history")
+async def show_history(message: Message, db: Optional[Database] = None):
+    """
+    Show user's search history
+    
+    Args:
+        message: The message object from Telegram
+        db: Database instance (injected by middleware)
+    """
+    # Use global database if middleware didn't provide one
+    if db is None:
+        db = Database()
+        
+    # Check if user is None
+    if message.from_user is None:
+        await message.answer("Не удалось определить пользователя.")
         return
-    history_text = [f"📝 <b>История поиска</b>", separator()]
+        
+    user_id = message.from_user.id
+    logging.info("Запрос истории поиска от %s", user_id)
+    
+    history = await db.get_search_history(user_id)
+    
+    if not history:
+        await message.answer("У вас пока нет истории поиска.")
+        return
+    
+    response = ["<b>История поиска:</b>"]
     for i, item in enumerate(history, 1):
-        search_time = format_datetime(item["timestamp"])
-        history_text.append(f"{i}. <b>{html.escape(item['query'])}</b> ({search_time})")
-    response = "\n".join(history_text)
-    await message.answer(response, parse_mode=ParseMode.HTML)
+        query = item["query"]
+        timestamp = format_datetime(item["timestamp"])
+        response.append(f"{i}. {query} - <i>{timestamp}</i>")
+    
+    await message.answer("\n".join(response), parse_mode=ParseMode.HTML)
 
 # Обработчик команды /stats
-@router.message(Command("stats"))
-async def show_stats(message: Message):
-    logging.info(f"Запрос статистики от {message.from_user.id}")
-    user_id = message.from_user.id
-    stats = await db.get_movie_stats(user_id)
-    if not stats:
-        await message.answer("📊 <b>Статистика просмотров пуста</b>", parse_mode=ParseMode.HTML)
+@router.message(F.text == "/stats")
+async def show_stats(message: Message, db: Optional[Database] = None):
+    """
+    Show user's movie statistics
+    
+    Args:
+        message: The message object from Telegram
+        db: Database instance (injected by middleware)
+    """
+    # Use global database if middleware didn't provide one
+    if db is None:
+        db = Database()
+        
+    # Check if user is None
+    if message.from_user is None:
+        await message.answer("Не удалось определить пользователя.")
         return
-    stats_text = [f"📊 <b>Статистика просмотров</b>", separator()]
-    for i, item in enumerate(stats, 1):
-        title = html.escape(item["title"])
-        year = f" ({item['year']})" if item["year"] else ""
-        count = item["count"]
-        description = item.get("description", "")
-        if description:
-            short_desc = html.escape(description[:50] + "..." if len(description) > 50 else description)
-            stats_text.append(f"{i}. <b>{title}{year}</b> — {count} {pluralize_times(count)}\n   <i>{short_desc}</i>")
-        else:
-            stats_text.append(f"{i}. <b>{title}{year}</b> — {count} {pluralize_times(count)}")
-    stats_text.append(separator())
-    stats_text.append("<i>Чтобы посмотреть полное описание фильма, введите его название</i>")
-    response = "\n".join(stats_text)
-    await message.answer(response, parse_mode=ParseMode.HTML) 
+        
+    user_id = message.from_user.id
+    logging.info("Запрос статистики от %s", user_id)
+    
+    stats = await db.get_movie_stats(user_id)
+    
+    if not stats:
+        await message.answer("У вас пока нет статистики просмотров.")
+        return
+    
+    response = ["<b>Ваша статистика просмотров:</b>"]
+    
+    for i, movie in enumerate(stats[:10], 1):  # Limit to top 10
+        title = movie["title"]
+        year = f" ({movie['year']})" if movie.get("year") else ""
+        count = movie["count"]
+        response.append(f"{i}. {title}{year} - {count} {pluralize_times(count)}")
+    
+    await message.answer("\n".join(response), parse_mode=ParseMode.HTML) 

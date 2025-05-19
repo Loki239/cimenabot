@@ -3,6 +3,9 @@ import json
 import time
 import logging
 import hashlib
+import shutil
+import asyncio
+from typing import Dict, List, Optional, Any, Union
 
 # Cache-related constants
 CACHE_DIR = "cache"
@@ -213,83 +216,85 @@ def save_poster_to_cache(movie_id, poster_data):
         logging.error(f"Failed to save poster to cache: {str(e)}")
         return None
 
-async def clear_cache(clear_all=True, clear_posters=False, clear_movie_data=False, clear_rutube=False):
-    """
-    Clear cache files and directories
-    
-    Parameters:
-    - clear_all: Whether to clear all cache types
-    - clear_posters: Whether to clear the poster cache
-    - clear_movie_data: Whether to clear the movie data cache
-    - clear_rutube: Whether to clear the Rutube links cache
-    
-    Returns:
-    - result_string: A string describing what was cleared
-    """
-    results = []
-    
-    # If clear_all is True, set all other flags to True
-    if clear_all:
-        clear_posters = True
-        clear_movie_data = True
-        clear_rutube = True
-    
-    # Clear poster cache
-    if clear_posters:
-        try:
-            poster_count = 0
-            if os.path.exists(POSTERS_DIR):
-                for filename in os.listdir(POSTERS_DIR):
-                    file_path = os.path.join(POSTERS_DIR, filename)
-                    try:
-                        if os.path.isfile(file_path):
-                            os.remove(file_path)
-                            poster_count += 1
-                    except Exception as e:
-                        logging.error(f"Error removing {file_path}: {str(e)}")
-            results.append(f"Удалено постеров: {poster_count}")
-            logging.info(f"Cleared {poster_count} posters from cache")
-        except Exception as e:
-            error_msg = f"Ошибка при очистке кэша постеров: {str(e)}"
-            results.append(error_msg)
-            logging.error(error_msg)
-    
-    # Clear movie data cache
-    if clear_movie_data:
-        try:
-            if os.path.exists(MOVIE_DATA_CACHE):
-                # Reset to empty dictionary
-                with open(MOVIE_DATA_CACHE, 'w', encoding='utf-8') as f:
-                    json.dump({}, f)
-                results.append("Кэш данных о фильмах очищен")
-                logging.info("Cleared movie data cache")
-            else:
-                results.append("Кэш данных о фильмах не найден")
-        except Exception as e:
-            error_msg = f"Ошибка при очистке кэша данных о фильмах: {str(e)}"
-            results.append(error_msg)
-            logging.error(error_msg)
-    
-    # Clear Rutube links cache
-    if clear_rutube:
-        try:
-            if os.path.exists(RUTUBE_CACHE):
-                # Reset to empty dictionary
-                with open(RUTUBE_CACHE, 'w', encoding='utf-8') as f:
-                    json.dump({}, f)
-                results.append("Кэш ссылок Rutube очищен")
-                logging.info("Cleared Rutube links cache")
-            else:
-                results.append("Кэш ссылок Rutube не найден")
-        except Exception as e:
-            error_msg = f"Ошибка при очистке кэша ссылок Rutube: {str(e)}"
-            results.append(error_msg)
-            logging.error(error_msg)
-    
-    # Reinitialize cache directories
-    init_cache_directories()
-    
-    if not results:
-        return "Ничего не было очищено"
-    
-    return "\n".join(results) 
+async def clear_cache() -> str:
+    """Clear all cache directories and files"""
+    try:
+        # Clear poster directory
+        cleared_posters = await clear_posters()
+        
+        # Clear movie data
+        cleared_movie_data = await clear_movie_data()
+        
+        # Clear Rutube links
+        cleared_rutube = await clear_rutube()
+        
+        total_cleared = cleared_posters + cleared_movie_data + cleared_rutube
+        logging.info("Cleared all cache: %s files", total_cleared)
+        return f"Cleared {total_cleared} cached items"
+    except Exception as e:
+        logging.error("Failed to clear cache: %s", e)
+        return f"Error clearing cache: {e}"
+
+async def clear_posters() -> int:
+    """Clear poster cache"""
+    try:
+        count = 0
+        if os.path.exists(POSTERS_DIR):
+            for file in os.listdir(POSTERS_DIR):
+                file_path = os.path.join(POSTERS_DIR, file)
+                try:
+                    if os.path.isfile(file_path):
+                        os.unlink(file_path)
+                        count += 1
+                except Exception as e:
+                    logging.error("Error deleting poster file %s: %s", file_path, e)
+        logging.info("Cleared %s poster files", count)
+        return count
+    except Exception as e:
+        logging.error("Failed to clear posters: %s", e)
+        return 0
+
+async def clear_movie_data() -> int:
+    """Clear movie data cache"""
+    try:
+        if os.path.exists(MOVIE_DATA_CACHE):
+            with open(MOVIE_DATA_CACHE, 'w', encoding='utf-8') as f:
+                json.dump({}, f)
+            logging.info("Cleared movie data cache")
+            return 1
+        return 0
+    except Exception as e:
+        logging.error("Failed to clear movie data: %s", e)
+        return 0
+
+async def clear_rutube() -> int:
+    """Clear Rutube links cache"""
+    try:
+        if os.path.exists(RUTUBE_CACHE):
+            with open(RUTUBE_CACHE, 'w', encoding='utf-8') as f:
+                json.dump({}, f)
+            logging.info("Cleared Rutube links cache")
+            return 1
+        return 0
+    except Exception as e:
+        logging.error("Failed to clear Rutube links: %s", e)
+        return 0
+
+# Export all cache clear functions
+__all__ = [
+    'init_cache_directories', 
+    'clear_cache', 
+    'clear_posters', 
+    'clear_movie_data', 
+    'clear_rutube',
+    'get_movie_from_cache',
+    'save_movie_to_cache',
+    'get_rutube_from_cache',
+    'save_rutube_to_cache',
+    'get_cached_poster_path',
+    'save_poster_to_cache',
+    'CACHE_DIR',
+    'POSTERS_DIR',
+    'MOVIE_DATA_CACHE',
+    'RUTUBE_CACHE'
+] 
