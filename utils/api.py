@@ -2,6 +2,7 @@ import aiohttp
 import asyncio
 import logging
 import os
+from typing import Optional, List, Dict, Any
 from utils.cache import (
     get_movie_from_cache, save_movie_to_cache,
     get_rutube_from_cache, save_rutube_to_cache
@@ -67,94 +68,114 @@ async def search_rutube_api(title: str):
     
     return rutube_links
 
+async def search_kinopoisk(query: str) -> Optional[List[Dict[str, Any]]]:
+    """Search for movies on Kinopoisk by keyword"""
+    # Use v2.2 API
+    url = "https://kinopoiskapiunofficial.tech/api/v2.2/films"
+    
+    # Get API key and log if it's missing
+    api_key = os.getenv("KINOPOISK_TOKEN")
+    if not api_key:
+        logging.error("KINOPOISK_TOKEN environment variable is not set or empty")
+        return None
+        
+    headers = {
+        "X-API-KEY": api_key,
+        "Content-Type": "application/json",
+    }
+    
+    # Use search parameters
+    params = {
+        'keyword': query,
+        'order': 'RATING',
+        'type': 'ALL'
+    }
+    
+    logging.info(f"Searching Kinopoisk for: '{query}' using URL: {url}")
+    
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, params=params, headers=headers) as response:
+                status = response.status
+                logging.info(f"Kinopoisk API response status: {status}")
+                
+                if status == 200:
+                    data = await response.json()
+                    # Log the entire response for debugging
+                    logging.debug(f"Kinopoisk API response: {data}")
+                    
+                    items = data.get('items', [])
+                    films_count = len(items)
+                    logging.info(f"Found {films_count} films for query '{query}'")
+                    
+                    if items:
+                        results = []
+                        for film in items:
+                            poster_url = film.get('posterUrl', '')
+                            if not poster_url:
+                                poster_url = film.get('posterUrlPreview', '')
+                                
+                            logging.info(f"Film: {film.get('nameRu', '')}, Poster URL: {poster_url}")
+                            
+                            # Build result with proper field mappings
+                            result = {
+                                'title': film.get('nameRu', film.get('nameEn', '')),
+                                'url': f"https://www.kinopoisk.ru/film/{film['kinopoiskId']}/",
+                                'year': film.get('year', ''),
+                                'description': film.get('description', ''),
+                                'filmId': film['kinopoiskId'],
+                                'rating': film.get('ratingKinopoisk', ''),
+                                'posterUrl': poster_url
+                            }
+                            results.append(result)
+                        return results
+                else:
+                    response_text = await response.text()
+                    logging.error(f"Kinopoisk API request failed, status: {status}, response: {response_text}")
+    except Exception as e:
+        logging.error(f"Error in search_kinopoisk: {e}", exc_info=True)
+    
+    return None
+
 async def get_kinopoisk_data(movie_title):
     """Получение данных о фильме с Кинопоиска"""
     # Check cache first
     cached_data = get_movie_from_cache(movie_title)
     if cached_data is not None:
         logging.info(f"Returning cached movie data for '{movie_title}'")
+        cached_data["cache_source"] = True
         return cached_data
     
-    # Continue with regular API call if not in cache
-    # Initialize with all keys search_movie expects for kinopoisk_data
-    # This ensures that if some fields are missing from API, they are None.
-    kinopoisk_data_output = {
-        "kinopoiskId": None,
-        "nameRu": None,
-        "year": None,
-        "description": None,
-        "ratingKinopoisk": None,
-        "genres": [],
-        "countries": [],
-        "filmLength": None,
-        "posterUrlPreview": None
-    }
-    try:
-        async with aiohttp.ClientSession() as session:
-            url = f"https://api.kinopoisk.dev/v1.4/movie/search?query={aiohttp.helpers.quote(movie_title)}&page=1&limit=1"
-            headers = {"X-API-KEY": KINOPOISK_TOKEN}
-            logging.debug(f"Requesting Kinopoisk API: {url} with headers {headers}")
-            async with session.get(url, headers=headers, timeout=7) as resp: # Increased timeout slightly
-                logging.debug(f"Kinopoisk API response status: {resp.status}")
-                if resp.status == 200:
-                    data = await resp.json()
-                    logging.debug(f"Kinopoisk API response data: {data}")
-                    if data.get("docs") and len(data["docs"]) > 0:
-                        movie = data["docs"][0]
-                        
-                        kinopoisk_data_output["kinopoiskId"] = movie.get('id')
-                        kinopoisk_data_output["nameRu"] = movie.get('name')
-                        if not kinopoisk_data_output["nameRu"]: # Fallback to alternativeName
-                            kinopoisk_data_output["nameRu"] = movie.get('alternativeName')
-                        
-                        kinopoisk_data_output["year"] = movie.get('year')
-                        kinopoisk_data_output["description"] = movie.get('description')
-                        
-                        rating_data = movie.get('rating', {})
-                        if isinstance(rating_data, dict):
-                            kinopoisk_data_output["ratingKinopoisk"] = rating_data.get('kp')
-                        
-                        api_genres = movie.get('genres', [])
-                        if isinstance(api_genres, list):
-                            kinopoisk_data_output["genres"] = [{'genre': g.get('name')} for g in api_genres if isinstance(g, dict) and g.get('name')]
-
-                        api_countries = movie.get('countries', [])
-                        if isinstance(api_countries, list):
-                            kinopoisk_data_output["countries"] = [{'country': c.get('name')} for c in api_countries if isinstance(c, dict) and c.get('name')]
-                        
-                        kinopoisk_data_output["filmLength"] = movie.get('movieLength')
-                        if kinopoisk_data_output["filmLength"] is None:
-                            kinopoisk_data_output["filmLength"] = movie.get('filmLength')
-
-                        poster_data = movie.get('poster', {})
-                        if isinstance(poster_data, dict):
-                            # Берем URL постера напрямую без изменений размера
-                            poster_url = poster_data.get('url')
-                            if poster_url:
-                                kinopoisk_data_output["posterUrlPreview"] = poster_url
-                                
-                            # Log the poster URL for debugging
-                            logging.info(f"Poster URL for '{movie_title}': {kinopoisk_data_output['posterUrlPreview']}")
-                        
-                        # Critical check: if no ID or name, treat as not found.
-                        if not kinopoisk_data_output["kinopoiskId"] or not kinopoisk_data_output["nameRu"]:
-                            logging.warning(f"Kinopoisk API: Movie found for '{movie_title}' but missing essential id or name. Data: {movie}")
-                            return {} # Return empty dict
-                        
-                        logging.info(f"Successfully fetched Kinopoisk data for '{movie_title}': ID {kinopoisk_data_output['kinopoiskId']}")
-                        if kinopoisk_data_output["kinopoiskId"]:
-                            save_movie_to_cache(movie_title, kinopoisk_data_output)
-                        return kinopoisk_data_output
-                    else:
-                        logging.info(f"Kinopoisk API: No movie found for query '{movie_title}'.")
-                        return {} 
-                else:
-                    responseText = await resp.text(errors='ignore')
-                    logging.error(f"Kinopoisk API request failed for '{movie_title}', status: {resp.status}, response: {responseText}")
-                    return {}
-    except asyncio.TimeoutError:
-        logging.warning(f"Timeout during Kinopoisk API request for '{movie_title}'")
+    # Use the new search function
+    search_results = await search_kinopoisk(movie_title)
+    if not search_results:
+        logging.info(f"No Kinopoisk results found for '{movie_title}'")
         return {}
-    except Exception as e:
-        logging.error(f"Unexpected error in get_kinopoisk_data for '{movie_title}': {e}", exc_info=True)
-        return {} 
+    
+    # Get the first result
+    movie = search_results[0]
+    
+    # Create the formatted response
+    kinopoisk_data_output = {
+        "kinopoiskId": movie.get('filmId'),
+        "nameRu": movie.get('title'),
+        "year": movie.get('year'),
+        "description": movie.get('description', 'Описание отсутствует'),
+        "ratingKinopoisk": movie.get('rating'),
+        "genres": [],  # Will be populated if available
+        "countries": [],  # Will be populated if available
+        "filmLength": None,  # Not available in basic search
+        "posterUrlPreview": movie.get('posterUrl')
+    }
+    
+    # Log the poster URL for debugging
+    logging.info(f"Poster URL for '{movie_title}': {kinopoisk_data_output['posterUrlPreview']}")
+    
+    # Save to cache
+    if kinopoisk_data_output["kinopoiskId"]:
+        save_movie_to_cache(movie_title, kinopoisk_data_output)
+        logging.info(f"Saved movie data to cache for '{movie_title}'")
+    else:
+        logging.warning(f"Missing kinopoiskId for '{movie_title}', not saving to cache")
+    
+    return kinopoisk_data_output 

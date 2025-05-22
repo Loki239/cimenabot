@@ -13,7 +13,7 @@ from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
 from aiogram.utils.formatting import Text
 from aiogram.enums import ParseMode
-from typing import Optional
+from typing import Optional, Dict, Any
 
 from utils.helpers import separator, get_source_status
 from utils.cache import clear_cache, clear_posters, clear_movie_data, clear_rutube
@@ -24,6 +24,13 @@ router = Router()
 # Global variables for settings (will be moved to config in the future)
 LINKS_ON = True  # This refers to Rutube search
 KP_ON = True
+
+def get_search_settings() -> Dict[str, Any]:
+    """Return current search settings as a dictionary"""
+    return {
+        'links_on': LINKS_ON,
+        'kp_on': KP_ON
+    }
 
 # Обработчик команды /start
 @router.message(CommandStart())

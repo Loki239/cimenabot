@@ -5859,3 +5859,317 @@ TypeError: handle_message() missing 1 required positional argument: 'db'
 2025-05-19 22:09:31,009 - WARNING - Sleep for 2.153399 seconds and try again... (tryings = 3, bot id = 7535140306)
 2025-05-19 22:09:41,292 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 2025-05-19 22:09:41,292 - WARNING - Sleep for 2.764400 seconds and try again... (tryings = 4, bot id = 7535140306)
+2025-05-22 14:13:14,328 - ERROR - TELEGRAM_TOKEN not found in environment variables. Please set it in the .env file.
+2025-05-22 14:14:34,704 - INFO - PID file created with process ID 88129
+2025-05-22 14:14:34,704 - INFO - Cache directories initialized
+2025-05-22 14:14:34,704 - INFO - Инициализация базы данных
+2025-05-22 14:14:34,708 - INFO - Database initialized
+2025-05-22 14:14:34,842 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:14:34,842 - INFO - Запуск бота
+2025-05-22 14:14:34,842 - INFO - Start polling
+2025-05-22 14:14:34,881 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:16:50,690 - INFO - Поиск фильма: 'кладбище домашних животных' от пользователя 1601735530
+2025-05-22 14:16:50,691 - INFO - Added search from user 1601735530: кладбище домашних животных
+2025-05-22 14:16:50,909 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5%20%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D1%85%20%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:16:51,137 - ERROR - Unexpected error in get_kinopoisk_data for 'кладбище домашних животных': Cannot serialize non-str key None
+Traceback (most recent call last):
+  File "/Users/artem/Programming/ialox/cimenabot/utils/api.py", line 97, in get_kinopoisk_data
+    async with session.get(url, headers=headers, timeout=7) as resp: # Increased timeout slightly
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiohttp/client.py", line 728, in _request
+    resp = await req.send(conn)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 752, in send
+    await writer.write_headers(status_line, self.headers)
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiohttp/http_writer.py", line 166, in write_headers
+    buf = _serialize_headers(status_line, headers)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_http_writer.pyx", line 146, in aiohttp._http_writer._serialize_headers
+  File "aiohttp/_http_writer.pyx", line 108, in aiohttp._http_writer._write_str_raise_on_nlcr
+TypeError: Cannot serialize non-str key None
+2025-05-22 14:16:51,716 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:16:51,716 - INFO - Найдено видео на Rutube: https://rutube.ru/video/89f34eef91ebbd5df1ac118a3f4aec99/ (Кладбище домашних животны...)
+2025-05-22 14:16:51,716 - INFO - Найдено видео на Rutube: https://rutube.ru/video/6c7edee3dad29a0bf949c493cbc73983/ (Кладбище домашних животны...)
+2025-05-22 14:16:51,716 - INFO - Найдено видео на Rutube: https://rutube.ru/video/249847216e36e6f209977d548f08d9f9/ (Кладбище домашних животны...)
+2025-05-22 14:16:51,717 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:16:51,717 - INFO - Rutube links for 'Кладбище домашних животных | Pet Sematary (1989)' saved to cache
+2025-05-22 14:16:51,718 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:16:51,718 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:16:51,718 - INFO - Добавлена ссылка 1: Кладбище домашних животных | Pet Sematary (2019) (из поиска)
+2025-05-22 14:16:51,718 - INFO - Добавлена ссылка 2: Кладбище домашних животных (фильм, 2019) (из поиска)
+2025-05-22 14:16:51,718 - INFO - Добавлена ссылка 3: Кладбище домашних животных | Pet Sematary (1989) (из поиска)
+2025-05-22 14:16:51,859 - INFO - Update id=965058767 is handled. Duration 1171 ms by bot id=7535140306
+2025-05-22 14:16:56,851 - WARNING - Received SIGINT signal
+2025-05-22 14:16:56,851 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:16:56,851 - INFO - Polling stopped
+2025-05-22 14:18:24,173 - WARNING - Stale PID file found. Previous process (PID 88129) is not running.
+2025-05-22 14:18:24,174 - INFO - PID file created with process ID 88258
+2025-05-22 14:18:24,174 - INFO - Cache directories initialized
+2025-05-22 14:18:24,174 - INFO - Инициализация базы данных
+2025-05-22 14:18:24,176 - INFO - Database initialized
+2025-05-22 14:18:24,301 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:18:24,301 - INFO - Запуск бота
+2025-05-22 14:18:24,302 - INFO - Start polling
+2025-05-22 14:18:24,341 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:19:33,532 - INFO - Поиск фильма: 'солярис' от пользователя 1601735530
+2025-05-22 14:19:33,535 - INFO - Added search from user 1601735530: солярис
+2025-05-22 14:19:33,685 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D1%81%D0%BE%D0%BB%D1%8F%D1%80%D0%B8%D1%81%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:19:33,756 - ERROR - Kinopoisk API request failed, status: 401
+2025-05-22 14:19:33,756 - INFO - No Kinopoisk results found for 'солярис'
+2025-05-22 14:19:34,352 - INFO - Rutube API: получено 99 результатов
+2025-05-22 14:19:34,353 - INFO - Найдено видео на Rutube: https://rutube.ru/video/32814fd315e9eacf551885ebda45f8cf/ (Солярис (фильм, 2002)...)
+2025-05-22 14:19:34,353 - INFO - Найдено видео на Rutube: https://rutube.ru/video/405e959d0f19430e227f5316f17d1d43/ (Солярис 1972 г...)
+2025-05-22 14:19:34,353 - INFO - Найдено видео на Rutube: https://rutube.ru/video/ba6cceb9e1db3b15855f5d945b1fc9d8/ ("Солярис" | Тайны кино...)
+2025-05-22 14:19:34,353 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:19:34,355 - INFO - Rutube links for '"Солярис" | Тайны кино' saved to cache
+2025-05-22 14:19:34,355 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:19:34,356 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:19:34,356 - INFO - Добавлена ссылка 1: Солярис (фильм, 2002) (из поиска)
+2025-05-22 14:19:34,356 - INFO - Добавлена ссылка 2: Солярис 1972 г (из поиска)
+2025-05-22 14:19:34,356 - INFO - Добавлена ссылка 3: "Солярис" | Тайны кино (из поиска)
+2025-05-22 14:19:34,503 - INFO - Update id=965058768 is handled. Duration 972 ms by bot id=7535140306
+2025-05-22 14:20:15,177 - WARNING - Stale PID file found. Previous process (PID 88258) is not running.
+2025-05-22 14:20:15,178 - INFO - PID file created with process ID 88355
+2025-05-22 14:20:15,178 - INFO - Cache directories initialized
+2025-05-22 14:20:15,178 - INFO - Инициализация базы данных
+2025-05-22 14:20:15,181 - INFO - Database initialized
+2025-05-22 14:20:15,334 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:20:15,334 - INFO - Запуск бота
+2025-05-22 14:20:15,335 - INFO - Start polling
+2025-05-22 14:20:15,387 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:20:34,540 - INFO - Поиск фильма: '11 друзей оушена' от пользователя 1601735530
+2025-05-22 14:20:34,545 - INFO - Added search from user 1601735530: 11 друзей оушена
+2025-05-22 14:20:34,699 - INFO - Searching Kinopoisk for: '11 друзей оушена' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:20:34,701 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=11%20%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9%20%D0%BE%D1%83%D1%88%D0%B5%D0%BD%D0%B0%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:20:34,771 - INFO - Kinopoisk API response status: 401
+2025-05-22 14:20:34,771 - ERROR - Kinopoisk API request failed, status: 401, response: {"message":"You don't have permissions. See https://kinopoiskapiunofficial.tech"}
+2025-05-22 14:20:34,771 - INFO - No Kinopoisk results found for '11 друзей оушена'
+2025-05-22 14:20:35,377 - INFO - Rutube API: получено 99 результатов
+2025-05-22 14:20:35,377 - INFO - Найдено видео на Rutube: https://rutube.ru/video/71f3e7f31f31679fcd83c9459054aa9a/ (Одиннадцать друзей Оушена...)
+2025-05-22 14:20:35,378 - INFO - Найдено видео на Rutube: https://rutube.ru/video/de5f6589c2cdf723a7412ffba65fb814/ (Одиннадцать друзей Оушена...)
+2025-05-22 14:20:35,378 - INFO - Найдено видео на Rutube: https://rutube.ru/video/49c2776fff822fa56ba56cf4a164aa65/ (Одиннадцать друзей Оушена...)
+2025-05-22 14:20:35,378 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:20:35,379 - INFO - Rutube links for 'Одиннадцать друзей Оушена' saved to cache
+2025-05-22 14:20:35,379 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:20:35,379 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:20:35,379 - INFO - Добавлена ссылка 1: Одиннадцать друзей Оушена | Ocean's Eleven (2001) (из поиска)
+2025-05-22 14:20:35,379 - INFO - Добавлена ссылка 2: Одиннадцать друзей Оушена (фильм, 2001) (из поиска)
+2025-05-22 14:20:35,379 - INFO - Добавлена ссылка 3: Одиннадцать друзей Оушена (из поиска)
+2025-05-22 14:20:35,515 - INFO - Update id=965058769 is handled. Duration 978 ms by bot id=7535140306
+2025-05-22 14:22:57,659 - WARNING - Stale PID file found. Previous process (PID 88355) is not running.
+2025-05-22 14:22:57,659 - INFO - PID file created with process ID 88405
+2025-05-22 14:22:57,659 - INFO - Cache directories initialized
+2025-05-22 14:22:57,659 - INFO - Инициализация базы данных
+2025-05-22 14:22:57,662 - INFO - Database initialized
+2025-05-22 14:22:57,814 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:22:57,814 - INFO - Запуск бота
+2025-05-22 14:22:57,814 - INFO - Start polling
+2025-05-22 14:22:57,860 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:23:09,254 - INFO - Поиск фильма: 'гол' от пользователя 1601735530
+2025-05-22 14:23:09,257 - INFO - Added search from user 1601735530: гол
+2025-05-22 14:23:09,585 - INFO - 🔄 Используем кэшированные данные для фильма 'Гол!' (ID: 50225)
+2025-05-22 14:23:09,586 - INFO - Returning cached movie data for 'гол'
+2025-05-22 14:23:09,587 - INFO - 🔄 Используем кэшированные ссылки Rutube для 'гол' (3 ссылок)
+2025-05-22 14:23:09,587 - INFO - 🔄 Возвращаем кэшированные ссылки на Rutube для 'гол' (3 ссылок)
+2025-05-22 14:23:09,587 - INFO - Получены данные с Кинопоиска (данные из кэша): Да
+2025-05-22 14:23:09,587 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:23:09,590 - INFO - Updated stats for movie 'Гол!' for user 1601735530
+2025-05-22 14:23:09,591 - INFO - Добавлена ссылка 1: Rutube: Гол! (фильм, 2005) (из кэша)
+2025-05-22 14:23:09,591 - INFO - Добавлена ссылка 2: Rutube: Гол (2005) (из кэша)
+2025-05-22 14:23:09,591 - INFO - Добавлена ссылка 3: Rutube: Гол 2: Жизнь как мечта (фильм,... (из кэша)
+2025-05-22 14:23:09,591 - INFO - Using cached poster for movie 50225
+2025-05-22 14:23:09,591 - INFO - Using cached poster for movie: Гол!
+2025-05-22 14:23:10,173 - INFO - Постер успешно отправлен
+2025-05-22 14:23:10,174 - INFO - Update id=965058770 is handled. Duration 921 ms by bot id=7535140306
+2025-05-22 14:23:13,924 - INFO - Поиск фильма: 'фокус' от пользователя 1601735530
+2025-05-22 14:23:13,925 - INFO - Added search from user 1601735530: фокус
+2025-05-22 14:23:14,004 - INFO - Searching Kinopoisk for: 'фокус' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:23:14,006 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D1%84%D0%BE%D0%BA%D1%83%D1%81%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:23:14,076 - INFO - Kinopoisk API response status: 401
+2025-05-22 14:23:14,076 - ERROR - Kinopoisk API request failed, status: 401, response: {"message":"You don't have permissions. See https://kinopoiskapiunofficial.tech"}
+2025-05-22 14:23:14,076 - INFO - No Kinopoisk results found for 'фокус'
+2025-05-22 14:23:15,021 - INFO - Rutube API: получено 98 результатов
+2025-05-22 14:23:15,021 - INFO - Найдено видео на Rutube: https://rutube.ru/video/85a89d2a427022372b06dae544554950/ (Фокус (фильм, 2014)...)
+2025-05-22 14:23:15,022 - INFO - Найдено видео на Rutube: https://rutube.ru/video/53878fa472ebe6b2ad546393418f8138/ (Фокус | Focus (2014)...)
+2025-05-22 14:23:15,022 - INFO - Найдено видео на Rutube: https://rutube.ru/video/26e6ae6e070956f15b343b1f3c021982/ (Как снимали фильм "Фокус"...)
+2025-05-22 14:23:15,022 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:23:15,024 - INFO - Rutube links for 'Как снимали фильм "Фокус" (2014)' saved to cache
+2025-05-22 14:23:15,024 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:23:15,024 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:23:15,024 - INFO - Добавлена ссылка 1: Фокус (фильм, 2014) (из поиска)
+2025-05-22 14:23:15,024 - INFO - Добавлена ссылка 2: Фокус | Focus (2014) (из поиска)
+2025-05-22 14:23:15,024 - INFO - Добавлена ссылка 3: Как снимали фильм "Фокус" (2014) (из поиска)
+2025-05-22 14:23:15,181 - INFO - Update id=965058771 is handled. Duration 1258 ms by bot id=7535140306
+2025-05-22 14:24:23,588 - ERROR - Another bot instance is already running with PID 88405. Exiting.
+2025-05-22 14:24:23,588 - INFO - Бот остановлен
+2025-05-22 14:24:23,588 - INFO - PID file removed
+2025-05-22 14:24:27,996 - INFO - PID file created with process ID 88529
+2025-05-22 14:24:27,996 - INFO - Cache directories initialized
+2025-05-22 14:24:27,996 - INFO - Инициализация базы данных
+2025-05-22 14:24:27,997 - INFO - Database initialized
+2025-05-22 14:24:28,160 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:24:28,160 - INFO - Запуск бота
+2025-05-22 14:24:28,160 - INFO - Start polling
+2025-05-22 14:24:28,213 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:24:28,261 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:28,262 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7535140306)
+2025-05-22 14:24:32,420 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:32,421 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7535140306)
+2025-05-22 14:24:33,479 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:33,479 - WARNING - Sleep for 1.318470 seconds and try again... (tryings = 1, bot id = 7535140306)
+2025-05-22 14:24:35,740 - INFO - Connection established (tryings = 2, bot id = 7535140306)
+2025-05-22 14:24:35,743 - INFO - Поиск фильма: 'тачки 2' от пользователя 1601735530
+2025-05-22 14:24:35,747 - INFO - Added search from user 1601735530: тачки 2
+2025-05-22 14:24:35,961 - INFO - Searching Kinopoisk for: 'тачки 2' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:24:35,963 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D1%82%D0%B0%D1%87%D0%BA%D0%B8%202%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:24:36,034 - INFO - Kinopoisk API response status: 401
+2025-05-22 14:24:36,034 - ERROR - Kinopoisk API request failed, status: 401, response: {"message":"You don't have permissions. See https://kinopoiskapiunofficial.tech"}
+2025-05-22 14:24:36,034 - INFO - No Kinopoisk results found for 'тачки 2'
+2025-05-22 14:24:36,697 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:24:36,697 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2d3c8449ea0a1a992214c93bf802b761/ (Тачки 2 (2011)...)
+2025-05-22 14:24:36,697 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c1200268257b04a80733e2a86af63667/ (Тачки 2 (мультфильм, 2011...)
+2025-05-22 14:24:36,697 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c5d7a4a3c6a24e56890e0ce6e2783c09/ (Обзор фильма: Тачки 2...)
+2025-05-22 14:24:36,697 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:24:36,700 - INFO - Rutube links for 'Обзор фильма: Тачки 2' saved to cache
+2025-05-22 14:24:36,700 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:24:36,700 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:24:36,700 - INFO - Добавлена ссылка 1: Тачки 2 (2011) (из поиска)
+2025-05-22 14:24:36,700 - INFO - Добавлена ссылка 2: Тачки 2 (мультфильм, 2011) (из поиска)
+2025-05-22 14:24:36,700 - INFO - Добавлена ссылка 3: Обзор фильма: Тачки 2 (из поиска)
+2025-05-22 14:24:36,845 - INFO - Update id=965058772 is handled. Duration 1103 ms by bot id=7535140306
+2025-05-22 14:24:37,869 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:37,869 - WARNING - Sleep for 1.544080 seconds and try again... (tryings = 1, bot id = 7535140306)
+2025-05-22 14:24:39,477 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:39,478 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7535140306)
+2025-05-22 14:24:43,536 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:43,536 - WARNING - Sleep for 2.050339 seconds and try again... (tryings = 2, bot id = 7535140306)
+2025-05-22 14:24:45,635 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:45,635 - WARNING - Sleep for 1.217748 seconds and try again... (tryings = 1, bot id = 7535140306)
+2025-05-22 14:24:49,905 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:49,905 - WARNING - Sleep for 2.580824 seconds and try again... (tryings = 3, bot id = 7535140306)
+2025-05-22 14:24:52,542 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:52,542 - WARNING - Sleep for 1.574742 seconds and try again... (tryings = 2, bot id = 7535140306)
+2025-05-22 14:24:57,174 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:24:57,174 - WARNING - Sleep for 3.328536 seconds and try again... (tryings = 4, bot id = 7535140306)
+2025-05-22 14:25:00,552 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-05-22 14:25:00,552 - WARNING - Sleep for 2.142034 seconds and try again... (tryings = 3, bot id = 7535140306)
+2025-05-22 14:25:12,744 - INFO - Connection established (tryings = 4, bot id = 7535140306)
+2025-05-22 14:25:21,700 - WARNING - Received SIGTERM signal
+2025-05-22 14:25:21,701 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:25:21,701 - INFO - Polling stopped
+2025-05-22 14:26:01,203 - INFO - PID file created with process ID 88671
+2025-05-22 14:26:01,203 - INFO - Cache directories initialized
+2025-05-22 14:26:01,203 - INFO - Инициализация базы данных
+2025-05-22 14:26:01,206 - INFO - Database initialized
+2025-05-22 14:26:01,346 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:26:01,346 - INFO - Запуск бота
+2025-05-22 14:26:01,346 - INFO - Start polling
+2025-05-22 14:26:01,395 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:26:10,415 - INFO - Поиск фильма: 'тачки 3' от пользователя 1601735530
+2025-05-22 14:26:10,418 - INFO - Added search from user 1601735530: тачки 3
+2025-05-22 14:26:10,605 - INFO - Searching Kinopoisk for: 'тачки 3' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:26:10,606 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D1%82%D0%B0%D1%87%D0%BA%D0%B8%203%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:26:11,399 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:26:11,399 - INFO - Найдено видео на Rutube: https://rutube.ru/video/ff87eaca587088e07a67a650d5889e46/ (Тачки 3 (мультфильм, 2017...)
+2025-05-22 14:26:11,399 - INFO - Найдено видео на Rutube: https://rutube.ru/video/6ddce715cbf3f56b4712f5e0ee4fdc9b/ (Тачки 3 (2017)...)
+2025-05-22 14:26:11,399 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e8dfc5d70d162df37b7af83ae41044b6/ (Тачки 3 – Обзор Фильма...)
+2025-05-22 14:26:11,400 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:26:11,401 - INFO - Rutube links for 'Тачки 3 – Обзор Фильма' saved to cache
+2025-05-22 14:26:13,487 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:26:13,487 - INFO - Found 1 films for query 'тачки 3'
+2025-05-22 14:26:13,488 - INFO - Film: Тачки 3, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/839646.jpg
+2025-05-22 14:26:13,488 - INFO - Poster URL for 'тачки 3': https://kinopoiskapiunofficial.tech/images/posters/kp/839646.jpg
+2025-05-22 14:26:13,491 - INFO - Movie data for 'тачки 3' saved to cache
+2025-05-22 14:26:13,491 - INFO - Saved movie data to cache for 'тачки 3'
+2025-05-22 14:26:13,491 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:26:13,491 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:26:13,493 - INFO - Updated stats for movie 'Тачки 3' for user 1601735530
+2025-05-22 14:26:13,494 - INFO - Добавлена ссылка 1: Тачки 3 (мультфильм, 2017) (из поиска)
+2025-05-22 14:26:13,494 - INFO - Добавлена ссылка 2: Тачки 3 (2017) (из поиска)
+2025-05-22 14:26:13,494 - INFO - Добавлена ссылка 3: Тачки 3 – Обзор Фильма (из поиска)
+2025-05-22 14:26:13,494 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/839646.jpg
+2025-05-22 14:26:13,816 - INFO - Poster for movie 839646 saved to cache
+2025-05-22 14:26:13,817 - INFO - Poster saved to cache and loaded for movie ID: 839646
+2025-05-22 14:26:13,817 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/839646.jpg
+2025-05-22 14:26:14,233 - INFO - Постер успешно отправлен
+2025-05-22 14:26:14,233 - INFO - Update id=965058773 is handled. Duration 3819 ms by bot id=7535140306
+2025-05-22 14:26:31,053 - INFO - Поиск фильма: 'машина' от пользователя 1601735530
+2025-05-22 14:26:31,054 - INFO - Added search from user 1601735530: машина
+2025-05-22 14:26:31,133 - INFO - Searching Kinopoisk for: 'машина' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:26:31,135 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:26:31,828 - INFO - Rutube API: получено 97 результатов
+2025-05-22 14:26:31,829 - INFO - Найдено видео на Rutube: https://rutube.ru/video/365b4ed134d4673418992c6e5cc23eb6/ (Машина (фильм, 2023)...)
+2025-05-22 14:26:31,829 - INFO - Найдено видео на Rutube: https://rutube.ru/video/31dfbcf0cb8bbcf79e69325cbf47ff57/ (Машина | The Machine (202...)
+2025-05-22 14:26:31,829 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c4e6f612de72a3c4cbbb44e133dc0761/ (Машина Фильм обзор...)
+2025-05-22 14:26:31,829 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:26:31,830 - INFO - Rutube links for 'Машина Фильм обзор' saved to cache
+2025-05-22 14:26:33,042 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:26:33,044 - INFO - Found 20 films for query 'машина'
+2025-05-22 14:26:33,044 - INFO - Film: Машина юмора Стюарта Ли, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/678257.jpg
+2025-05-22 14:26:33,044 - INFO - Film: BBC: Машина времени, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/258273.jpg
+2025-05-22 14:26:33,044 - INFO - Film: Машина автошкола, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1112977.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Машина завтрашнего дня, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/205534.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Одноминутная машина времени, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/864243.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Боевая машина, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4535504.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Машина времени, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/80881.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Машина времени, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/8109.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Новая машина Майка, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/229092.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Магическая машина времени, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5107938.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Крушащая машина, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/58413.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Форд: Человек и машина, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/160957.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Победа над машинами, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/19652.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Машина времени Сэма Клемке, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/852472.jpg
+2025-05-22 14:26:33,045 - INFO - Film: Синяя машина, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/7821.jpg
+2025-05-22 14:26:33,046 - INFO - Film: Танцевальная машина, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/53202.jpg
+2025-05-22 14:26:33,046 - INFO - Film: Машина Джейн Мэнсфилд, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/575315.jpg
+2025-05-22 14:26:33,046 - INFO - Film: Машина времени в джакузи, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/450289.jpg
+2025-05-22 14:26:33,046 - INFO - Film: Машина медового месяца, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/14466.jpg
+2025-05-22 14:26:33,046 - INFO - Film: Машина, убивающая плохих, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/148401.jpg
+2025-05-22 14:26:33,046 - INFO - Poster URL for 'машина': https://kinopoiskapiunofficial.tech/images/posters/kp/678257.jpg
+2025-05-22 14:26:33,048 - INFO - Movie data for 'машина' saved to cache
+2025-05-22 14:26:33,049 - INFO - Saved movie data to cache for 'машина'
+2025-05-22 14:26:33,049 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:26:33,049 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:26:33,053 - INFO - Updated stats for movie 'Машина юмора Стюарта Ли' for user 1601735530
+2025-05-22 14:26:33,053 - INFO - Добавлена ссылка 1: Машина (фильм, 2023) (из поиска)
+2025-05-22 14:26:33,053 - INFO - Добавлена ссылка 2: Машина | The Machine (2023) (из поиска)
+2025-05-22 14:26:33,054 - INFO - Добавлена ссылка 3: Машина Фильм обзор (из поиска)
+2025-05-22 14:26:33,054 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/678257.jpg
+2025-05-22 14:26:33,342 - INFO - Poster for movie 678257 saved to cache
+2025-05-22 14:26:33,343 - INFO - Poster saved to cache and loaded for movie ID: 678257
+2025-05-22 14:26:33,343 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/678257.jpg
+2025-05-22 14:26:33,591 - INFO - Постер успешно отправлен
+2025-05-22 14:26:33,592 - INFO - Update id=965058774 is handled. Duration 2539 ms by bot id=7535140306
+2025-05-22 14:26:47,933 - INFO - Поиск фильма: 'мортал комбат' от пользователя 1601735530
+2025-05-22 14:26:47,936 - INFO - Added search from user 1601735530: мортал комбат
+2025-05-22 14:26:48,007 - INFO - Searching Kinopoisk for: 'мортал комбат' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:26:48,008 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BC%D0%BE%D1%80%D1%82%D0%B0%D0%BB%20%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:26:48,759 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:26:48,759 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e89b5c9364e89805c57eb39fd536753c/ (Фильм Мортал Комбат, 2021...)
+2025-05-22 14:26:48,759 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df98c8149fec7fb8ecc30b42b1d75134/ (Мортал Комбат | Mortal Ko...)
+2025-05-22 14:26:48,759 - INFO - Найдено видео на Rutube: https://rutube.ru/video/d1dc9a7a9ef9c57c19e783f72d8ef567/ (Смертельная битва | Morta...)
+2025-05-22 14:26:48,760 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:26:48,761 - INFO - Rutube links for 'Смертельная битва | Mortal Kombat (1995) в озвучке Jaskier' saved to cache
+2025-05-22 14:26:51,066 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:26:51,066 - INFO - Found 4 films for query 'мортал комбат'
+2025-05-22 14:26:51,067 - INFO - Film: Легенды Мортал Комбат: Снежная слепота, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg
+2025-05-22 14:26:51,067 - INFO - Film: Легенды Мортал комбат: Битва миров, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4489270.jpg
+2025-05-22 14:26:51,067 - INFO - Film: Легенды Мортал Комбат: Матч Кейджа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5143827.jpg
+2025-05-22 14:26:51,067 - INFO - Film: Мортал Комбат, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/8062.jpg
+2025-05-22 14:26:51,068 - INFO - Poster URL for 'мортал комбат': https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg
+2025-05-22 14:26:51,071 - INFO - Movie data for 'мортал комбат' saved to cache
+2025-05-22 14:26:51,071 - INFO - Saved movie data to cache for 'мортал комбат'
+2025-05-22 14:26:51,071 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:26:51,071 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:26:51,076 - INFO - Updated stats for movie 'Легенды Мортал Комбат: Снежная слепота' for user 1601735530
+2025-05-22 14:26:51,076 - INFO - Добавлена ссылка 1: Фильм Мортал Комбат, 2021 года, смотреть онлайн бесплатно в хорошем качестве (из поиска)
+2025-05-22 14:26:51,077 - INFO - Добавлена ссылка 2: Мортал Комбат | Mortal Kombat (2021) (из поиска)
+2025-05-22 14:26:51,077 - INFO - Добавлена ссылка 3: Смертельная битва | Mortal Kombat (1995) в озвучке Jaskier (из поиска)
+2025-05-22 14:26:51,077 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg
+2025-05-22 14:26:51,337 - INFO - Poster for movie 5076516 saved to cache
+2025-05-22 14:26:51,337 - INFO - Poster saved to cache and loaded for movie ID: 5076516
+2025-05-22 14:26:51,338 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg
+2025-05-22 14:26:51,702 - INFO - Постер успешно отправлен
+2025-05-22 14:26:51,702 - INFO - Update id=965058775 is handled. Duration 3769 ms by bot id=7535140306

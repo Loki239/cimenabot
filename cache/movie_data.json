@@ -388,5 +388,50 @@
       "posterUrlPreview": "https://image.openmoviedb.com/kinopoisk-images/1600647/ba661225-1035-43fd-97cf-9ff36efaee8f/orig"
     },
     "original_query": "джейн эйр"
+  },
+  "3dffa628c781c1f93848d25c31d7afbf": {
+    "timestamp": 1747913173.489442,
+    "data": {
+      "kinopoiskId": 839646,
+      "nameRu": "Тачки 3",
+      "year": 2017,
+      "description": "",
+      "ratingKinopoisk": 7.3,
+      "genres": [],
+      "countries": [],
+      "filmLength": null,
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp/839646.jpg"
+    },
+    "original_query": "тачки 3"
+  },
+  "0b15ec353653f8e06fd7220dad58db78": {
+    "timestamp": 1747913193.0474272,
+    "data": {
+      "kinopoiskId": 678257,
+      "nameRu": "Машина юмора Стюарта Ли",
+      "year": 2009,
+      "description": "",
+      "ratingKinopoisk": 8.2,
+      "genres": [],
+      "countries": [],
+      "filmLength": null,
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp/678257.jpg"
+    },
+    "original_query": "машина"
+  },
+  "39579a0b3e3ed0b19286184cb55f6269": {
+    "timestamp": 1747913211.069535,
+    "data": {
+      "kinopoiskId": 5076516,
+      "nameRu": "Легенды Мортал Комбат: Снежная слепота",
+      "year": 2022,
+      "description": "",
+      "ratingKinopoisk": 6.8,
+      "genres": [],
+      "countries": [],
+      "filmLength": null,
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg"
+    },
+    "original_query": "мортал комбат"
   }
 }
