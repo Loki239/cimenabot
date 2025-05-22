@@ -6173,3 +6173,831 @@ TypeError: Cannot serialize non-str key None
 2025-05-22 14:26:51,338 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/5076516.jpg
 2025-05-22 14:26:51,702 - INFO - Постер успешно отправлен
 2025-05-22 14:26:51,702 - INFO - Update id=965058775 is handled. Duration 3769 ms by bot id=7535140306
+2025-05-22 14:29:06,230 - WARNING - Stale PID file found. Previous process (PID 88671) is not running.
+2025-05-22 14:29:06,230 - INFO - PID file created with process ID 88858
+2025-05-22 14:29:06,230 - INFO - Cache directories initialized
+2025-05-22 14:29:06,230 - INFO - Инициализация базы данных
+2025-05-22 14:29:06,233 - INFO - Database initialized
+2025-05-22 14:29:06,362 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:29:06,363 - INFO - Запуск бота
+2025-05-22 14:29:06,363 - INFO - Start polling
+2025-05-22 14:29:06,401 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:29:36,656 - INFO - Поиск фильма: 'папа' от пользователя 1601735530
+2025-05-22 14:29:36,658 - INFO - Added search from user 1601735530: папа
+2025-05-22 14:29:36,834 - INFO - Searching Kinopoisk for: 'папа' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:29:36,835 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BF%D0%B0%D0%BF%D0%B0%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:29:39,635 - INFO - Rutube API: получено 95 результатов
+2025-05-22 14:29:39,635 - INFO - Найдено видео на Rutube: https://rutube.ru/video/0de4471818f0767e318e3db307e94ecf/ (ПАПА...)
+2025-05-22 14:29:39,636 - INFO - Найдено видео на Rutube: https://rutube.ru/video/839b230136267c33fced2aa1f593100e/ (Папа. Короткометражный фи...)
+2025-05-22 14:29:39,636 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b1a4195b3d982fa9507f0513e60e9f99/ (Фильм «Папа» (2023)...)
+2025-05-22 14:29:39,636 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:29:39,638 - INFO - Rutube links for 'Фильм «Папа» (2023)' saved to cache
+2025-05-22 14:29:39,639 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:29:39,639 - INFO - Found 20 films for query 'папа'
+2025-05-22 14:29:39,639 - INFO - Film: Барбапапа: Большая счастливая семья, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4917198.jpg
+2025-05-22 14:29:39,639 - INFO - Film: Молодой Папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/893361.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/82314.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/840615.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа странный, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1008545.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа Срапа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4446102.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Новый Папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1048602.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Девочка, дракон и папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1112713.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/80740.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папаши-дружбаны, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5148537.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа в командировке, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/7704.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа на один день, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/469645.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папаши, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/20903.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Мой папа не подарок, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1354896.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папа — звезда, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/712644.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Беги, папа, беги, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/406242.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Папарацци, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/534992.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Кароль — Папа Римский, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/258400.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Большой папа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4188.jpg
+2025-05-22 14:29:39,640 - INFO - Film: Киберпапа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5320185.jpg
+2025-05-22 14:29:39,640 - INFO - Fetching film details for ID: 4917198
+2025-05-22 14:29:39,731 - INFO - Successfully fetched details for film ID: 4917198
+2025-05-22 14:29:39,732 - INFO - Poster URL for 'папа': https://kinopoiskapiunofficial.tech/images/posters/kp/4917198.jpg
+2025-05-22 14:29:39,735 - INFO - Movie data for 'папа' saved to cache
+2025-05-22 14:29:39,735 - INFO - Saved movie data to cache for 'папа'
+2025-05-22 14:29:39,736 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:29:39,736 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:29:39,739 - INFO - Updated stats for movie 'Барбапапа: Большая счастливая семья' for user 1601735530
+2025-05-22 14:29:39,740 - INFO - Добавлена ссылка 1: ПАПА (из поиска)
+2025-05-22 14:29:39,740 - INFO - Добавлена ссылка 2: Папа. Короткометражный фильм. (из поиска)
+2025-05-22 14:29:39,740 - INFO - Добавлена ссылка 3: Фильм «Папа» (2023) (из поиска)
+2025-05-22 14:29:39,740 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/4917198.jpg
+2025-05-22 14:29:40,042 - INFO - Poster for movie 4917198 saved to cache
+2025-05-22 14:29:40,042 - INFO - Poster saved to cache and loaded for movie ID: 4917198
+2025-05-22 14:29:40,043 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/4917198.jpg
+2025-05-22 14:29:40,442 - INFO - Постер успешно отправлен
+2025-05-22 14:29:40,442 - INFO - Update id=965058776 is handled. Duration 3787 ms by bot id=7535140306
+2025-05-22 14:30:01,106 - INFO - Поиск фильма: 'клинок рассекающий демонов' от пользователя 1601735530
+2025-05-22 14:30:01,109 - INFO - Added search from user 1601735530: клинок рассекающий демонов
+2025-05-22 14:30:01,235 - INFO - Searching Kinopoisk for: 'клинок рассекающий демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:30:01,236 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%BB%D0%B8%D0%BD%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%B5%D0%BA%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:30:02,175 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:30:02,175 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:30:02,175 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8aafc6ac3613720c22aa16fb6f4d696f/ (Самое переоцененное аниме...)
+2025-05-22 14:30:02,175 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2c2e3107ad6dc7c501f5e8b9298bf9ac/ (Фильм, который заставил м...)
+2025-05-22 14:30:02,175 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:30:02,176 - INFO - Rutube links for 'Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд' saved to cache
+2025-05-22 14:30:03,991 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:30:03,991 - INFO - Found 0 films for query 'клинок рассекающий демонов'
+2025-05-22 14:30:03,992 - INFO - No Kinopoisk results found for 'клинок рассекающий демонов'
+2025-05-22 14:30:03,992 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:30:03,992 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:30:03,992 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:30:03,993 - INFO - Добавлена ссылка 2: Самое переоцененное аниме | 5 причин ненавидеть Клинок, рассекающий демонов + бесконечный поезд (из поиска)
+2025-05-22 14:30:03,993 - INFO - Добавлена ссылка 3: Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд (из поиска)
+2025-05-22 14:30:04,372 - INFO - Update id=965058777 is handled. Duration 3267 ms by bot id=7535140306
+2025-05-22 14:30:15,132 - INFO - Поиск фильма: 'истребитель демоно' от пользователя 1601735530
+2025-05-22 14:30:15,135 - INFO - Added search from user 1601735530: истребитель демоно
+2025-05-22 14:30:15,197 - INFO - Searching Kinopoisk for: 'истребитель демоно' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:30:15,198 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B8%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:30:17,835 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:30:17,836 - INFO - Found 10 films for query 'истребитель демоно'
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов: Гора Натагумо, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4664130.jpg
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов: Узы брата и сестры, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1252387.jpg
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов: Битва в доме Цудзуми, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4843390.jpg
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов: Собрание высших лун и деревня кузнецов, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5264039.jpg
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1220920.jpg
+2025-05-22 14:30:17,836 - INFO - Film: Истребитель демонов: Поезд «Бесконечный», Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4664118.jpg
+2025-05-22 14:30:17,837 - INFO - Film: Истребитель демонов: Встреча с хасира, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4664131.jpg
+2025-05-22 14:30:17,837 - INFO - Film: Истребитель демонов: Миссия в Асакусе, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4843387.jpg
+2025-05-22 14:30:17,837 - INFO - Film: Истребитель демонов: Поезд «Бесконечный», Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1347949.jpg
+2025-05-22 14:30:17,837 - INFO - Film: Истребитель демонов: На тренировку столпов, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5447036.jpg
+2025-05-22 14:30:17,837 - INFO - Fetching film details for ID: 4664130
+2025-05-22 14:30:17,910 - INFO - Successfully fetched details for film ID: 4664130
+2025-05-22 14:30:17,910 - INFO - Poster URL for 'истребитель демоно': https://kinopoiskapiunofficial.tech/images/posters/kp/4664130.jpg
+2025-05-22 14:30:17,911 - INFO - Movie data for 'истребитель демоно' saved to cache
+2025-05-22 14:30:17,911 - INFO - Saved movie data to cache for 'истребитель демоно'
+2025-05-22 14:30:17,952 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:30:17,952 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a4b64572d03c0592f0d3527d0b11f1f1/ (Истребитель демонов - 4 с...)
+2025-05-22 14:30:17,952 - INFO - Найдено видео на Rutube: https://rutube.ru/video/95b0da1058200a93cf3cb25c598feb6e/ (Истребитель демонов - 4 с...)
+2025-05-22 14:30:17,952 - INFO - Найдено видео на Rutube: https://rutube.ru/video/34b2db24136ba631e6c6eab4b4749247/ (Аниме Истребитель демонов...)
+2025-05-22 14:30:17,953 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:30:17,954 - INFO - Rutube links for 'Аниме Истребитель демонов — 1 сезон 12 серия / Kimetsu no Yaiba' saved to cache
+2025-05-22 14:30:17,954 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:30:17,954 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:30:17,956 - INFO - Updated stats for movie 'Истребитель демонов: Гора Натагумо' for user 1601735530
+2025-05-22 14:30:17,956 - INFO - Update id=965058778 is not handled. Duration 2824 ms by bot id=7535140306
+2025-05-22 14:30:17,956 - ERROR - Cause exception while process update id=965058778 by bot id=7535140306
+AttributeError: 'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/artem/Programming/ialox/cimenabot/main.py", line 104, in database_middleware
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/artem/Programming/ialox/cimenabot/handlers/search.py", line 158, in handle_message
+    response_parts.append(f"<i>{html.escape(description)}</i>")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+        ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'replace'
+2025-05-22 14:32:28,244 - WARNING - Stale PID file found. Previous process (PID 88858) is not running.
+2025-05-22 14:32:28,244 - INFO - PID file created with process ID 88968
+2025-05-22 14:32:28,244 - INFO - Cache directories initialized
+2025-05-22 14:32:28,244 - INFO - Инициализация базы данных
+2025-05-22 14:32:28,247 - INFO - Database initialized
+2025-05-22 14:32:28,407 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:32:28,407 - INFO - Запуск бота
+2025-05-22 14:32:28,407 - INFO - Start polling
+2025-05-22 14:32:28,453 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:32:53,928 - INFO - Поиск фильма: 'бля' от пользователя 1601735530
+2025-05-22 14:32:53,930 - INFO - Added search from user 1601735530: бля
+2025-05-22 14:32:54,206 - INFO - Searching Kinopoisk for: 'бля' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:32:54,207 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B1%D0%BB%D1%8F%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:32:54,996 - INFO - Rutube API: получено 96 результатов
+2025-05-22 14:32:54,996 - INFO - Найдено видео на Rutube: https://rutube.ru/video/d9ffb16c2083da8fd4d34688fa45eae4/ (Blya, aka "Senit Zon", ak...)
+2025-05-22 14:32:54,996 - INFO - Найдено видео на Rutube: https://rutube.ru/video/0de3b0a5f90e342b42079c89421f44a3/ (Шлюха (фильм, 1995)...)
+2025-05-22 14:32:54,996 - INFO - Найдено видео на Rutube: https://rutube.ru/video/6f81a0ca5e814b11d2141cc066d1cb46/ (Бонжур ёпта (Чиво бл**ь?)...)
+2025-05-22 14:32:54,996 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:32:54,997 - INFO - Rutube links for 'Бонжур ёпта (Чиво бл**ь?) HD' saved to cache
+2025-05-22 14:32:56,131 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:32:56,132 - INFO - Found 20 films for query 'бля'
+2025-05-22 14:32:56,132 - INFO - Film: Влюбляясь в тебя, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5248520.jpg
+2025-05-22 14:32:56,132 - INFO - Film: Легенды дубляжа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/692557.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Когда влюбляешься, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/18730.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Легенды советского кинодубляжа (выходят из тени), Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/583590.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Сабля Шарпа, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/230890.jpg
+2025-05-22 14:32:56,133 - INFO - Film: С корабля на бал, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/736108.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Почему женщины влюбляются, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4899102.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Когда волк влюбляется в овечку, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/733111.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Бесконечное путешествие корабля Ривиас, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/408463.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Три рубля, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/43603.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Танец с саблями, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/958470.jpg
+2025-05-22 14:32:56,133 - INFO - Film: Командир корабля, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/44868.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Школа монстров: Отчего монстры влюбляются?, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/687358.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Сокровища погибшего корабля, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/43897.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Спуск корабля на воду, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/266515.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Почему дураки влюбляются, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/3527.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Волшебная сабля, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/211604.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Олимпиада-80. Академическая гребля, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/477328.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Олимпиада-80. Гребля на каноэ, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/652827.jpg
+2025-05-22 14:32:56,134 - INFO - Film: Дубля не будет, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/586690.jpg
+2025-05-22 14:32:56,135 - INFO - Fetching film details for ID: 5248520
+2025-05-22 14:32:56,243 - INFO - Successfully fetched details for film ID: 5248520
+2025-05-22 14:32:56,243 - INFO - Poster URL for 'бля': https://kinopoiskapiunofficial.tech/images/posters/kp/5248520.jpg
+2025-05-22 14:32:56,247 - INFO - Movie data for 'бля' saved to cache
+2025-05-22 14:32:56,248 - INFO - Saved movie data to cache for 'бля'
+2025-05-22 14:32:56,248 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:32:56,248 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:32:56,252 - INFO - Updated stats for movie 'Влюбляясь в тебя' for user 1601735530
+2025-05-22 14:32:56,252 - INFO - Добавлена ссылка 1: Blya, aka "Senit Zon", aka "The sanitary zone"  Russia, 1990, "Бля" ("Сэнит Зон") (из поиска)
+2025-05-22 14:32:56,252 - INFO - Добавлена ссылка 2: Шлюха (фильм, 1995) (из поиска)
+2025-05-22 14:32:56,252 - INFO - Добавлена ссылка 3: Бонжур ёпта (Чиво бл**ь?) HD (из поиска)
+2025-05-22 14:32:56,252 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/5248520.jpg
+2025-05-22 14:32:56,772 - INFO - Poster for movie 5248520 saved to cache
+2025-05-22 14:32:56,773 - INFO - Poster saved to cache and loaded for movie ID: 5248520
+2025-05-22 14:32:56,773 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/5248520.jpg
+2025-05-22 14:33:04,631 - INFO - Постер успешно отправлен
+2025-05-22 14:33:04,631 - INFO - Update id=965058779 is handled. Duration 10704 ms by bot id=7535140306
+2025-05-22 14:33:29,779 - INFO - Поиск фильма: 'клинок рассекающий демонов' от пользователя 1601735530
+2025-05-22 14:33:29,783 - INFO - Added search from user 1601735530: клинок рассекающий демонов
+2025-05-22 14:33:29,916 - INFO - Searching Kinopoisk for: 'клинок рассекающий демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:33:29,917 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%BB%D0%B8%D0%BD%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%B5%D0%BA%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:33:29,994 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:33:29,995 - INFO - Found 0 films for query 'клинок рассекающий демонов'
+2025-05-22 14:33:29,995 - INFO - No Kinopoisk results found for 'клинок рассекающий демонов'
+2025-05-22 14:33:30,104 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:33:30,104 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:33:30,104 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8aafc6ac3613720c22aa16fb6f4d696f/ (Самое переоцененное аниме...)
+2025-05-22 14:33:30,104 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2c2e3107ad6dc7c501f5e8b9298bf9ac/ (Фильм, который заставил м...)
+2025-05-22 14:33:30,105 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:33:30,107 - INFO - Rutube links for 'Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд' saved to cache
+2025-05-22 14:33:30,107 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:33:30,107 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:33:30,107 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:33:30,107 - INFO - Добавлена ссылка 2: Самое переоцененное аниме | 5 причин ненавидеть Клинок, рассекающий демонов + бесконечный поезд (из поиска)
+2025-05-22 14:33:30,107 - INFO - Добавлена ссылка 3: Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд (из поиска)
+2025-05-22 14:33:30,394 - INFO - Update id=965058780 is handled. Duration 616 ms by bot id=7535140306
+2025-05-22 14:33:38,315 - INFO - Поиск фильма: '/clear_cache' от пользователя 1601735530
+2025-05-22 14:33:38,317 - INFO - Added search from user 1601735530: /clear_cache
+2025-05-22 14:33:38,504 - INFO - Searching Kinopoisk for: '/clear_cache' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:33:38,506 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=/clear_cache%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:33:39,269 - INFO - Rutube API: получено 97 результатов
+2025-05-22 14:33:39,269 - INFO - Найдено видео на Rutube: https://rutube.ru/video/bea72146e396099379c4e4ee7e9d9dc9/ (How To Clear Cache In Win...)
+2025-05-22 14:33:39,269 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a9667eea4faeb4ab9c60dc7c0a734722/ (Vivo How to Clear Data & ...)
+2025-05-22 14:33:39,269 - INFO - Найдено видео на Rutube: https://rutube.ru/video/9201ce46345ba3e7e1899ce4864b739f/ (Clear Cache/Factory Reset...)
+2025-05-22 14:33:39,269 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:33:39,271 - INFO - Rutube links for 'Clear Cache/Factory Reset/Recovery Mode on Galaxy phones with the latest Android (New Easy Steps!!!' saved to cache
+2025-05-22 14:33:40,617 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:33:40,618 - INFO - Found 0 films for query '/clear_cache'
+2025-05-22 14:33:40,619 - INFO - No Kinopoisk results found for '/clear_cache'
+2025-05-22 14:33:40,619 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:33:40,619 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:33:40,619 - INFO - Добавлена ссылка 1: How To Clear Cache In Windows | Tech Insider (из поиска)
+2025-05-22 14:33:40,619 - INFO - Добавлена ссылка 2: Vivo How to Clear Data & Cache Settings (из поиска)
+2025-05-22 14:33:40,619 - INFO - Добавлена ссылка 3: Clear Cache/Factory Reset/Recovery Mode on Galaxy phones with the latest Android (New Easy Steps!!! (из поиска)
+2025-05-22 14:33:40,790 - INFO - Update id=965058781 is handled. Duration 2476 ms by bot id=7535140306
+2025-05-22 14:35:17,191 - WARNING - Stale PID file found. Previous process (PID 88968) is not running.
+2025-05-22 14:35:17,192 - INFO - PID file created with process ID 89122
+2025-05-22 14:35:17,192 - INFO - Cache directories initialized
+2025-05-22 14:35:17,192 - INFO - Инициализация базы данных
+2025-05-22 14:35:17,194 - INFO - Database initialized
+2025-05-22 14:35:17,339 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:35:17,339 - INFO - Запуск бота
+2025-05-22 14:35:17,339 - INFO - Start polling
+2025-05-22 14:35:17,388 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:35:31,489 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 14:35:31,647 - ERROR - Ошибка при очистке кэша: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "coroutine" at byte offset 64
+2025-05-22 14:35:31,763 - INFO - Update id=965058782 is handled. Duration 275 ms by bot id=7535140306
+2025-05-22 14:36:12,888 - WARNING - Stale PID file found. Previous process (PID 89122) is not running.
+2025-05-22 14:36:12,888 - INFO - PID file created with process ID 89189
+2025-05-22 14:36:12,888 - INFO - Cache directories initialized
+2025-05-22 14:36:12,888 - INFO - Инициализация базы данных
+2025-05-22 14:36:12,891 - INFO - Database initialized
+2025-05-22 14:36:13,045 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:36:13,045 - INFO - Запуск бота
+2025-05-22 14:36:13,045 - INFO - Start polling
+2025-05-22 14:36:13,094 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:36:17,739 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 14:36:17,742 - INFO - Cleared 17 poster files
+2025-05-22 14:36:17,743 - INFO - Cleared movie data cache (18 entries)
+2025-05-22 14:36:17,743 - INFO - Cleared Rutube links cache (26 entries)
+2025-05-22 14:36:17,744 - INFO - Cleared all cache: 61 files
+2025-05-22 14:36:18,007 - INFO - Update id=965058783 is handled. Duration 268 ms by bot id=7535140306
+2025-05-22 14:36:30,586 - INFO - Поиск фильма: 'клинок рассекающий демонов' от пользователя 1601735530
+2025-05-22 14:36:30,589 - INFO - Added search from user 1601735530: клинок рассекающий демонов
+2025-05-22 14:36:30,675 - INFO - Searching Kinopoisk for: 'клинок рассекающий демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:36:30,677 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%BB%D0%B8%D0%BD%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%B5%D0%BA%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:36:30,745 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:36:30,746 - INFO - Found 0 films for query 'клинок рассекающий демонов'
+2025-05-22 14:36:30,746 - INFO - No Kinopoisk results found for 'клинок рассекающий демонов'
+2025-05-22 14:36:30,831 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:36:30,831 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:36:30,832 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8aafc6ac3613720c22aa16fb6f4d696f/ (Самое переоцененное аниме...)
+2025-05-22 14:36:30,832 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2c2e3107ad6dc7c501f5e8b9298bf9ac/ (Фильм, который заставил м...)
+2025-05-22 14:36:30,832 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:36:30,833 - INFO - Rutube links for 'Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд' saved to cache
+2025-05-22 14:36:30,833 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:36:30,833 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:36:30,833 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:36:30,833 - INFO - Добавлена ссылка 2: Самое переоцененное аниме | 5 причин ненавидеть Клинок, рассекающий демонов + бесконечный поезд (из поиска)
+2025-05-22 14:36:30,833 - INFO - Добавлена ссылка 3: Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд (из поиска)
+2025-05-22 14:36:31,033 - INFO - Update id=965058784 is handled. Duration 448 ms by bot id=7535140306
+2025-05-22 14:36:41,968 - INFO - Поиск фильма: 'гол' от пользователя 1601735530
+2025-05-22 14:36:41,971 - INFO - Added search from user 1601735530: гол
+2025-05-22 14:36:42,053 - INFO - Searching Kinopoisk for: 'гол' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:36:42,054 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D0%BB%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:36:42,907 - INFO - Rutube API: получено 99 результатов
+2025-05-22 14:36:42,908 - INFO - Найдено видео на Rutube: https://rutube.ru/video/65d1837025dac1b5cf24e0489d19f275/ (Гол! (фильм, 2005)...)
+2025-05-22 14:36:42,909 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3c12f7b6057f539eaff51158b4a81f1d/ (Гол (2005)...)
+2025-05-22 14:36:42,909 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a98a1b83a44b8db9edbdd83cedf058f0/ (Гол 2: Жизнь как мечта (ф...)
+2025-05-22 14:36:42,909 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:36:42,910 - INFO - Rutube links for 'Гол 2: Жизнь как мечта (фильм, 2007)' saved to cache
+2025-05-22 14:36:45,319 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:36:45,320 - INFO - Found 20 films for query 'гол'
+2025-05-22 14:36:45,320 - INFO - Film: Голубая планета 2, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1073233.jpg
+2025-05-22 14:36:45,320 - INFO - Film: Голяк, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1236393.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Голубая планета, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/252059.jpg
+2025-05-22 14:36:45,321 - INFO - Film: В голубую бездну, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4875761.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Софийский крест. Голубь мира, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1372007.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Голый повар, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/570004.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Не могу выкинуть тебя из головы, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4380712.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Риголетто, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/63090.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Голубоглазый самурай, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4992678.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Любовь и голуби, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/45146.jpg
+2025-05-22 14:36:45,321 - INFO - Film: Сила любви и голоса, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/831430.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Форма голоса, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/963343.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Головоломка 2, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/5102255.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Господа Головлевы, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/426275.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Головоломка, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/645118.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Голый остров, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/80659.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Голодный сирота, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/221821.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Голова в мешке, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1124847.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Голова-утиль, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1176095.jpg
+2025-05-22 14:36:45,322 - INFO - Film: Tide: Отрубание головы, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1211868.jpg
+2025-05-22 14:36:45,323 - INFO - Fetching film details for ID: 1073233
+2025-05-22 14:36:45,430 - INFO - Successfully fetched details for film ID: 1073233
+2025-05-22 14:36:45,431 - INFO - Poster URL for 'гол': https://kinopoiskapiunofficial.tech/images/posters/kp/1073233.jpg
+2025-05-22 14:36:45,432 - INFO - Movie data for 'гол' saved to cache
+2025-05-22 14:36:45,432 - INFO - Saved movie data to cache for 'гол'
+2025-05-22 14:36:45,432 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:36:45,432 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:36:45,435 - INFO - Updated stats for movie 'Голубая планета 2' for user 1601735530
+2025-05-22 14:36:45,435 - INFO - Добавлена ссылка 1: Гол! (фильм, 2005) (из поиска)
+2025-05-22 14:36:45,436 - INFO - Добавлена ссылка 2: Гол (2005) (из поиска)
+2025-05-22 14:36:45,436 - INFO - Добавлена ссылка 3: Гол 2: Жизнь как мечта (фильм, 2007) (из поиска)
+2025-05-22 14:36:45,436 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/1073233.jpg
+2025-05-22 14:36:45,774 - INFO - Poster for movie 1073233 saved to cache
+2025-05-22 14:36:45,775 - INFO - Poster saved to cache and loaded for movie ID: 1073233
+2025-05-22 14:36:45,775 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/1073233.jpg
+2025-05-22 14:36:46,125 - INFO - Постер успешно отправлен
+2025-05-22 14:36:46,125 - INFO - Update id=965058785 is handled. Duration 4157 ms by bot id=7535140306
+2025-05-22 14:36:57,083 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 14:36:57,086 - INFO - Added search from user 1601735530: Venom
+2025-05-22 14:36:57,167 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:36:57,168 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:36:57,930 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:36:57,931 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 14:36:57,931 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 14:36:57,931 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 14:36:57,931 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:36:57,932 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 14:36:59,026 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:36:59,027 - INFO - Found 20 films for query 'Venom'
+2025-05-22 14:36:59,028 - INFO - Film: LEGO Marvel Человек-Паук: Одержимый Веномом, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1302483.jpg
+2025-05-22 14:36:59,028 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1204111.jpg
+2025-05-22 14:36:59,028 - INFO - Film: Веном, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 14:36:59,028 - INFO - Film: Веном 2, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1227967.jpg
+2025-05-22 14:36:59,028 - INFO - Film: Веном: Истина в журналистике, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/784446.jpg
+2025-05-22 14:36:59,028 - INFO - Film: Змеиный яд, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/17514.jpg
+2025-05-22 14:36:59,029 - INFO - Film: Болото, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/86741.jpg
+2025-05-22 14:36:59,029 - INFO - Film: Гремучие змеи, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/9227.jpg
+2025-05-22 14:36:59,029 - INFO - Film: Безмолвный яд, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/416247.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/916719.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/935481.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1083814.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1273805.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1317293.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1362238.jpg
+2025-05-22 14:36:59,029 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/2003041.jpg
+2025-05-22 14:36:59,030 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4758648.jpg
+2025-05-22 14:36:59,030 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4895311.jpg
+2025-05-22 14:36:59,030 - INFO - Film: Яд медузы, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4922766.jpg
+2025-05-22 14:36:59,030 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4964526.jpg
+2025-05-22 14:36:59,030 - INFO - Fetching film details for ID: 1302483
+2025-05-22 14:36:59,110 - INFO - Successfully fetched details for film ID: 1302483
+2025-05-22 14:36:59,111 - INFO - Poster URL for 'Venom': https://kinopoiskapiunofficial.tech/images/posters/kp/1302483.jpg
+2025-05-22 14:36:59,113 - INFO - Movie data for 'Venom' saved to cache
+2025-05-22 14:36:59,113 - INFO - Saved movie data to cache for 'Venom'
+2025-05-22 14:36:59,113 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:36:59,113 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:36:59,115 - INFO - Updated stats for movie 'LEGO Marvel Человек-Паук: Одержимый Веномом' for user 1601735530
+2025-05-22 14:36:59,116 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 14:36:59,116 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 14:36:59,116 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 14:36:59,116 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/1302483.jpg
+2025-05-22 14:36:59,431 - INFO - Poster for movie 1302483 saved to cache
+2025-05-22 14:36:59,431 - INFO - Poster saved to cache and loaded for movie ID: 1302483
+2025-05-22 14:36:59,432 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/1302483.jpg
+2025-05-22 14:36:59,767 - INFO - Постер успешно отправлен
+2025-05-22 14:36:59,768 - INFO - Update id=965058786 is handled. Duration 2685 ms by bot id=7535140306
+2025-05-22 14:37:31,635 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 14:37:31,638 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 14:37:31,811 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:37:31,812 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BD%D0%B5%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:37:32,601 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:37:32,601 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df597de79081512651bdcb8cbfd85788/ (Город, в котором меня нет...)
+2025-05-22 14:37:32,601 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e54354014cf53cb6f8dfe5114aeb6873/ (Город.в котором меня нет ...)
+2025-05-22 14:37:32,601 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b527507906f0325fc87c8c55205714b1/ (Город, в котором меня нет...)
+2025-05-22 14:37:32,602 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:37:32,603 - INFO - Rutube links for 'Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me' saved to cache
+2025-05-22 14:37:33,984 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:37:33,984 - INFO - Found 0 films for query 'город в котором меня нет'
+2025-05-22 14:37:33,985 - INFO - No Kinopoisk results found for 'город в котором меня нет'
+2025-05-22 14:37:33,985 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:37:33,985 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:37:33,985 - INFO - Добавлена ссылка 1: Город, в котором меня нет (дорама, 2016) (из поиска)
+2025-05-22 14:37:33,986 - INFO - Добавлена ссылка 2: Город.в котором меня нет Русский Триллер /фильм\ (из поиска)
+2025-05-22 14:37:33,986 - INFO - Добавлена ссылка 3: Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me (из поиска)
+2025-05-22 14:37:34,150 - INFO - Update id=965058787 is handled. Duration 2516 ms by bot id=7535140306
+2025-05-22 14:37:42,744 - INFO - Поиск фильма: 'остров собак' от пользователя 1601735530
+2025-05-22 14:37:42,745 - INFO - Added search from user 1601735530: остров собак
+2025-05-22 14:37:42,844 - INFO - Searching Kinopoisk for: 'остров собак' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:37:42,844 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:37:43,716 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:37:43,716 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2e8edd0cde3f3d40ad067645638814cc/ (Остров собак | Isle of Do...)
+2025-05-22 14:37:43,716 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3a38d5ce93ff191124a693c13ce2daa8/ (Остров собак (мультфильм,...)
+2025-05-22 14:37:43,717 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8344645e673257864b78902f0a1da22d/ (Впечатления: "Остров соба...)
+2025-05-22 14:37:43,717 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:37:43,718 - INFO - Rutube links for 'Впечатления: "Остров собак" (Isle of Dogs)' saved to cache
+2025-05-22 14:37:44,800 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:37:44,801 - INFO - Found 3 films for query 'остров собак'
+2025-05-22 14:37:44,801 - INFO - Film: Остров собак, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 14:37:44,801 - INFO - Film: Остров собак, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/496866.jpg
+2025-05-22 14:37:44,802 - INFO - Film: Остров собак, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/743601.jpg
+2025-05-22 14:37:44,802 - INFO - Fetching film details for ID: 939785
+2025-05-22 14:37:44,888 - INFO - Successfully fetched details for film ID: 939785
+2025-05-22 14:37:44,889 - INFO - Poster URL for 'остров собак': https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 14:37:44,890 - INFO - Movie data for 'остров собак' saved to cache
+2025-05-22 14:37:44,891 - INFO - Saved movie data to cache for 'остров собак'
+2025-05-22 14:37:44,891 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:37:44,891 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:37:44,893 - INFO - Updated stats for movie 'Остров собак' for user 1601735530
+2025-05-22 14:37:44,894 - INFO - Добавлена ссылка 1: Остров собак | Isle of Dogs (2018) (из поиска)
+2025-05-22 14:37:44,894 - INFO - Добавлена ссылка 2: Остров собак (мультфильм, 2018) (из поиска)
+2025-05-22 14:37:44,894 - INFO - Добавлена ссылка 3: Впечатления: "Остров собак" (Isle of Dogs) (из поиска)
+2025-05-22 14:37:44,894 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 14:37:45,201 - INFO - Poster for movie 939785 saved to cache
+2025-05-22 14:37:45,201 - INFO - Poster saved to cache and loaded for movie ID: 939785
+2025-05-22 14:37:45,202 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 14:37:45,479 - INFO - Постер успешно отправлен
+2025-05-22 14:37:45,480 - INFO - Update id=965058788 is handled. Duration 2737 ms by bot id=7535140306
+2025-05-22 14:38:15,087 - INFO - Поиск фильма: 'аля иногда кокетничает со мной по-русски' от пользователя 1601735530
+2025-05-22 14:38:15,091 - INFO - Added search from user 1601735530: аля иногда кокетничает со мной по-русски
+2025-05-22 14:38:15,173 - INFO - Searching Kinopoisk for: 'аля иногда кокетничает со мной по-русски' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:38:15,175 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B0%D0%BB%D1%8F%20%D0%B8%D0%BD%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%BA%D0%BE%D0%BA%D0%B5%D1%82%D0%BD%D0%B8%D1%87%D0%B0%D0%B5%D1%82%20%D1%81%D0%BE%20%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:38:15,852 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:38:15,852 - INFO - Найдено видео на Rutube: https://rutube.ru/video/1096aaba78826c02890959e6984b88d5/ (СТОИТ ЛИ СМОТРЕТЬ АНИМЕ А...)
+2025-05-22 14:38:15,852 - INFO - Найдено видео на Rutube: https://rutube.ru/video/815bd9cc05129e1af8c9b667a1869884/ (Аля иногда кокетничает со...)
+2025-05-22 14:38:15,852 - INFO - Найдено видео на Rutube: https://rutube.ru/video/37e4b46473bd572aa07a76722b11eefa/ (Аля иногда кокетничает со...)
+2025-05-22 14:38:15,853 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:38:15,854 - INFO - Rutube links for 'Аля иногда кокетничает со мной по-русски Русский трейлер сериала' saved to cache
+2025-05-22 14:38:17,261 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:38:17,262 - INFO - Found 1 films for query 'аля иногда кокетничает со мной по-русски'
+2025-05-22 14:38:17,262 - INFO - Film: Аля иногда кокетничает со мной по-русски, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/6022338.jpg
+2025-05-22 14:38:17,263 - INFO - Fetching film details for ID: 6022338
+2025-05-22 14:38:17,358 - INFO - Successfully fetched details for film ID: 6022338
+2025-05-22 14:38:17,360 - INFO - Poster URL for 'аля иногда кокетничает со мной по-русски': https://kinopoiskapiunofficial.tech/images/posters/kp/6022338.jpg
+2025-05-22 14:38:17,362 - INFO - Movie data for 'аля иногда кокетничает со мной по-русски' saved to cache
+2025-05-22 14:38:17,362 - INFO - Saved movie data to cache for 'аля иногда кокетничает со мной по-русски'
+2025-05-22 14:38:17,363 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:38:17,363 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:38:17,367 - INFO - Updated stats for movie 'Аля иногда кокетничает со мной по-русски' for user 1601735530
+2025-05-22 14:38:17,368 - INFO - Добавлена ссылка 1: СТОИТ ЛИ СМОТРЕТЬ АНИМЕ АЛЯ ИНОГДА КОКЕТНИЧАЕТ СО МНОЙ ПО-РУССКИ?! ОБЗОР АНИМЕ (из поиска)
+2025-05-22 14:38:17,368 - INFO - Добавлена ссылка 2: Аля иногда кокетничает со мной по-русски 2024 - Тизер (из поиска)
+2025-05-22 14:38:17,368 - INFO - Добавлена ссылка 3: Аля иногда кокетничает со мной по-русски Русский трейлер сериала (из поиска)
+2025-05-22 14:38:17,368 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/6022338.jpg
+2025-05-22 14:38:17,635 - INFO - Poster for movie 6022338 saved to cache
+2025-05-22 14:38:17,635 - INFO - Poster saved to cache and loaded for movie ID: 6022338
+2025-05-22 14:38:17,636 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/6022338.jpg
+2025-05-22 14:38:18,037 - INFO - Постер успешно отправлен
+2025-05-22 14:38:18,038 - INFO - Update id=965058789 is handled. Duration 2951 ms by bot id=7535140306
+2025-05-22 14:40:24,018 - WARNING - Stale PID file found. Previous process (PID 89189) is not running.
+2025-05-22 14:40:24,019 - INFO - PID file created with process ID 89327
+2025-05-22 14:40:24,019 - INFO - Cache directories initialized
+2025-05-22 14:40:24,019 - INFO - Инициализация базы данных
+2025-05-22 14:40:24,022 - INFO - Database initialized
+2025-05-22 14:40:24,187 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:40:24,187 - INFO - Запуск бота
+2025-05-22 14:40:24,187 - INFO - Start polling
+2025-05-22 14:40:24,237 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:40:38,977 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 14:40:38,979 - INFO - Cleared 4 poster files
+2025-05-22 14:40:38,980 - INFO - Cleared movie data cache (4 entries)
+2025-05-22 14:40:38,981 - INFO - Cleared Rutube links cache (6 entries)
+2025-05-22 14:40:38,981 - INFO - Cleared all cache: 14 files
+2025-05-22 14:40:39,171 - INFO - Update id=965058790 is handled. Duration 195 ms by bot id=7535140306
+2025-05-22 14:40:45,653 - INFO - Поиск фильма: 'клинок рассекающий демонов' от пользователя 1601735530
+2025-05-22 14:40:45,655 - INFO - Added search from user 1601735530: клинок рассекающий демонов
+2025-05-22 14:40:45,753 - INFO - Searching Kinopoisk for: 'клинок рассекающий демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:40:45,753 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%BB%D0%B8%D0%BD%D0%BE%D0%BA%20%D1%80%D0%B0%D1%81%D1%81%D0%B5%D0%BA%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:40:45,829 - INFO - Kinopoisk API response status: 400
+2025-05-22 14:40:45,830 - ERROR - Kinopoisk API request failed, status: 400, response: {"message":"Method parameter 'order': Failed to convert value of type 'java.lang.String' to required type 'com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder] for value [RELEVANCE]"}
+2025-05-22 14:40:45,830 - INFO - No Kinopoisk results found for 'клинок рассекающий демонов'
+2025-05-22 14:40:45,914 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:40:45,914 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:40:45,914 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8aafc6ac3613720c22aa16fb6f4d696f/ (Самое переоцененное аниме...)
+2025-05-22 14:40:45,914 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2c2e3107ad6dc7c501f5e8b9298bf9ac/ (Фильм, который заставил м...)
+2025-05-22 14:40:45,915 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:40:45,916 - INFO - Rutube links for 'Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд' saved to cache
+2025-05-22 14:40:45,916 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:40:45,916 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:40:45,916 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:40:45,916 - INFO - Добавлена ссылка 2: Самое переоцененное аниме | 5 причин ненавидеть Клинок, рассекающий демонов + бесконечный поезд (из поиска)
+2025-05-22 14:40:45,916 - INFO - Добавлена ссылка 3: Фильм, который заставил меня плакать / Клинок, рассекающий демонов: бесконечный поезд (из поиска)
+2025-05-22 14:40:46,074 - INFO - Update id=965058791 is handled. Duration 421 ms by bot id=7535140306
+2025-05-22 14:40:55,481 - INFO - Поиск фильма: 'истребитель демонов' от пользователя 1601735530
+2025-05-22 14:40:55,483 - INFO - Added search from user 1601735530: истребитель демонов
+2025-05-22 14:40:55,564 - INFO - Searching Kinopoisk for: 'истребитель демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:40:55,565 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B8%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:40:55,636 - INFO - Kinopoisk API response status: 400
+2025-05-22 14:40:55,636 - ERROR - Kinopoisk API request failed, status: 400, response: {"message":"Method parameter 'order': Failed to convert value of type 'java.lang.String' to required type 'com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder] for value [RELEVANCE]"}
+2025-05-22 14:40:55,637 - INFO - No Kinopoisk results found for 'истребитель демонов'
+2025-05-22 14:40:56,360 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:40:56,360 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:40:56,360 - INFO - Найдено видео на Rutube: https://rutube.ru/video/234d3b374b133e18a0484f082cd314eb/ (Аниме Истребитель демонов...)
+2025-05-22 14:40:56,360 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e1c15ec11cae0a699d8d009d2f9e9404/ (Аниме Истребитель демонов...)
+2025-05-22 14:40:56,361 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:40:56,363 - INFO - Rutube links for 'Аниме Истребитель демонов — 4 сезон 6 серия / Kimetsu no Yaiba' saved to cache
+2025-05-22 14:40:56,363 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:40:56,363 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:40:56,363 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:40:56,363 - INFO - Добавлена ссылка 2: Аниме Истребитель демонов — 1 сезон 16 серия / Kimetsu no Yaiba (из поиска)
+2025-05-22 14:40:56,363 - INFO - Добавлена ссылка 3: Аниме Истребитель демонов — 4 сезон 6 серия / Kimetsu no Yaiba (из поиска)
+2025-05-22 14:40:56,664 - INFO - Update id=965058792 is handled. Duration 1183 ms by bot id=7535140306
+2025-05-22 14:41:20,986 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 14:41:20,989 - INFO - Added search from user 1601735530: Venom
+2025-05-22 14:41:21,064 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:41:21,066 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:41:21,136 - INFO - Kinopoisk API response status: 400
+2025-05-22 14:41:21,136 - ERROR - Kinopoisk API request failed, status: 400, response: {"message":"Method parameter 'order': Failed to convert value of type 'java.lang.String' to required type 'com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.github.truedevprofile.common.repository.jdbc.repository.model.SearchFilmFilters$SearchOrder] for value [RELEVANCE]"}
+2025-05-22 14:41:21,136 - INFO - No Kinopoisk results found for 'Venom'
+2025-05-22 14:41:21,195 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:41:21,196 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 14:41:21,196 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 14:41:21,196 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 14:41:21,196 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:41:21,198 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 14:41:21,198 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:41:21,198 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:41:21,198 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 14:41:21,198 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 14:41:21,198 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 14:41:21,379 - INFO - Update id=965058793 is handled. Duration 394 ms by bot id=7535140306
+2025-05-22 14:42:26,412 - WARNING - Stale PID file found. Previous process (PID 89327) is not running.
+2025-05-22 14:42:26,412 - INFO - PID file created with process ID 89430
+2025-05-22 14:42:26,413 - INFO - Cache directories initialized
+2025-05-22 14:42:26,413 - INFO - Инициализация базы данных
+2025-05-22 14:42:26,416 - INFO - Database initialized
+2025-05-22 14:42:26,585 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:42:26,586 - INFO - Запуск бота
+2025-05-22 14:42:26,586 - INFO - Start polling
+2025-05-22 14:42:26,648 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:43:10,510 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 14:43:10,511 - INFO - Cleared 0 poster files
+2025-05-22 14:43:10,511 - INFO - Cleared movie data cache (0 entries)
+2025-05-22 14:43:10,513 - INFO - Cleared Rutube links cache (3 entries)
+2025-05-22 14:43:10,513 - INFO - Cleared all cache: 3 files
+2025-05-22 14:43:10,685 - INFO - Update id=965058794 is handled. Duration 175 ms by bot id=7535140306
+2025-05-22 14:43:15,466 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 14:43:15,468 - INFO - Added search from user 1601735530: Venom
+2025-05-22 14:43:15,562 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.2/films
+2025-05-22 14:43:15,563 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:43:15,699 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:43:15,700 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 14:43:15,700 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 14:43:15,700 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 14:43:15,701 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:43:15,701 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 14:43:18,325 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:43:18,326 - INFO - Found 20 films for query 'Venom'
+2025-05-22 14:43:18,326 - INFO - Search result #1: None / None (2025)
+2025-05-22 14:43:18,326 - INFO - Search result #2: Веном 3: Последний танец / None (2024)
+2025-05-22 14:43:18,326 - INFO - Search result #3: Яд медузы / None (2023)
+2025-05-22 14:43:18,326 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1385350.jpg
+2025-05-22 14:43:18,326 - INFO - Film: Веном 3: Последний танец, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4766559.jpg
+2025-05-22 14:43:18,326 - INFO - Film: Яд медузы, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4922766.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4948355.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4628107.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4964819.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4860908.jpg
+2025-05-22 14:43:18,327 - INFO - Film: Змеиный берег, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4384079.jpg
+2025-05-22 14:43:18,327 - INFO - Film: Веном 2, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1227967.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4824488.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/2003041.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4993633.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4895311.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1273805.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1362238.jpg
+2025-05-22 14:43:18,327 - INFO - Film: LEGO Marvel Человек-Паук: Одержимый Веномом, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1302483.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1211095.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/4758648.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1060559.jpg
+2025-05-22 14:43:18,327 - INFO - Film: None, Poster URL: https://kinopoiskapiunofficial.tech/images/posters/kp/1204111.jpg
+2025-05-22 14:43:18,328 - INFO - Searching for exact matches with terms: ['веном', 'venom']
+2025-05-22 14:43:18,328 - ERROR - Ошибка при выполнении задачи: 'NoneType' object has no attribute 'lower'
+2025-05-22 14:43:18,328 - INFO - Получены данные с Кинопоиска: Нет
+2025-05-22 14:43:18,328 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:43:18,328 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 14:43:18,328 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 14:43:18,328 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 14:43:18,639 - INFO - Update id=965058795 is handled. Duration 3174 ms by bot id=7535140306
+2025-05-22 14:44:35,162 - WARNING - Stale PID file found. Previous process (PID 89430) is not running.
+2025-05-22 14:44:35,163 - INFO - PID file created with process ID 89521
+2025-05-22 14:44:35,163 - INFO - Cache directories initialized
+2025-05-22 14:44:35,163 - INFO - Инициализация базы данных
+2025-05-22 14:44:35,165 - INFO - Database initialized
+2025-05-22 14:44:35,314 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 14:44:35,314 - INFO - Запуск бота
+2025-05-22 14:44:35,314 - INFO - Start polling
+2025-05-22 14:44:35,362 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 14:45:58,668 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 14:45:58,669 - INFO - Cleared 0 poster files
+2025-05-22 14:45:58,670 - INFO - Cleared movie data cache (0 entries)
+2025-05-22 14:45:58,672 - INFO - Cleared Rutube links cache (1 entries)
+2025-05-22 14:45:58,672 - INFO - Cleared all cache: 1 files
+2025-05-22 14:45:58,848 - INFO - Update id=965058796 is handled. Duration 180 ms by bot id=7535140306
+2025-05-22 14:46:03,864 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 14:46:03,867 - INFO - Added search from user 1601735530: Venom
+2025-05-22 14:46:03,992 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:46:03,993 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:46:04,081 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:46:04,081 - INFO - Found 20 films for query 'Venom'
+2025-05-22 14:46:04,081 - INFO - Search result #1: Веном / Venom (2018)
+2025-05-22 14:46:04,081 - INFO - Search result #2: Веном: Последний танец / Venom: The Last Dance (2024)
+2025-05-22 14:46:04,081 - INFO - Search result #3: Веном 2 / Venom: Let There Be Carnage (2021)
+2025-05-22 14:46:04,081 - INFO - Searching for exact matches with terms: ['веном', 'venom']
+2025-05-22 14:46:04,081 - INFO - Found exact title match: Веном
+2025-05-22 14:46:04,082 - INFO - Found exact match for 'Venom': Веном
+2025-05-22 14:46:04,082 - INFO - Fetching film details for ID: 463634
+2025-05-22 14:46:04,130 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:46:04,130 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 14:46:04,130 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 14:46:04,130 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 14:46:04,130 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:46:04,131 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 14:46:04,197 - INFO - Successfully fetched details for film ID: 463634
+2025-05-22 14:46:04,198 - INFO - Poster URL for 'Venom': https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 14:46:04,200 - INFO - Movie data for 'Venom' saved to cache
+2025-05-22 14:46:04,200 - INFO - Saved movie data to cache for 'Venom'
+2025-05-22 14:46:04,200 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:46:04,200 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:46:04,203 - INFO - Updated stats for movie 'Веном' for user 1601735530
+2025-05-22 14:46:04,204 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 14:46:04,204 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 14:46:04,204 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 14:46:04,204 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 14:46:04,511 - INFO - Poster for movie 463634 saved to cache
+2025-05-22 14:46:04,511 - INFO - Poster saved to cache and loaded for movie ID: 463634
+2025-05-22 14:46:04,512 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 14:46:05,066 - INFO - Постер успешно отправлен
+2025-05-22 14:46:05,066 - INFO - Update id=965058797 is handled. Duration 1203 ms by bot id=7535140306
+2025-05-22 14:46:14,014 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 14:46:14,016 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 14:46:14,086 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:46:14,086 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BD%D0%B5%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:46:14,206 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:46:14,206 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df597de79081512651bdcb8cbfd85788/ (Город, в котором меня нет...)
+2025-05-22 14:46:14,206 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e54354014cf53cb6f8dfe5114aeb6873/ (Город.в котором меня нет ...)
+2025-05-22 14:46:14,206 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b527507906f0325fc87c8c55205714b1/ (Город, в котором меня нет...)
+2025-05-22 14:46:14,207 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:46:14,207 - INFO - Rutube links for 'Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me' saved to cache
+2025-05-22 14:46:14,664 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:46:14,665 - INFO - Found 20 films for query 'город в котором меня нет'
+2025-05-22 14:46:14,665 - INFO - Search result #1: Город, в котором меня нет / Boku dake ga inai machi (2016)
+2025-05-22 14:46:14,665 - INFO - Search result #2: Город, в котором меня нет / Boku dake ga inai machi (2017)
+2025-05-22 14:46:14,665 - INFO - Search result #3: Город, в котором меня нет / Bokudake ga inai machi (2016)
+2025-05-22 14:46:14,666 - INFO - Searching for exact matches with terms: ['город в котором меня нет']
+2025-05-22 14:46:14,666 - INFO - No exact match found, using first result
+2025-05-22 14:46:14,666 - INFO - Using first result for 'город в котором меня нет': Город, в котором меня нет
+2025-05-22 14:46:14,666 - INFO - Fetching film details for ID: 957840
+2025-05-22 14:46:14,769 - INFO - Successfully fetched details for film ID: 957840
+2025-05-22 14:46:14,770 - INFO - Poster URL for 'город в котором меня нет': https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 14:46:14,771 - INFO - Movie data for 'город в котором меня нет' saved to cache
+2025-05-22 14:46:14,771 - INFO - Saved movie data to cache for 'город в котором меня нет'
+2025-05-22 14:46:14,772 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:46:14,772 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:46:14,774 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 14:46:14,775 - INFO - Добавлена ссылка 1: Город, в котором меня нет (дорама, 2016) (из поиска)
+2025-05-22 14:46:14,775 - INFO - Добавлена ссылка 2: Город.в котором меня нет Русский Триллер /фильм\ (из поиска)
+2025-05-22 14:46:14,775 - INFO - Добавлена ссылка 3: Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me (из поиска)
+2025-05-22 14:46:14,775 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 14:46:15,021 - INFO - Poster for movie 957840 saved to cache
+2025-05-22 14:46:15,021 - INFO - Poster saved to cache and loaded for movie ID: 957840
+2025-05-22 14:46:15,021 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 14:46:15,633 - INFO - Постер успешно отправлен
+2025-05-22 14:46:15,634 - INFO - Update id=965058798 is handled. Duration 1620 ms by bot id=7535140306
+2025-05-22 14:46:46,118 - INFO - Поиск фильма: 'истребитель демонов' от пользователя 1601735530
+2025-05-22 14:46:46,122 - INFO - Added search from user 1601735530: истребитель демонов
+2025-05-22 14:46:46,197 - INFO - Searching Kinopoisk for: 'истребитель демонов' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:46:46,198 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B8%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:46:46,322 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:46:46,322 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a7c24fdcde34f9983273cf33d76a7a5a/ (Клинок, рассекающий демон...)
+2025-05-22 14:46:46,322 - INFO - Найдено видео на Rutube: https://rutube.ru/video/234d3b374b133e18a0484f082cd314eb/ (Аниме Истребитель демонов...)
+2025-05-22 14:46:46,322 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e1c15ec11cae0a699d8d009d2f9e9404/ (Аниме Истребитель демонов...)
+2025-05-22 14:46:46,322 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:46:46,323 - INFO - Rutube links for 'Аниме Истребитель демонов — 4 сезон 6 серия / Kimetsu no Yaiba' saved to cache
+2025-05-22 14:46:46,622 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:46:46,623 - INFO - Found 18 films for query 'истребитель демонов'
+2025-05-22 14:46:46,623 - INFO - Search result #1: Истребитель демонов / Kimetsu no Yaiba (2019)
+2025-05-22 14:46:46,623 - INFO - Search result #2: Истребитель демонов: Поезд «Бесконечный» / Kimetsu no Yaiba Movie: Mugen Ressha-hen (2020)
+2025-05-22 14:46:46,623 - INFO - Search result #3: Истребитель демонов: На тренировку столпов / Kimetsu no Yaiba: Hashira Geiko-hen (2024)
+2025-05-22 14:46:46,624 - INFO - Searching for exact matches with terms: ['истребитель демонов']
+2025-05-22 14:46:46,624 - INFO - Found exact title match: Истребитель демонов
+2025-05-22 14:46:46,624 - INFO - Found exact match for 'истребитель демонов': Истребитель демонов
+2025-05-22 14:46:46,624 - INFO - Fetching film details for ID: 1220920
+2025-05-22 14:46:46,720 - INFO - Successfully fetched details for film ID: 1220920
+2025-05-22 14:46:46,720 - INFO - Poster URL for 'истребитель демонов': https://kinopoiskapiunofficial.tech/images/posters/kp/1220920.jpg
+2025-05-22 14:46:46,722 - INFO - Movie data for 'истребитель демонов' saved to cache
+2025-05-22 14:46:46,722 - INFO - Saved movie data to cache for 'истребитель демонов'
+2025-05-22 14:46:46,722 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:46:46,722 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:46:46,726 - INFO - Updated stats for movie 'Истребитель демонов' for user 1601735530
+2025-05-22 14:46:46,727 - INFO - Добавлена ссылка 1: Клинок, рассекающий демонов: Бесконечный поезд (из поиска)
+2025-05-22 14:46:46,727 - INFO - Добавлена ссылка 2: Аниме Истребитель демонов — 1 сезон 16 серия / Kimetsu no Yaiba (из поиска)
+2025-05-22 14:46:46,727 - INFO - Добавлена ссылка 3: Аниме Истребитель демонов — 4 сезон 6 серия / Kimetsu no Yaiba (из поиска)
+2025-05-22 14:46:46,727 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/1220920.jpg
+2025-05-22 14:46:47,033 - INFO - Poster for movie 1220920 saved to cache
+2025-05-22 14:46:47,033 - INFO - Poster saved to cache and loaded for movie ID: 1220920
+2025-05-22 14:46:47,033 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/1220920.jpg
+2025-05-22 14:46:47,425 - INFO - Постер успешно отправлен
+2025-05-22 14:46:47,425 - INFO - Update id=965058799 is handled. Duration 1307 ms by bot id=7535140306
+2025-05-22 14:47:21,484 - INFO - Поиск фильма: 'Мстители: война бесконечности' от пользователя 1601735530
+2025-05-22 14:47:21,487 - INFO - Added search from user 1601735530: Мстители: война бесконечности
+2025-05-22 14:47:21,567 - INFO - Searching Kinopoisk for: 'Мстители: война бесконечности' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:47:21,568 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%9C%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B8%3A%20%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:47:21,751 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:47:21,752 - INFO - Found 2 films for query 'Мстители: война бесконечности'
+2025-05-22 14:47:21,752 - INFO - Search result #1: Мстители: Война бесконечности / Avengers: Infinity War (2018)
+2025-05-22 14:47:21,752 - INFO - Search result #2: Мстители: Финал / Avengers: Endgame (2019)
+2025-05-22 14:47:21,752 - INFO - Searching for exact matches with terms: ['мстители: война бесконечности']
+2025-05-22 14:47:21,753 - INFO - Found exact title match: Мстители: Война бесконечности
+2025-05-22 14:47:21,753 - INFO - Found exact match for 'Мстители: война бесконечности': Мстители: Война бесконечности
+2025-05-22 14:47:21,753 - INFO - Fetching film details for ID: 843649
+2025-05-22 14:47:21,830 - INFO - Successfully fetched details for film ID: 843649
+2025-05-22 14:47:21,830 - INFO - Poster URL for 'Мстители: война бесконечности': https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 14:47:21,830 - INFO - Movie data for 'Мстители: война бесконечности' saved to cache
+2025-05-22 14:47:21,830 - INFO - Saved movie data to cache for 'Мстители: война бесконечности'
+2025-05-22 14:47:22,376 - INFO - Rutube API: получено 98 результатов
+2025-05-22 14:47:22,377 - INFO - Найдено видео на Rutube: https://rutube.ru/video/13ab8d24ce9e9c8119b4d67af9daf482/ (Мстители: Война бесконечн...)
+2025-05-22 14:47:22,377 - INFO - Найдено видео на Rutube: https://rutube.ru/video/d8af7cdd8ecb49c7d242133cbdc68480/ (Мстители: Война бесконечн...)
+2025-05-22 14:47:22,377 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3f245f9083ce713acde0ff0d3446955e/ (Мстители 3 Война бесконеч...)
+2025-05-22 14:47:22,377 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:47:22,379 - INFO - Rutube links for 'Мстители 3 Война бесконечности (фильм, 2018)' saved to cache
+2025-05-22 14:47:22,379 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:47:22,379 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:47:22,381 - INFO - Updated stats for movie 'Мстители: Война бесконечности' for user 1601735530
+2025-05-22 14:47:22,382 - INFO - Добавлена ссылка 1: Мстители: Война бесконечности (фильм, 2018) (из поиска)
+2025-05-22 14:47:22,382 - INFO - Добавлена ссылка 2: Мстители: Война бесконечности (Фильм 4), 2018 года, смотреть онлайн бесплатно в хорошем качестве (из поиска)
+2025-05-22 14:47:22,382 - INFO - Добавлена ссылка 3: Мстители 3 Война бесконечности (фильм, 2018) (из поиска)
+2025-05-22 14:47:22,382 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 14:47:22,653 - INFO - Poster for movie 843649 saved to cache
+2025-05-22 14:47:22,653 - INFO - Poster saved to cache and loaded for movie ID: 843649
+2025-05-22 14:47:22,653 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 14:47:23,065 - INFO - Постер успешно отправлен
+2025-05-22 14:47:23,065 - INFO - Update id=965058800 is handled. Duration 1582 ms by bot id=7535140306
+2025-05-22 14:47:31,936 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 14:47:31,939 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 14:47:32,037 - INFO - 🔄 Используем кэшированные данные для фильма 'Город, в котором меня нет' (ID: 957840)
+2025-05-22 14:47:32,037 - INFO - Returning cached movie data for 'город в котором меня нет'
+2025-05-22 14:47:32,038 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BD%D0%B5%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:47:32,180 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:47:32,180 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df597de79081512651bdcb8cbfd85788/ (Город, в котором меня нет...)
+2025-05-22 14:47:32,180 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e54354014cf53cb6f8dfe5114aeb6873/ (Город.в котором меня нет ...)
+2025-05-22 14:47:32,180 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b527507906f0325fc87c8c55205714b1/ (Город, в котором меня нет...)
+2025-05-22 14:47:32,181 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:47:32,182 - INFO - Rutube links for 'Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me' saved to cache
+2025-05-22 14:47:32,182 - INFO - Получены данные с Кинопоиска (данные из кэша): Да
+2025-05-22 14:47:32,182 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:47:32,186 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 14:47:32,187 - INFO - Добавлена ссылка 1: Город, в котором меня нет (дорама, 2016) (из поиска)
+2025-05-22 14:47:32,187 - INFO - Добавлена ссылка 2: Город.в котором меня нет Русский Триллер /фильм\ (из поиска)
+2025-05-22 14:47:32,187 - INFO - Добавлена ссылка 3: Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me (из поиска)
+2025-05-22 14:47:32,187 - INFO - Using cached poster for movie 957840
+2025-05-22 14:47:32,187 - INFO - Using cached poster for movie: Город, в котором меня нет
+2025-05-22 14:47:32,542 - INFO - Постер успешно отправлен
+2025-05-22 14:47:32,542 - INFO - Update id=965058801 is handled. Duration 607 ms by bot id=7535140306
+2025-05-22 14:47:38,311 - INFO - Поиск фильма: 'как витька чеснок вез леху штыря в дом инвалидов' от пользователя 1601735530
+2025-05-22 14:47:38,313 - INFO - Added search from user 1601735530: как витька чеснок вез леху штыря в дом инвалидов
+2025-05-22 14:47:38,384 - INFO - Searching Kinopoisk for: 'как витька чеснок вез леху штыря в дом инвалидов' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 14:47:38,385 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%B0%D0%BA%20%D0%B2%D0%B8%D1%82%D1%8C%D0%BA%D0%B0%20%D1%87%D0%B5%D1%81%D0%BD%D0%BE%D0%BA%20%D0%B2%D0%B5%D0%B7%20%D0%BB%D0%B5%D1%85%D1%83%20%D1%88%D1%82%D1%8B%D1%80%D1%8F%20%D0%B2%20%D0%B4%D0%BE%D0%BC%20%D0%B8%D0%BD%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 14:47:38,589 - INFO - Kinopoisk API response status: 200
+2025-05-22 14:47:38,589 - INFO - Found 1 films for query 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 14:47:38,590 - INFO - Search result #1: Как Витька Чеснок вёз Лёху Штыря в дом инвалидов /  (2017)
+2025-05-22 14:47:38,590 - INFO - Searching for exact matches with terms: ['как витька чеснок вез леху штыря в дом инвалидов']
+2025-05-22 14:47:38,590 - INFO - No exact match found, using first result
+2025-05-22 14:47:38,591 - INFO - Using first result for 'как витька чеснок вез леху штыря в дом инвалидов': Как Витька Чеснок вёз Лёху Штыря в дом инвалидов
+2025-05-22 14:47:38,591 - INFO - Fetching film details for ID: 909700
+2025-05-22 14:47:38,680 - INFO - Successfully fetched details for film ID: 909700
+2025-05-22 14:47:38,681 - INFO - Poster URL for 'как витька чеснок вез леху штыря в дом инвалидов': https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 14:47:38,684 - INFO - Movie data for 'как витька чеснок вез леху штыря в дом инвалидов' saved to cache
+2025-05-22 14:47:38,684 - INFO - Saved movie data to cache for 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 14:47:39,786 - INFO - Rutube API: получено 100 результатов
+2025-05-22 14:47:39,787 - INFO - Найдено видео на Rutube: https://rutube.ru/video/7928493a0afdf98535c580249152591d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 14:47:39,787 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8420828a1c652110a831406ab9ba739d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 14:47:39,787 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b6b7312e9252995f37a860aa9f1bd27a/ (Глубокий смысл фильма «Ка...)
+2025-05-22 14:47:39,788 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 14:47:39,789 - INFO - Rutube links for 'Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов»' saved to cache
+2025-05-22 14:47:39,789 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 14:47:39,790 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 14:47:39,792 - INFO - Updated stats for movie 'Как Витька Чеснок вёз Лёху Штыря в дом инвалидов' for user 1601735530
+2025-05-22 14:47:39,793 - INFO - Добавлена ссылка 1: Как Витька Чеснок вез Леху Штыря в дом инвалидов (2017) (из поиска)
+2025-05-22 14:47:39,793 - INFO - Добавлена ссылка 2: Как Витька Чеснок вез Леху Штыря в дом инвалидов 2017 720p via Skyload (из поиска)
+2025-05-22 14:47:39,793 - INFO - Добавлена ссылка 3: Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов» (из поиска)
+2025-05-22 14:47:39,793 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 14:47:40,122 - INFO - Poster for movie 909700 saved to cache
+2025-05-22 14:47:40,122 - INFO - Poster saved to cache and loaded for movie ID: 909700
+2025-05-22 14:47:40,123 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 14:47:40,682 - INFO - Постер успешно отправлен
+2025-05-22 14:47:40,682 - INFO - Update id=965058802 is handled. Duration 2371 ms by bot id=7535140306

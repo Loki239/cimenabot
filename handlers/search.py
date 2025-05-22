@@ -147,20 +147,27 @@ async def handle_message(message: Message, bot: Bot, db: Optional[Database] = No
         countries = ", ".join([c["country"] for c in kinopoisk_data.get("countries", [])])
         film_length = kinopoisk_data.get("filmLength", "Не указана")
 
-        response_parts.append(f"🎬 <b>{html.escape(title)} ({year})</b>")
-        response_parts.append(f"<b>Жанр:</b> {html.escape(genres)}")
-        response_parts.append(f"<b>Страна:</b> {html.escape(countries)}")
+        # Safe html.escape - handle None values
+        title_safe = html.escape(str(title)) if title is not None else "Без названия"
+        genres_safe = html.escape(str(genres)) if genres is not None else "Не указан"
+        countries_safe = html.escape(str(countries)) if countries is not None else "Не указана"
+        description_safe = html.escape(str(description)) if description is not None else "Описание отсутствует"
+
+        response_parts.append(f"🎬 <b>{title_safe} ({year})</b>")
+        response_parts.append(f"<b>Жанр:</b> {genres_safe}")
+        response_parts.append(f"<b>Страна:</b> {countries_safe}")
         if film_length and film_length > 0:
             response_parts.append(f"<b>Длительность:</b> {film_length} мин.")
         if rating_kp:
             response_parts.append(f"<b>Рейтинг Кинопоиска:</b> {rating_kp} {rating_stars(rating_kp)}")
         response_parts.append(separator())
-        response_parts.append(f"<i>{html.escape(description)}</i>")
+        response_parts.append(f"<i>{description_safe}</i>")
         
         image_url = kinopoisk_data.get("posterUrlPreview")
 
     if links_on and not video_links and not kinopoisk_data: # Если искали ссылки, но ничего не нашли (даже инфо о фильме)
-        response_parts.append(f"😔 К сожалению, по запросу <b>{html.escape(query)}</b> ничего не найдено ни на Кинопоиске, ни на Rutube.")
+        query_safe = html.escape(str(query)) if query is not None else ""
+        response_parts.append(f"😔 К сожалению, по запросу <b>{query_safe}</b> ничего не найдено ни на Кинопоиске, ни на Rutube.")
     elif links_on and not video_links and kinopoisk_data: # Если инфо есть, но ссылок нет
         response_parts.append(separator("Ссылки на просмотр"))
         response_parts.append("ℹ К сожалению, прямых ссылок на Rutube для этого фильма/сериала не найдено.")
@@ -176,8 +183,11 @@ async def handle_message(message: Message, bot: Bot, db: Optional[Database] = No
             if not url.startswith('http'):
                 url = 'https://' + url
                 
+            # Safe html escape
+            name_safe = html.escape(str(name)) if name is not None else "Видео"
+                
             # Добавляем текстовую ссылку
-            response_parts.append(f"{i}. <a href='{url}'>{html.escape(name)}</a>")
+            response_parts.append(f"{i}. <a href='{url}'>{name_safe}</a>")
             
             # Log for debugging
             from_cache = link_info.get('from_cache', False)
@@ -420,4 +430,5 @@ async def handle_message(message: Message, bot: Bot, db: Optional[Database] = No
                             disable_web_page_preview=False)
     else:
         await loading_msg.delete()
-        await message.answer(f"😔 Не удалось обработать ваш запрос <b>{html.escape(query)}</b>. Попробуйте позже.", parse_mode=ParseMode.HTML) 
+        query_safe = html.escape(str(query)) if query is not None else ""
+        await message.answer(f"😔 Не удалось обработать ваш запрос <b>{query_safe}</b>. Попробуйте позже.", parse_mode=ParseMode.HTML) 

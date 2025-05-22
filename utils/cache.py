@@ -216,7 +216,7 @@ def save_poster_to_cache(movie_id, poster_data):
         logging.error(f"Failed to save poster to cache: {str(e)}")
         return None
 
-async def clear_cache() -> str:
+async def clear_cache() -> int:
     """Clear all cache directories and files"""
     try:
         # Clear poster directory
@@ -229,11 +229,11 @@ async def clear_cache() -> str:
         cleared_rutube = await clear_rutube()
         
         total_cleared = cleared_posters + cleared_movie_data + cleared_rutube
-        logging.info("Cleared all cache: %s files", total_cleared)
-        return f"Cleared {total_cleared} cached items"
+        logging.info(f"Cleared all cache: {total_cleared} files")
+        return total_cleared
     except Exception as e:
-        logging.error("Failed to clear cache: %s", e)
-        return f"Error clearing cache: {e}"
+        logging.error(f"Failed to clear cache: {e}")
+        return 0
 
 async def clear_posters() -> int:
     """Clear poster cache"""
@@ -258,26 +258,46 @@ async def clear_movie_data() -> int:
     """Clear movie data cache"""
     try:
         if os.path.exists(MOVIE_DATA_CACHE):
+            # Count the number of entries before clearing
+            with open(MOVIE_DATA_CACHE, 'r', encoding='utf-8') as f:
+                try:
+                    data = json.load(f)
+                    count = len(data)
+                except json.JSONDecodeError:
+                    count = 0
+            
+            # Clear the cache
             with open(MOVIE_DATA_CACHE, 'w', encoding='utf-8') as f:
                 json.dump({}, f)
-            logging.info("Cleared movie data cache")
-            return 1
+            
+            logging.info(f"Cleared movie data cache ({count} entries)")
+            return count
         return 0
     except Exception as e:
-        logging.error("Failed to clear movie data: %s", e)
+        logging.error(f"Failed to clear movie data: {e}")
         return 0
 
 async def clear_rutube() -> int:
     """Clear Rutube links cache"""
     try:
         if os.path.exists(RUTUBE_CACHE):
+            # Count the number of entries before clearing
+            with open(RUTUBE_CACHE, 'r', encoding='utf-8') as f:
+                try:
+                    data = json.load(f)
+                    count = len(data)
+                except json.JSONDecodeError:
+                    count = 0
+            
+            # Clear the cache
             with open(RUTUBE_CACHE, 'w', encoding='utf-8') as f:
                 json.dump({}, f)
-            logging.info("Cleared Rutube links cache")
-            return 1
+            
+            logging.info(f"Cleared Rutube links cache ({count} entries)")
+            return count
         return 0
     except Exception as e:
-        logging.error("Failed to clear Rutube links: %s", e)
+        logging.error(f"Failed to clear Rutube links: {e}")
         return 0
 
 # Export all cache clear functions
