@@ -24,3 +24,4 @@ var/
 *.egg
 *.db
 *.sqlite3 
+.jpg

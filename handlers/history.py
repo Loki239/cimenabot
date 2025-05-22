@@ -36,7 +36,7 @@ async def show_history(message: Message, db: Optional[Database] = None):
         
     # Check if user is None
     if message.from_user is None:
-        await message.answer("Не удалось определить пользователя.")
+        await message.answer("Не удалось определить пользователя.", disable_web_page_preview=True)
         return
         
     user_id = message.from_user.id
@@ -45,7 +45,7 @@ async def show_history(message: Message, db: Optional[Database] = None):
     history = await db.get_search_history(user_id)
     
     if not history:
-        await message.answer("У вас пока нет истории поиска.")
+        await message.answer("У вас пока нет истории поиска.", disable_web_page_preview=True)
         return
     
     response = ["<b>История поиска:</b>"]
@@ -54,7 +54,7 @@ async def show_history(message: Message, db: Optional[Database] = None):
         timestamp = format_datetime(item["timestamp"])
         response.append(f"{i}. {query} - <i>{timestamp}</i>")
     
-    await message.answer("\n".join(response), parse_mode=ParseMode.HTML)
+    await message.answer("\n".join(response), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
 # Обработчик команды /stats
 @router.message(F.text == "/stats")
@@ -72,7 +72,7 @@ async def show_stats(message: Message, db: Optional[Database] = None):
         
     # Check if user is None
     if message.from_user is None:
-        await message.answer("Не удалось определить пользователя.")
+        await message.answer("Не удалось определить пользователя.", disable_web_page_preview=True)
         return
         
     user_id = message.from_user.id
@@ -81,7 +81,7 @@ async def show_stats(message: Message, db: Optional[Database] = None):
     stats = await db.get_movie_stats(user_id)
     
     if not stats:
-        await message.answer("У вас пока нет статистики просмотров.")
+        await message.answer("У вас пока нет статистики просмотров.", disable_web_page_preview=True)
         return
     
     response = ["<b>Ваша статистика просмотров:</b>"]
@@ -92,4 +92,4 @@ async def show_stats(message: Message, db: Optional[Database] = None):
         count = movie["count"]
         response.append(f"{i}. {title}{year} - {count} {pluralize_times(count)}")
     
-    await message.answer("\n".join(response), parse_mode=ParseMode.HTML) 
+    await message.answer("\n".join(response), parse_mode=ParseMode.HTML, disable_web_page_preview=True) 

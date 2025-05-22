@@ -171,6 +171,12 @@ async def handle_message(message: Message, bot: Bot, db: Optional[Database] = No
     elif links_on and not video_links and kinopoisk_data: # Если инфо есть, но ссылок нет
         response_parts.append(separator("Ссылки на просмотр"))
         response_parts.append("ℹ К сожалению, прямых ссылок на Rutube для этого фильма/сериала не найдено.")
+        
+        # Добавляем ссылку на Кинопоиск, если есть ID фильма
+        if kinopoisk_data.get("kinopoiskId"):
+            kp_id = kinopoisk_data.get("kinopoiskId")
+            kp_title = kinopoisk_data.get("nameRu", "фильм")
+            response_parts.append(f"\n<b>Кинопоиск:</b> <a href='https://www.kinopoisk.ru/film/{kp_id}/'>Страница «{kp_title}» на Кинопоиске</a>")
     elif video_links: # Если ссылки есть
         response_parts.append(separator("Ссылки на просмотр (Rutube)"))
         
@@ -193,6 +199,12 @@ async def handle_message(message: Message, bot: Bot, db: Optional[Database] = No
             from_cache = link_info.get('from_cache', False)
             cache_status = "из кэша" if from_cache else "из поиска"
             logging.info(f"Добавлена ссылка {i}: {name} ({cache_status})")
+        
+        # Добавляем ссылку на Кинопоиск, если есть ID фильма
+        if kinopoisk_data and kinopoisk_data.get("kinopoiskId"):
+            kp_id = kinopoisk_data.get("kinopoiskId")
+            kp_title = kinopoisk_data.get("nameRu", "фильм")
+            response_parts.append(f"\n<b>Кинопоиск:</b> <a href='https://www.kinopoisk.ru/film/{kp_id}/'>Страница «{kp_title}» на Кинопоиске</a>")
         
         # Создаем пустую клавиатуру (нам не нужны кнопки)
         rutube_keyboard = None

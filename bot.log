@@ -7001,3 +7001,752 @@ AttributeError: 'NoneType' object has no attribute 'replace'
 2025-05-22 14:47:40,123 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
 2025-05-22 14:47:40,682 - INFO - Постер успешно отправлен
 2025-05-22 14:47:40,682 - INFO - Update id=965058802 is handled. Duration 2371 ms by bot id=7535140306
+2025-05-22 15:18:18,214 - WARNING - Stale PID file found. Previous process (PID 89521) is not running.
+2025-05-22 15:18:18,214 - INFO - PID file created with process ID 89915
+2025-05-22 15:18:18,214 - INFO - Cache directories initialized
+2025-05-22 15:18:18,214 - INFO - Инициализация базы данных
+2025-05-22 15:18:18,217 - INFO - Database initialized
+2025-05-22 15:18:18,361 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:18:18,362 - INFO - Запуск бота
+2025-05-22 15:18:18,362 - INFO - Start polling
+2025-05-22 15:18:18,404 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:19:37,571 - WARNING - Unauthorized attempt to clear cache by user 1601735530
+2025-05-22 15:19:37,717 - INFO - Update id=965058803 is handled. Duration 147 ms by bot id=7535140306
+2025-05-22 15:20:23,202 - INFO - Update id=965058804 is handled. Duration 1 ms by bot id=7535140306
+2025-05-22 15:20:42,803 - WARNING - Unauthorized attempt to clear cache by user 1601735530
+2025-05-22 15:20:42,859 - INFO - Update id=965058805 is handled. Duration 56 ms by bot id=7535140306
+2025-05-22 15:21:07,956 - WARNING - Received SIGINT signal
+2025-05-22 15:21:07,959 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:21:07,959 - INFO - Polling stopped
+2025-05-22 15:25:05,289 - WARNING - Stale PID file found. Previous process (PID 89915) is not running.
+2025-05-22 15:25:05,290 - INFO - PID file created with process ID 90084
+2025-05-22 15:25:05,290 - INFO - Cache directories initialized
+2025-05-22 15:25:05,290 - INFO - Инициализация базы данных
+2025-05-22 15:25:05,293 - INFO - Database initialized
+2025-05-22 15:25:05,455 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:25:05,455 - INFO - Запуск бота
+2025-05-22 15:25:05,455 - INFO - Start polling
+2025-05-22 15:25:05,504 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:25:15,317 - WARNING - Unauthorized attempt to clear cache by user 1601735530
+2025-05-22 15:25:15,490 - INFO - Update id=965058806 is handled. Duration 173 ms by bot id=7535140306
+2025-05-22 15:25:51,721 - WARNING - Received SIGINT signal
+2025-05-22 15:25:51,722 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:25:51,722 - INFO - Polling stopped
+2025-05-22 15:25:53,343 - WARNING - Stale PID file found. Previous process (PID 90084) is not running.
+2025-05-22 15:25:53,344 - INFO - PID file created with process ID 90130
+2025-05-22 15:25:53,344 - INFO - Cache directories initialized
+2025-05-22 15:25:53,344 - INFO - Инициализация базы данных
+2025-05-22 15:25:53,345 - INFO - Database initialized
+2025-05-22 15:25:53,505 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:25:53,505 - INFO - Запуск бота
+2025-05-22 15:25:53,505 - INFO - Start polling
+2025-05-22 15:25:53,558 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:25:57,397 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:25:57,398 - INFO - Cleared 5 poster files
+2025-05-22 15:25:57,399 - INFO - Cleared movie data cache (5 entries)
+2025-05-22 15:25:57,400 - INFO - Cleared Rutube links cache (5 entries)
+2025-05-22 15:25:57,400 - INFO - Cleared all cache: 15 files
+2025-05-22 15:25:57,575 - INFO - Update id=965058807 is handled. Duration 178 ms by bot id=7535140306
+2025-05-22 15:26:07,214 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:26:07,218 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:26:07,319 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:26:07,320 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BD%D0%B5%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:26:07,451 - INFO - Rutube API: получено 100 результатов
+2025-05-22 15:26:07,451 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df597de79081512651bdcb8cbfd85788/ (Город, в котором меня нет...)
+2025-05-22 15:26:07,451 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e54354014cf53cb6f8dfe5114aeb6873/ (Город.в котором меня нет ...)
+2025-05-22 15:26:07,451 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b527507906f0325fc87c8c55205714b1/ (Город, в котором меня нет...)
+2025-05-22 15:26:07,452 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:26:07,452 - INFO - Rutube links for 'Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me' saved to cache
+2025-05-22 15:26:07,881 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:26:07,882 - INFO - Found 20 films for query 'город в котором меня нет'
+2025-05-22 15:26:07,882 - INFO - Search result #1: Город, в котором меня нет / Boku dake ga inai machi (2016)
+2025-05-22 15:26:07,882 - INFO - Search result #2: Город, в котором меня нет / Boku dake ga inai machi (2017)
+2025-05-22 15:26:07,882 - INFO - Search result #3: Город, в котором меня нет / Bokudake ga inai machi (2016)
+2025-05-22 15:26:07,883 - INFO - Searching for exact matches with terms: ['город в котором меня нет']
+2025-05-22 15:26:07,883 - INFO - No exact match found, using first result
+2025-05-22 15:26:07,883 - INFO - Using first result for 'город в котором меня нет': Город, в котором меня нет
+2025-05-22 15:26:07,883 - INFO - Fetching film details for ID: 957840
+2025-05-22 15:26:08,020 - INFO - Successfully fetched details for film ID: 957840
+2025-05-22 15:26:08,021 - INFO - Poster URL for 'город в котором меня нет': https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:26:08,022 - INFO - Movie data for 'город в котором меня нет' saved to cache
+2025-05-22 15:26:08,022 - INFO - Saved movie data to cache for 'город в котором меня нет'
+2025-05-22 15:26:08,023 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:26:08,023 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:26:08,028 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:26:08,029 - INFO - Добавлена ссылка 1: Город, в котором меня нет (дорама, 2016) (из поиска)
+2025-05-22 15:26:08,029 - INFO - Добавлена ссылка 2: Город.в котором меня нет Русский Триллер /фильм\ (из поиска)
+2025-05-22 15:26:08,029 - INFO - Добавлена ссылка 3: Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me (из поиска)
+2025-05-22 15:26:08,029 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:26:08,310 - INFO - Poster for movie 957840 saved to cache
+2025-05-22 15:26:08,310 - INFO - Poster saved to cache and loaded for movie ID: 957840
+2025-05-22 15:26:08,310 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:26:08,684 - INFO - Постер успешно отправлен
+2025-05-22 15:26:08,685 - INFO - Update id=965058808 is handled. Duration 1471 ms by bot id=7535140306
+2025-05-22 15:29:42,127 - WARNING - Received SIGINT signal
+2025-05-22 15:29:42,128 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:29:42,128 - INFO - Polling stopped
+2025-05-22 15:29:43,764 - WARNING - Stale PID file found. Previous process (PID 90130) is not running.
+2025-05-22 15:29:43,764 - INFO - PID file created with process ID 90294
+2025-05-22 15:29:43,764 - INFO - Cache directories initialized
+2025-05-22 15:29:43,764 - INFO - Инициализация базы данных
+2025-05-22 15:29:43,766 - INFO - Database initialized
+2025-05-22 15:29:43,892 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:29:43,892 - INFO - Запуск бота
+2025-05-22 15:29:43,892 - INFO - Start polling
+2025-05-22 15:29:43,930 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:29:57,535 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:29:57,538 - INFO - Cleared 1 poster files
+2025-05-22 15:29:57,539 - INFO - Cleared movie data cache (1 entries)
+2025-05-22 15:29:57,540 - INFO - Cleared Rutube links cache (1 entries)
+2025-05-22 15:29:57,540 - INFO - Cleared all cache: 3 files
+2025-05-22 15:29:57,766 - INFO - Update id=965058809 is handled. Duration 232 ms by bot id=7535140306
+2025-05-22 15:30:05,165 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:30:05,168 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:30:05,223 - INFO - Special case detected for 'город в котором меня нет' - returning anime series data
+2025-05-22 15:30:05,224 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BD%D0%B5%D1%82%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:30:05,379 - INFO - Rutube API: получено 100 результатов
+2025-05-22 15:30:05,379 - INFO - Найдено видео на Rutube: https://rutube.ru/video/df597de79081512651bdcb8cbfd85788/ (Город, в котором меня нет...)
+2025-05-22 15:30:05,379 - INFO - Найдено видео на Rutube: https://rutube.ru/video/e54354014cf53cb6f8dfe5114aeb6873/ (Город.в котором меня нет ...)
+2025-05-22 15:30:05,379 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b527507906f0325fc87c8c55205714b1/ (Город, в котором меня нет...)
+2025-05-22 15:30:05,380 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:30:05,381 - INFO - Rutube links for 'Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me' saved to cache
+2025-05-22 15:30:05,381 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:30:05,381 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:30:05,384 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:30:05,384 - INFO - Добавлена ссылка 1: Город, в котором меня нет (дорама, 2016) (из поиска)
+2025-05-22 15:30:05,384 - INFO - Добавлена ссылка 2: Город.в котором меня нет Русский Триллер /фильм\ (из поиска)
+2025-05-22 15:30:05,384 - INFO - Добавлена ссылка 3: Город, в котором меня нет - серия 3 / Boku dake ga Inai Machi / The Town Without Me (из поиска)
+2025-05-22 15:30:05,384 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/733493.jpg
+2025-05-22 15:30:05,667 - INFO - Poster for movie 733493 saved to cache
+2025-05-22 15:30:05,668 - INFO - Poster saved to cache and loaded for movie ID: 733493
+2025-05-22 15:30:05,668 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/733493.jpg
+2025-05-22 15:30:13,273 - INFO - Постер успешно отправлен
+2025-05-22 15:30:13,275 - INFO - Update id=965058810 is handled. Duration 8110 ms by bot id=7535140306
+2025-05-22 15:32:23,547 - WARNING - Received SIGINT signal
+2025-05-22 15:32:23,549 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:32:23,549 - INFO - Polling stopped
+2025-05-22 15:32:25,228 - WARNING - Stale PID file found. Previous process (PID 90294) is not running.
+2025-05-22 15:32:25,228 - INFO - PID file created with process ID 90376
+2025-05-22 15:32:25,228 - INFO - Cache directories initialized
+2025-05-22 15:32:25,228 - INFO - Инициализация базы данных
+2025-05-22 15:32:25,229 - INFO - Database initialized
+2025-05-22 15:32:25,382 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:32:25,382 - INFO - Запуск бота
+2025-05-22 15:32:25,382 - INFO - Start polling
+2025-05-22 15:32:25,429 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:32:31,733 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:32:31,735 - INFO - Cleared 1 poster files
+2025-05-22 15:32:31,735 - INFO - Cleared movie data cache (0 entries)
+2025-05-22 15:32:31,736 - INFO - Cleared Rutube links cache (1 entries)
+2025-05-22 15:32:31,736 - INFO - Cleared all cache: 2 files
+2025-05-22 15:32:31,919 - INFO - Update id=965058811 is handled. Duration 186 ms by bot id=7535140306
+2025-05-22 15:32:39,643 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:32:39,645 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:32:39,806 - INFO - Special case detected for 'город в котором меня нет' - returning anime series data
+2025-05-22 15:32:39,807 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 15:32:39,807 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:32:39,807 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:32:39,812 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:32:39,812 - INFO - Добавлена ссылка 1: Город, в котором меня нет (аниме) - трейлер (из поиска)
+2025-05-22 15:32:39,813 - INFO - Добавлена ссылка 2: Город, в котором меня нет - Все серии аниме (рецензия) (из поиска)
+2025-05-22 15:32:39,813 - INFO - Добавлена ссылка 3: Город, в котором меня нет (Boku dake ga Inai Machi) - Обзор аниме (из поиска)
+2025-05-22 15:32:39,813 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/733493.jpg
+2025-05-22 15:32:40,084 - INFO - Poster for movie 733493 saved to cache
+2025-05-22 15:32:40,085 - INFO - Poster saved to cache and loaded for movie ID: 733493
+2025-05-22 15:32:40,085 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/733493.jpg
+2025-05-22 15:32:40,455 - INFO - Постер успешно отправлен
+2025-05-22 15:32:40,455 - INFO - Update id=965058812 is handled. Duration 813 ms by bot id=7535140306
+2025-05-22 15:34:10,871 - WARNING - Received SIGINT signal
+2025-05-22 15:34:10,872 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:34:10,873 - INFO - Polling stopped
+2025-05-22 15:34:12,616 - WARNING - Stale PID file found. Previous process (PID 90376) is not running.
+2025-05-22 15:34:12,617 - INFO - PID file created with process ID 90450
+2025-05-22 15:34:12,617 - INFO - Cache directories initialized
+2025-05-22 15:34:12,617 - INFO - Инициализация базы данных
+2025-05-22 15:34:12,618 - INFO - Database initialized
+2025-05-22 15:34:12,771 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:34:12,771 - INFO - Запуск бота
+2025-05-22 15:34:12,771 - INFO - Start polling
+2025-05-22 15:34:12,817 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:34:21,584 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:34:21,585 - INFO - Cleared 1 poster files
+2025-05-22 15:34:21,585 - INFO - Cleared movie data cache (0 entries)
+2025-05-22 15:34:21,586 - INFO - Cleared Rutube links cache (0 entries)
+2025-05-22 15:34:21,586 - INFO - Cleared all cache: 1 files
+2025-05-22 15:34:21,756 - INFO - Update id=965058813 is handled. Duration 172 ms by bot id=7535140306
+2025-05-22 15:34:29,896 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:34:29,899 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:34:29,969 - INFO - Special case detected for 'город в котором меня нет' - returning anime series data
+2025-05-22 15:34:29,969 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 15:34:29,969 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:34:29,969 - INFO - Получены видео ссылки (Rutube): 5
+2025-05-22 15:34:29,971 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:34:29,971 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 15:34:29,971 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 2 (из поиска)
+2025-05-22 15:34:29,971 - INFO - Добавлена ссылка 3: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 3 (из поиска)
+2025-05-22 15:34:29,971 - INFO - Добавлена ссылка 4: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 15:34:29,971 - INFO - Добавлена ссылка 5: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 15:34:29,972 - INFO - Загружаем постер: https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5724dc33-7105-4c3a-8e48-dd0a297c686a/300x450
+2025-05-22 15:34:30,073 - ERROR - Ошибка загрузки постера, статус: 404, URL: https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5724dc33-7105-4c3a-8e48-dd0a297c686a/300x450
+2025-05-22 15:34:30,074 - WARNING - Не удалось загрузить постер для 'Город, в котором меня нет', создаем дефолтный
+2025-05-22 15:34:30,076 - INFO - Создаем дефолтный постер для: 'Город, в котором меня нет' (2016)
+2025-05-22 15:34:31,886 - INFO - Создан дефолтный постер для 'Город, в котором меня нет'
+2025-05-22 15:34:32,132 - INFO - Постер успешно отправлен
+2025-05-22 15:34:32,133 - INFO - Удален временный файл постера: poster_3885.jpg
+2025-05-22 15:34:32,133 - INFO - Update id=965058814 is handled. Duration 2237 ms by bot id=7535140306
+2025-05-22 15:35:14,581 - WARNING - Received SIGINT signal
+2025-05-22 15:35:14,582 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:35:14,582 - INFO - Polling stopped
+2025-05-22 15:35:16,156 - WARNING - Stale PID file found. Previous process (PID 90450) is not running.
+2025-05-22 15:35:16,156 - INFO - PID file created with process ID 90510
+2025-05-22 15:35:16,156 - INFO - Cache directories initialized
+2025-05-22 15:35:16,156 - INFO - Инициализация базы данных
+2025-05-22 15:35:16,158 - INFO - Database initialized
+2025-05-22 15:35:16,311 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:35:16,311 - INFO - Запуск бота
+2025-05-22 15:35:16,311 - INFO - Start polling
+2025-05-22 15:35:16,358 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:35:19,290 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:35:19,291 - INFO - Cleared 0 poster files
+2025-05-22 15:35:19,292 - INFO - Cleared movie data cache (0 entries)
+2025-05-22 15:35:19,292 - INFO - Cleared Rutube links cache (0 entries)
+2025-05-22 15:35:19,292 - INFO - Cleared all cache: 0 files
+2025-05-22 15:35:19,494 - INFO - Update id=965058815 is handled. Duration 203 ms by bot id=7535140306
+2025-05-22 15:35:30,428 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:35:30,431 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:35:30,504 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:35:30,505 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 15:35:30,932 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:35:30,933 - INFO - Found 20 films for query 'город в котором меня нет'
+2025-05-22 15:35:30,933 - INFO - Search result #1: Город, в котором меня нет / Boku dake ga inai machi (2016)
+2025-05-22 15:35:30,934 - INFO - Search result #2: Город, в котором меня нет / Boku dake ga inai machi (2017)
+2025-05-22 15:35:30,934 - INFO - Search result #3: Город, в котором меня нет / Bokudake ga inai machi (2016)
+2025-05-22 15:35:30,935 - INFO - Searching for exact matches with terms: ['город в котором меня нет']
+2025-05-22 15:35:30,935 - INFO - No exact match found, using first result
+2025-05-22 15:35:30,936 - INFO - Using first result for 'город в котором меня нет': Город, в котором меня нет
+2025-05-22 15:35:30,936 - INFO - Fetching film details for ID: 957840
+2025-05-22 15:35:31,016 - INFO - Successfully fetched details for film ID: 957840
+2025-05-22 15:35:31,016 - INFO - Poster URL for 'город в котором меня нет': https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:35:31,018 - INFO - Movie data for 'город в котором меня нет' saved to cache
+2025-05-22 15:35:31,018 - INFO - Saved movie data to cache for 'город в котором меня нет'
+2025-05-22 15:35:31,018 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:35:31,018 - INFO - Получены видео ссылки (Rutube): 5
+2025-05-22 15:35:31,021 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:35:31,021 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 15:35:31,021 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 2 (из поиска)
+2025-05-22 15:35:31,021 - INFO - Добавлена ссылка 3: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 3 (из поиска)
+2025-05-22 15:35:31,021 - INFO - Добавлена ссылка 4: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 15:35:31,021 - INFO - Добавлена ссылка 5: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 15:35:31,022 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:35:31,311 - INFO - Poster for movie 957840 saved to cache
+2025-05-22 15:35:31,311 - INFO - Poster saved to cache and loaded for movie ID: 957840
+2025-05-22 15:35:31,311 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:35:31,645 - INFO - Постер успешно отправлен
+2025-05-22 15:35:31,646 - INFO - Update id=965058816 is handled. Duration 1219 ms by bot id=7535140306
+2025-05-22 15:37:04,122 - WARNING - Received SIGINT signal
+2025-05-22 15:37:04,123 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:37:04,123 - INFO - Polling stopped
+2025-05-22 15:37:05,781 - WARNING - Stale PID file found. Previous process (PID 90510) is not running.
+2025-05-22 15:37:05,782 - INFO - PID file created with process ID 90559
+2025-05-22 15:37:05,782 - INFO - Cache directories initialized
+2025-05-22 15:37:05,782 - INFO - Инициализация базы данных
+2025-05-22 15:37:05,783 - INFO - Database initialized
+2025-05-22 15:37:05,940 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 15:37:05,940 - INFO - Запуск бота
+2025-05-22 15:37:05,940 - INFO - Start polling
+2025-05-22 15:37:05,997 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 15:37:09,291 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 15:37:09,293 - INFO - Cleared 1 poster files
+2025-05-22 15:37:09,294 - INFO - Cleared movie data cache (1 entries)
+2025-05-22 15:37:09,295 - INFO - Cleared Rutube links cache (0 entries)
+2025-05-22 15:37:09,295 - INFO - Cleared all cache: 2 files
+2025-05-22 15:37:09,463 - INFO - Update id=965058817 is handled. Duration 172 ms by bot id=7535140306
+2025-05-22 15:37:15,004 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 15:37:15,008 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 15:37:15,106 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:37:15,107 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 15:37:15,181 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:37:15,181 - INFO - Found 20 films for query 'город в котором меня нет'
+2025-05-22 15:37:15,182 - INFO - Search result #1: Город, в котором меня нет / Boku dake ga inai machi (2016)
+2025-05-22 15:37:15,182 - INFO - Search result #2: Город, в котором меня нет / Boku dake ga inai machi (2017)
+2025-05-22 15:37:15,182 - INFO - Search result #3: Город, в котором меня нет / Bokudake ga inai machi (2016)
+2025-05-22 15:37:15,182 - INFO - Searching for exact matches with terms: ['город в котором меня нет']
+2025-05-22 15:37:15,182 - INFO - No exact match found, using first result
+2025-05-22 15:37:15,182 - INFO - Using first result for 'город в котором меня нет': Город, в котором меня нет
+2025-05-22 15:37:15,182 - INFO - Fetching film details for ID: 957840
+2025-05-22 15:37:15,268 - INFO - Successfully fetched details for film ID: 957840
+2025-05-22 15:37:15,268 - INFO - Poster URL for 'город в котором меня нет': https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:37:15,269 - INFO - Movie data for 'город в котором меня нет' saved to cache
+2025-05-22 15:37:15,269 - INFO - Saved movie data to cache for 'город в котором меня нет'
+2025-05-22 15:37:15,269 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:37:15,269 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:37:15,270 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 15:37:15,271 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 15:37:15,271 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 15:37:15,271 - INFO - Добавлена ссылка 3: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 15:37:15,271 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:37:15,548 - INFO - Poster for movie 957840 saved to cache
+2025-05-22 15:37:15,548 - INFO - Poster saved to cache and loaded for movie ID: 957840
+2025-05-22 15:37:15,548 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 15:37:15,890 - INFO - Постер успешно отправлен
+2025-05-22 15:37:15,890 - INFO - Update id=965058818 is handled. Duration 886 ms by bot id=7535140306
+2025-05-22 15:37:29,480 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 15:37:29,484 - INFO - Added search from user 1601735530: Venom
+2025-05-22 15:37:29,554 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:37:29,555 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:37:29,625 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:37:29,626 - INFO - Found 20 films for query 'Venom'
+2025-05-22 15:37:29,626 - INFO - Search result #1: Веном / Venom (2018)
+2025-05-22 15:37:29,626 - INFO - Search result #2: Веном: Последний танец / Venom: The Last Dance (2024)
+2025-05-22 15:37:29,626 - INFO - Search result #3: Веном 2 / Venom: Let There Be Carnage (2021)
+2025-05-22 15:37:29,626 - INFO - Searching for exact matches with terms: ['веном', 'venom']
+2025-05-22 15:37:29,627 - INFO - Found exact title match: Веном
+2025-05-22 15:37:29,627 - INFO - Found exact match for 'Venom': Веном
+2025-05-22 15:37:29,627 - INFO - Fetching film details for ID: 463634
+2025-05-22 15:37:29,722 - INFO - Successfully fetched details for film ID: 463634
+2025-05-22 15:37:29,723 - INFO - Poster URL for 'Venom': https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 15:37:29,724 - INFO - Movie data for 'Venom' saved to cache
+2025-05-22 15:37:29,724 - INFO - Saved movie data to cache for 'Venom'
+2025-05-22 15:37:29,746 - INFO - Rutube API: получено 100 результатов
+2025-05-22 15:37:29,746 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 15:37:29,746 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 15:37:29,746 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 15:37:29,747 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:37:29,747 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 15:37:29,748 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:37:29,748 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:37:29,750 - INFO - Updated stats for movie 'Веном' for user 1601735530
+2025-05-22 15:37:29,750 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 15:37:29,750 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 15:37:29,750 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 15:37:29,750 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 15:37:30,068 - INFO - Poster for movie 463634 saved to cache
+2025-05-22 15:37:30,068 - INFO - Poster saved to cache and loaded for movie ID: 463634
+2025-05-22 15:37:30,069 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 15:37:30,272 - INFO - Постер успешно отправлен
+2025-05-22 15:37:30,272 - INFO - Update id=965058819 is handled. Duration 792 ms by bot id=7535140306
+2025-05-22 15:38:00,640 - INFO - Поиск фильма: 'как витька чеснок вез леху штыря в дом инвалидов' от пользователя 1601735530
+2025-05-22 15:38:00,643 - INFO - Added search from user 1601735530: как витька чеснок вез леху штыря в дом инвалидов
+2025-05-22 15:38:00,850 - INFO - Searching Kinopoisk for: 'как витька чеснок вез леху штыря в дом инвалидов' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:38:00,852 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%B0%D0%BA%20%D0%B2%D0%B8%D1%82%D1%8C%D0%BA%D0%B0%20%D1%87%D0%B5%D1%81%D0%BD%D0%BE%D0%BA%20%D0%B2%D0%B5%D0%B7%20%D0%BB%D0%B5%D1%85%D1%83%20%D1%88%D1%82%D1%8B%D1%80%D1%8F%20%D0%B2%20%D0%B4%D0%BE%D0%BC%20%D0%B8%D0%BD%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:38:00,973 - INFO - Rutube API: получено 100 результатов
+2025-05-22 15:38:00,973 - INFO - Найдено видео на Rutube: https://rutube.ru/video/7928493a0afdf98535c580249152591d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 15:38:00,973 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8420828a1c652110a831406ab9ba739d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 15:38:00,973 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b6b7312e9252995f37a860aa9f1bd27a/ (Глубокий смысл фильма «Ка...)
+2025-05-22 15:38:00,974 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:38:00,974 - INFO - Rutube links for 'Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов»' saved to cache
+2025-05-22 15:38:01,055 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:38:01,055 - INFO - Found 1 films for query 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 15:38:01,056 - INFO - Search result #1: Как Витька Чеснок вёз Лёху Штыря в дом инвалидов /  (2017)
+2025-05-22 15:38:01,056 - INFO - Searching for exact matches with terms: ['как витька чеснок вез леху штыря в дом инвалидов']
+2025-05-22 15:38:01,056 - INFO - No exact match found, using first result
+2025-05-22 15:38:01,056 - INFO - Using first result for 'как витька чеснок вез леху штыря в дом инвалидов': Как Витька Чеснок вёз Лёху Штыря в дом инвалидов
+2025-05-22 15:38:01,057 - INFO - Fetching film details for ID: 909700
+2025-05-22 15:38:01,139 - INFO - Successfully fetched details for film ID: 909700
+2025-05-22 15:38:01,140 - INFO - Poster URL for 'как витька чеснок вез леху штыря в дом инвалидов': https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 15:38:01,142 - INFO - Movie data for 'как витька чеснок вез леху штыря в дом инвалидов' saved to cache
+2025-05-22 15:38:01,142 - INFO - Saved movie data to cache for 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 15:38:01,142 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:38:01,142 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:38:01,146 - INFO - Updated stats for movie 'Как Витька Чеснок вёз Лёху Штыря в дом инвалидов' for user 1601735530
+2025-05-22 15:38:01,147 - INFO - Добавлена ссылка 1: Как Витька Чеснок вез Леху Штыря в дом инвалидов (2017) (из поиска)
+2025-05-22 15:38:01,147 - INFO - Добавлена ссылка 2: Как Витька Чеснок вез Леху Штыря в дом инвалидов 2017 720p via Skyload (из поиска)
+2025-05-22 15:38:01,147 - INFO - Добавлена ссылка 3: Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов» (из поиска)
+2025-05-22 15:38:01,147 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 15:38:01,487 - INFO - Poster for movie 909700 saved to cache
+2025-05-22 15:38:01,487 - INFO - Poster saved to cache and loaded for movie ID: 909700
+2025-05-22 15:38:01,488 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 15:38:01,849 - INFO - Постер успешно отправлен
+2025-05-22 15:38:01,849 - INFO - Update id=965058820 is handled. Duration 1210 ms by bot id=7535140306
+2025-05-22 15:38:14,216 - INFO - Поиск фильма: 'Мстители: война бесконечности' от пользователя 1601735530
+2025-05-22 15:38:14,218 - INFO - Added search from user 1601735530: Мстители: война бесконечности
+2025-05-22 15:38:14,314 - INFO - Searching Kinopoisk for: 'Мстители: война бесконечности' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:38:14,314 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%9C%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B8%3A%20%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:38:14,427 - INFO - Rutube API: получено 98 результатов
+2025-05-22 15:38:14,427 - INFO - Найдено видео на Rutube: https://rutube.ru/video/13ab8d24ce9e9c8119b4d67af9daf482/ (Мстители: Война бесконечн...)
+2025-05-22 15:38:14,427 - INFO - Найдено видео на Rutube: https://rutube.ru/video/d8af7cdd8ecb49c7d242133cbdc68480/ (Мстители: Война бесконечн...)
+2025-05-22 15:38:14,427 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3f245f9083ce713acde0ff0d3446955e/ (Мстители 3 Война бесконеч...)
+2025-05-22 15:38:14,428 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:38:14,428 - INFO - Rutube links for 'Мстители 3 Война бесконечности (фильм, 2018)' saved to cache
+2025-05-22 15:38:14,505 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:38:14,506 - INFO - Found 2 films for query 'Мстители: война бесконечности'
+2025-05-22 15:38:14,506 - INFO - Search result #1: Мстители: Война бесконечности / Avengers: Infinity War (2018)
+2025-05-22 15:38:14,506 - INFO - Search result #2: Мстители: Финал / Avengers: Endgame (2019)
+2025-05-22 15:38:14,506 - INFO - Searching for exact matches with terms: ['мстители: война бесконечности']
+2025-05-22 15:38:14,507 - INFO - Found exact title match: Мстители: Война бесконечности
+2025-05-22 15:38:14,507 - INFO - Found exact match for 'Мстители: война бесконечности': Мстители: Война бесконечности
+2025-05-22 15:38:14,507 - INFO - Fetching film details for ID: 843649
+2025-05-22 15:38:14,583 - INFO - Successfully fetched details for film ID: 843649
+2025-05-22 15:38:14,583 - INFO - Poster URL for 'Мстители: война бесконечности': https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 15:38:14,584 - INFO - Movie data for 'Мстители: война бесконечности' saved to cache
+2025-05-22 15:38:14,584 - INFO - Saved movie data to cache for 'Мстители: война бесконечности'
+2025-05-22 15:38:14,584 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:38:14,584 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:38:14,586 - INFO - Updated stats for movie 'Мстители: Война бесконечности' for user 1601735530
+2025-05-22 15:38:14,586 - INFO - Добавлена ссылка 1: Мстители: Война бесконечности (фильм, 2018) (из поиска)
+2025-05-22 15:38:14,587 - INFO - Добавлена ссылка 2: Мстители: Война бесконечности (Фильм 4), 2018 года, смотреть онлайн бесплатно в хорошем качестве (из поиска)
+2025-05-22 15:38:14,587 - INFO - Добавлена ссылка 3: Мстители 3 Война бесконечности (фильм, 2018) (из поиска)
+2025-05-22 15:38:14,587 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 15:38:14,904 - INFO - Poster for movie 843649 saved to cache
+2025-05-22 15:38:14,904 - INFO - Poster saved to cache and loaded for movie ID: 843649
+2025-05-22 15:38:14,904 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/843649.jpg
+2025-05-22 15:38:15,323 - INFO - Постер успешно отправлен
+2025-05-22 15:38:15,323 - INFO - Update id=965058821 is handled. Duration 1107 ms by bot id=7535140306
+2025-05-22 15:38:23,110 - INFO - Поиск фильма: 'магия лунного света' от пользователя 1601735530
+2025-05-22 15:38:23,112 - INFO - Added search from user 1601735530: магия лунного света
+2025-05-22 15:38:23,189 - INFO - Searching Kinopoisk for: 'магия лунного света' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:38:23,190 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BC%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%BB%D1%83%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D0%B2%D0%B5%D1%82%D0%B0%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:38:23,363 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:38:23,363 - INFO - Found 2 films for query 'магия лунного света'
+2025-05-22 15:38:23,364 - INFO - Search result #1: Магия лунного света / Magic in the Moonlight (2014)
+2025-05-22 15:38:23,364 - INFO - Search result #2: Чернокнижник 2: Армагеддон / Warlock: The Armageddon (1993)
+2025-05-22 15:38:23,364 - INFO - Searching for exact matches with terms: ['магия лунного света']
+2025-05-22 15:38:23,364 - INFO - Found exact title match: Магия лунного света
+2025-05-22 15:38:23,365 - INFO - Found exact match for 'магия лунного света': Магия лунного света
+2025-05-22 15:38:23,365 - INFO - Fetching film details for ID: 759558
+2025-05-22 15:38:23,444 - INFO - Successfully fetched details for film ID: 759558
+2025-05-22 15:38:23,444 - INFO - Poster URL for 'магия лунного света': https://kinopoiskapiunofficial.tech/images/posters/kp/759558.jpg
+2025-05-22 15:38:23,446 - INFO - Movie data for 'магия лунного света' saved to cache
+2025-05-22 15:38:23,446 - INFO - Saved movie data to cache for 'магия лунного света'
+2025-05-22 15:38:24,088 - INFO - Rutube API: получено 99 результатов
+2025-05-22 15:38:24,089 - INFO - Найдено видео на Rutube: https://rutube.ru/video/39e3b2a53e1510996a60d62ac53f3396/ (Магия лунного света...)
+2025-05-22 15:38:24,089 - INFO - Найдено видео на Rutube: https://rutube.ru/video/4fcc266aa49f8a820e6bbbffcf4109be/ (Магия лунного света - Рус...)
+2025-05-22 15:38:24,089 - INFO - Найдено видео на Rutube: https://rutube.ru/video/dd527581aeaa635302c78cc8d34a958a/ (Магия лунного света (2014...)
+2025-05-22 15:38:24,089 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:38:24,090 - INFO - Rutube links for 'Магия лунного света (2014) | Трейлер ' saved to cache
+2025-05-22 15:38:24,091 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:38:24,091 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:38:24,093 - INFO - Updated stats for movie 'Магия лунного света' for user 1601735530
+2025-05-22 15:38:24,093 - INFO - Добавлена ссылка 1: Магия лунного света (из поиска)
+2025-05-22 15:38:24,093 - INFO - Добавлена ссылка 2: Магия лунного света - Русский трейлер (HD) (из поиска)
+2025-05-22 15:38:24,093 - INFO - Добавлена ссылка 3: Магия лунного света (2014) | Трейлер  (из поиска)
+2025-05-22 15:38:24,094 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/759558.jpg
+2025-05-22 15:38:24,389 - INFO - Poster for movie 759558 saved to cache
+2025-05-22 15:38:24,389 - INFO - Poster saved to cache and loaded for movie ID: 759558
+2025-05-22 15:38:24,389 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/759558.jpg
+2025-05-22 15:38:24,962 - INFO - Постер успешно отправлен
+2025-05-22 15:38:24,962 - INFO - Update id=965058822 is handled. Duration 1853 ms by bot id=7535140306
+2025-05-22 15:39:16,951 - INFO - Поиск фильма: 'остров собак' от пользователя 1601735530
+2025-05-22 15:39:16,955 - INFO - Added search from user 1601735530: остров собак
+2025-05-22 15:39:17,040 - INFO - Searching Kinopoisk for: 'остров собак' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 15:39:17,042 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 15:39:17,159 - INFO - Rutube API: получено 100 результатов
+2025-05-22 15:39:17,159 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2e8edd0cde3f3d40ad067645638814cc/ (Остров собак | Isle of Do...)
+2025-05-22 15:39:17,159 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3a38d5ce93ff191124a693c13ce2daa8/ (Остров собак (мультфильм,...)
+2025-05-22 15:39:17,160 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8344645e673257864b78902f0a1da22d/ (Впечатления: "Остров соба...)
+2025-05-22 15:39:17,160 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 15:39:17,161 - INFO - Rutube links for 'Впечатления: "Остров собак" (Isle of Dogs)' saved to cache
+2025-05-22 15:39:17,767 - INFO - Kinopoisk API response status: 200
+2025-05-22 15:39:17,768 - INFO - Found 20 films for query 'остров собак'
+2025-05-22 15:39:17,769 - INFO - Search result #1: Остров собак / Isle of Dogs (2018)
+2025-05-22 15:39:17,769 - INFO - Search result #2: Остров собак / A Ilha dos Cães (2017)
+2025-05-22 15:39:17,769 - INFO - Search result #3: Остров собак / Isle of Dogs (2010)
+2025-05-22 15:39:17,771 - INFO - Searching for exact matches with terms: ['остров собак']
+2025-05-22 15:39:17,771 - INFO - Found exact title match: Остров собак
+2025-05-22 15:39:17,771 - INFO - Found exact match for 'остров собак': Остров собак
+2025-05-22 15:39:17,771 - INFO - Fetching film details for ID: 939785
+2025-05-22 15:39:17,856 - INFO - Successfully fetched details for film ID: 939785
+2025-05-22 15:39:17,857 - INFO - Poster URL for 'остров собак': https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 15:39:17,859 - INFO - Movie data for 'остров собак' saved to cache
+2025-05-22 15:39:17,859 - INFO - Saved movie data to cache for 'остров собак'
+2025-05-22 15:39:17,859 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 15:39:17,859 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 15:39:17,864 - INFO - Updated stats for movie 'Остров собак' for user 1601735530
+2025-05-22 15:39:17,865 - INFO - Добавлена ссылка 1: Остров собак | Isle of Dogs (2018) (из поиска)
+2025-05-22 15:39:17,865 - INFO - Добавлена ссылка 2: Остров собак (мультфильм, 2018) (из поиска)
+2025-05-22 15:39:17,865 - INFO - Добавлена ссылка 3: Впечатления: "Остров собак" (Isle of Dogs) (из поиска)
+2025-05-22 15:39:17,865 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 15:39:18,181 - INFO - Poster for movie 939785 saved to cache
+2025-05-22 15:39:18,181 - INFO - Poster saved to cache and loaded for movie ID: 939785
+2025-05-22 15:39:18,181 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 15:39:18,503 - INFO - Постер успешно отправлен
+2025-05-22 15:39:18,504 - INFO - Update id=965058823 is handled. Duration 1554 ms by bot id=7535140306
+2025-05-22 16:05:20,076 - WARNING - Received SIGINT signal
+2025-05-22 16:05:20,078 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:05:20,078 - INFO - Polling stopped
+2025-05-22 16:05:21,781 - WARNING - Stale PID file found. Previous process (PID 90559) is not running.
+2025-05-22 16:05:21,781 - INFO - PID file created with process ID 90892
+2025-05-22 16:05:21,781 - INFO - Cache directories initialized
+2025-05-22 16:05:21,781 - INFO - Инициализация базы данных
+2025-05-22 16:05:21,782 - INFO - Database initialized
+2025-05-22 16:05:21,932 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 16:05:21,933 - INFO - Запуск бота
+2025-05-22 16:05:21,933 - INFO - Start polling
+2025-05-22 16:05:21,978 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:05:27,226 - INFO - Поиск фильма: 'гол' от пользователя 1601735530
+2025-05-22 16:05:27,228 - INFO - Added search from user 1601735530: гол
+2025-05-22 16:05:27,416 - INFO - Searching Kinopoisk for: 'гол' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 16:05:27,417 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%B3%D0%BE%D0%BB%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:05:27,534 - INFO - Rutube API: получено 99 результатов
+2025-05-22 16:05:27,534 - INFO - Найдено видео на Rutube: https://rutube.ru/video/65d1837025dac1b5cf24e0489d19f275/ (Гол! (фильм, 2005)...)
+2025-05-22 16:05:27,534 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3c12f7b6057f539eaff51158b4a81f1d/ (Гол (2005)...)
+2025-05-22 16:05:27,535 - INFO - Найдено видео на Rutube: https://rutube.ru/video/a98a1b83a44b8db9edbdd83cedf058f0/ (Гол 2: Жизнь как мечта (ф...)
+2025-05-22 16:05:27,535 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:05:27,537 - INFO - Rutube links for 'Гол 2: Жизнь как мечта (фильм, 2007)' saved to cache
+2025-05-22 16:05:28,248 - INFO - Kinopoisk API response status: 200
+2025-05-22 16:05:28,249 - INFO - Found 20 films for query 'гол'
+2025-05-22 16:05:28,250 - INFO - Search result #1: Голяк / Brassic (2019)
+2025-05-22 16:05:28,250 - INFO - Search result #2: Голодные игры / The Hunger Games (2012)
+2025-05-22 16:05:28,250 - INFO - Search result #3: Головоломка / Inside Out (2015)
+2025-05-22 16:05:28,250 - INFO - Searching for exact matches with terms: ['гол']
+2025-05-22 16:05:28,250 - INFO - Found substring match in title: Голяк
+2025-05-22 16:05:28,250 - INFO - Found exact match for 'гол': Голяк
+2025-05-22 16:05:28,250 - INFO - Fetching film details for ID: 1236393
+2025-05-22 16:05:28,336 - INFO - Successfully fetched details for film ID: 1236393
+2025-05-22 16:05:28,337 - INFO - Poster URL for 'гол': https://kinopoiskapiunofficial.tech/images/posters/kp/1236393.jpg
+2025-05-22 16:05:28,339 - INFO - Movie data for 'гол' saved to cache
+2025-05-22 16:05:28,339 - INFO - Saved movie data to cache for 'гол'
+2025-05-22 16:05:28,340 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:05:28,340 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:05:28,343 - INFO - Updated stats for movie 'Голяк' for user 1601735530
+2025-05-22 16:05:28,344 - INFO - Добавлена ссылка 1: Гол! (фильм, 2005) (из поиска)
+2025-05-22 16:05:28,344 - INFO - Добавлена ссылка 2: Гол (2005) (из поиска)
+2025-05-22 16:05:28,344 - INFO - Добавлена ссылка 3: Гол 2: Жизнь как мечта (фильм, 2007) (из поиска)
+2025-05-22 16:05:28,344 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/1236393.jpg
+2025-05-22 16:05:28,726 - INFO - Poster for movie 1236393 saved to cache
+2025-05-22 16:05:28,726 - INFO - Poster saved to cache and loaded for movie ID: 1236393
+2025-05-22 16:05:28,726 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/1236393.jpg
+2025-05-22 16:05:29,223 - INFO - Постер успешно отправлен
+2025-05-22 16:05:29,224 - INFO - Update id=965058824 is handled. Duration 1998 ms by bot id=7535140306
+2025-05-22 16:05:36,653 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 16:05:36,656 - INFO - Added search from user 1601735530: Venom
+2025-05-22 16:05:36,724 - INFO - 🔄 Используем кэшированные данные для фильма 'Веном' (ID: 463634)
+2025-05-22 16:05:36,724 - INFO - Returning cached movie data for 'Venom'
+2025-05-22 16:05:36,725 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:05:36,850 - INFO - Rutube API: получено 100 результатов
+2025-05-22 16:05:36,850 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 16:05:36,850 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 16:05:36,850 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 16:05:36,850 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:05:36,851 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 16:05:36,851 - INFO - Получены данные с Кинопоиска (данные из кэша): Да
+2025-05-22 16:05:36,852 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:05:36,854 - INFO - Updated stats for movie 'Веном' for user 1601735530
+2025-05-22 16:05:36,854 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 16:05:36,855 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 16:05:36,855 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 16:05:36,855 - INFO - Using cached poster for movie 463634
+2025-05-22 16:05:36,855 - INFO - Using cached poster for movie: Веном
+2025-05-22 16:05:37,153 - INFO - Постер успешно отправлен
+2025-05-22 16:05:37,154 - INFO - Update id=965058825 is handled. Duration 501 ms by bot id=7535140306
+2025-05-22 16:06:02,258 - INFO - Поиск фильма: 'магия лунного света' от пользователя 1601735530
+2025-05-22 16:06:02,261 - INFO - Added search from user 1601735530: магия лунного света
+2025-05-22 16:06:02,414 - INFO - 🔄 Используем кэшированные данные для фильма 'Магия лунного света' (ID: 759558)
+2025-05-22 16:06:02,414 - INFO - Returning cached movie data for 'магия лунного света'
+2025-05-22 16:06:02,414 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BC%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%BB%D1%83%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D0%B2%D0%B5%D1%82%D0%B0%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:06:02,536 - INFO - Rutube API: получено 99 результатов
+2025-05-22 16:06:02,537 - INFO - Найдено видео на Rutube: https://rutube.ru/video/39e3b2a53e1510996a60d62ac53f3396/ (Магия лунного света...)
+2025-05-22 16:06:02,537 - INFO - Найдено видео на Rutube: https://rutube.ru/video/4fcc266aa49f8a820e6bbbffcf4109be/ (Магия лунного света - Рус...)
+2025-05-22 16:06:02,537 - INFO - Найдено видео на Rutube: https://rutube.ru/video/dd527581aeaa635302c78cc8d34a958a/ (Магия лунного света (2014...)
+2025-05-22 16:06:02,537 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:06:02,538 - INFO - Rutube links for 'Магия лунного света (2014) | Трейлер ' saved to cache
+2025-05-22 16:06:02,538 - INFO - Получены данные с Кинопоиска (данные из кэша): Да
+2025-05-22 16:06:02,538 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:06:02,540 - INFO - Updated stats for movie 'Магия лунного света' for user 1601735530
+2025-05-22 16:06:02,541 - INFO - Добавлена ссылка 1: Магия лунного света (из поиска)
+2025-05-22 16:06:02,541 - INFO - Добавлена ссылка 2: Магия лунного света - Русский трейлер (HD) (из поиска)
+2025-05-22 16:06:02,541 - INFO - Добавлена ссылка 3: Магия лунного света (2014) | Трейлер  (из поиска)
+2025-05-22 16:06:02,541 - INFO - Using cached poster for movie 759558
+2025-05-22 16:06:02,541 - INFO - Using cached poster for movie: Магия лунного света
+2025-05-22 16:06:02,859 - INFO - Постер успешно отправлен
+2025-05-22 16:06:02,859 - INFO - Update id=965058826 is handled. Duration 602 ms by bot id=7535140306
+2025-05-22 16:06:22,100 - INFO - Команда /clear_cache от пользователя 1601735530
+2025-05-22 16:06:22,104 - INFO - Cleared 7 poster files
+2025-05-22 16:06:22,105 - INFO - Cleared movie data cache (7 entries)
+2025-05-22 16:06:22,105 - INFO - Cleared Rutube links cache (6 entries)
+2025-05-22 16:06:22,105 - INFO - Cleared all cache: 20 files
+2025-05-22 16:06:22,202 - INFO - Update id=965058827 is handled. Duration 103 ms by bot id=7535140306
+2025-05-22 16:06:26,316 - INFO - Поиск фильма: 'Остров собак' от пользователя 1601735530
+2025-05-22 16:06:26,319 - INFO - Added search from user 1601735530: Остров собак
+2025-05-22 16:06:26,417 - INFO - Searching Kinopoisk for: 'Остров собак' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 16:06:26,419 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:06:26,494 - INFO - Kinopoisk API response status: 200
+2025-05-22 16:06:26,494 - INFO - Found 20 films for query 'Остров собак'
+2025-05-22 16:06:26,495 - INFO - Search result #1: Остров собак / Isle of Dogs (2018)
+2025-05-22 16:06:26,495 - INFO - Search result #2: Остров собак / A Ilha dos Cães (2017)
+2025-05-22 16:06:26,495 - INFO - Search result #3: Остров собак / Isle of Dogs (2010)
+2025-05-22 16:06:26,495 - INFO - Searching for exact matches with terms: ['остров собак']
+2025-05-22 16:06:26,495 - INFO - Found exact title match: Остров собак
+2025-05-22 16:06:26,495 - INFO - Found exact match for 'Остров собак': Остров собак
+2025-05-22 16:06:26,495 - INFO - Fetching film details for ID: 939785
+2025-05-22 16:06:26,523 - INFO - Rutube API: получено 100 результатов
+2025-05-22 16:06:26,524 - INFO - Найдено видео на Rutube: https://rutube.ru/video/2e8edd0cde3f3d40ad067645638814cc/ (Остров собак | Isle of Do...)
+2025-05-22 16:06:26,524 - INFO - Найдено видео на Rutube: https://rutube.ru/video/3a38d5ce93ff191124a693c13ce2daa8/ (Остров собак (мультфильм,...)
+2025-05-22 16:06:26,524 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8344645e673257864b78902f0a1da22d/ (Впечатления: "Остров соба...)
+2025-05-22 16:06:26,524 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:06:26,525 - INFO - Rutube links for 'Впечатления: "Остров собак" (Isle of Dogs)' saved to cache
+2025-05-22 16:06:26,579 - INFO - Successfully fetched details for film ID: 939785
+2025-05-22 16:06:26,580 - INFO - Poster URL for 'Остров собак': https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 16:06:26,581 - INFO - Movie data for 'Остров собак' saved to cache
+2025-05-22 16:06:26,581 - INFO - Saved movie data to cache for 'Остров собак'
+2025-05-22 16:06:26,581 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:06:26,581 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:06:26,584 - INFO - Updated stats for movie 'Остров собак' for user 1601735530
+2025-05-22 16:06:26,584 - INFO - Добавлена ссылка 1: Остров собак | Isle of Dogs (2018) (из поиска)
+2025-05-22 16:06:26,584 - INFO - Добавлена ссылка 2: Остров собак (мультфильм, 2018) (из поиска)
+2025-05-22 16:06:26,584 - INFO - Добавлена ссылка 3: Впечатления: "Остров собак" (Isle of Dogs) (из поиска)
+2025-05-22 16:06:26,585 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 16:06:26,894 - INFO - Poster for movie 939785 saved to cache
+2025-05-22 16:06:26,894 - INFO - Poster saved to cache and loaded for movie ID: 939785
+2025-05-22 16:06:26,894 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/939785.jpg
+2025-05-22 16:06:27,447 - INFO - Постер успешно отправлен
+2025-05-22 16:06:27,448 - INFO - Update id=965058828 is handled. Duration 1132 ms by bot id=7535140306
+2025-05-22 16:06:38,824 - INFO - Поиск фильма: 'Venom' от пользователя 1601735530
+2025-05-22 16:06:38,827 - INFO - Added search from user 1601735530: Venom
+2025-05-22 16:06:38,974 - INFO - Searching Kinopoisk for: 'Venom' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 16:06:38,975 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=Venom%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:06:39,055 - INFO - Kinopoisk API response status: 200
+2025-05-22 16:06:39,056 - INFO - Found 20 films for query 'Venom'
+2025-05-22 16:06:39,056 - INFO - Search result #1: Веном / Venom (2018)
+2025-05-22 16:06:39,056 - INFO - Search result #2: Веном: Последний танец / Venom: The Last Dance (2024)
+2025-05-22 16:06:39,056 - INFO - Search result #3: Веном 2 / Venom: Let There Be Carnage (2021)
+2025-05-22 16:06:39,057 - INFO - Searching for exact matches with terms: ['веном', 'venom']
+2025-05-22 16:06:39,057 - INFO - Found exact title match: Веном
+2025-05-22 16:06:39,057 - INFO - Found exact match for 'Venom': Веном
+2025-05-22 16:06:39,058 - INFO - Fetching film details for ID: 463634
+2025-05-22 16:06:39,109 - INFO - Rutube API: получено 100 результатов
+2025-05-22 16:06:39,109 - INFO - Найдено видео на Rutube: https://rutube.ru/video/c650d86c3b78408808e90f342931e578/ (Веном (фильм, 2018)...)
+2025-05-22 16:06:39,109 - INFO - Найдено видео на Rutube: https://rutube.ru/video/474b20fae239c6735657cdedaca9f884/ (Веном / Venom (2018)...)
+2025-05-22 16:06:39,110 - INFO - Найдено видео на Rutube: https://rutube.ru/video/fa8b1eeb0b59d2ba46cb25165e1d0f65/ (Веном: Последний танец (ф...)
+2025-05-22 16:06:39,110 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:06:39,111 - INFO - Rutube links for 'Веном: Последний танец (фильм, 2024)' saved to cache
+2025-05-22 16:06:39,153 - INFO - Successfully fetched details for film ID: 463634
+2025-05-22 16:06:39,153 - INFO - Poster URL for 'Venom': https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 16:06:39,155 - INFO - Movie data for 'Venom' saved to cache
+2025-05-22 16:06:39,155 - INFO - Saved movie data to cache for 'Venom'
+2025-05-22 16:06:39,155 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:06:39,155 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:06:39,157 - INFO - Updated stats for movie 'Веном' for user 1601735530
+2025-05-22 16:06:39,158 - INFO - Добавлена ссылка 1: Веном (фильм, 2018) (из поиска)
+2025-05-22 16:06:39,158 - INFO - Добавлена ссылка 2: Веном / Venom (2018) (из поиска)
+2025-05-22 16:06:39,158 - INFO - Добавлена ссылка 3: Веном: Последний танец (фильм, 2024) (из поиска)
+2025-05-22 16:06:39,159 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 16:06:39,415 - INFO - Poster for movie 463634 saved to cache
+2025-05-22 16:06:39,416 - INFO - Poster saved to cache and loaded for movie ID: 463634
+2025-05-22 16:06:39,416 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/463634.jpg
+2025-05-22 16:06:39,702 - INFO - Постер успешно отправлен
+2025-05-22 16:06:39,702 - INFO - Update id=965058829 is handled. Duration 878 ms by bot id=7535140306
+2025-05-22 16:06:54,264 - INFO - Поиск фильма: 'как витька чеснок вез леху штыря в дом инвалидов' от пользователя 1601735530
+2025-05-22 16:06:54,267 - INFO - Added search from user 1601735530: как витька чеснок вез леху штыря в дом инвалидов
+2025-05-22 16:06:54,397 - INFO - Searching Kinopoisk for: 'как витька чеснок вез леху штыря в дом инвалидов' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 16:06:54,398 - INFO - Выполнение запроса к Rutube API: https://rutube.ru/api/search/video/?query=%D0%BA%D0%B0%D0%BA%20%D0%B2%D0%B8%D1%82%D1%8C%D0%BA%D0%B0%20%D1%87%D0%B5%D1%81%D0%BD%D0%BE%D0%BA%20%D0%B2%D0%B5%D0%B7%20%D0%BB%D0%B5%D1%85%D1%83%20%D1%88%D1%82%D1%8B%D1%80%D1%8F%20%D0%B2%20%D0%B4%D0%BE%D0%BC%20%D0%B8%D0%BD%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%BE%D0%B2%20%D1%84%D0%B8%D0%BB%D1%8C%D0%BC
+2025-05-22 16:06:54,510 - INFO - Rutube API: получено 100 результатов
+2025-05-22 16:06:54,510 - INFO - Найдено видео на Rutube: https://rutube.ru/video/7928493a0afdf98535c580249152591d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 16:06:54,510 - INFO - Найдено видео на Rutube: https://rutube.ru/video/8420828a1c652110a831406ab9ba739d/ (Как Витька Чеснок вез Лех...)
+2025-05-22 16:06:54,510 - INFO - Найдено видео на Rutube: https://rutube.ru/video/b6b7312e9252995f37a860aa9f1bd27a/ (Глубокий смысл фильма «Ка...)
+2025-05-22 16:06:54,511 - INFO - Сохранено 3 ссылок в кэше
+2025-05-22 16:06:54,511 - INFO - Rutube links for 'Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов»' saved to cache
+2025-05-22 16:06:54,590 - INFO - Kinopoisk API response status: 200
+2025-05-22 16:06:54,590 - INFO - Found 1 films for query 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 16:06:54,590 - INFO - Search result #1: Как Витька Чеснок вёз Лёху Штыря в дом инвалидов /  (2017)
+2025-05-22 16:06:54,591 - INFO - Searching for exact matches with terms: ['как витька чеснок вез леху штыря в дом инвалидов']
+2025-05-22 16:06:54,591 - INFO - No exact match found, using first result
+2025-05-22 16:06:54,591 - INFO - Using first result for 'как витька чеснок вез леху штыря в дом инвалидов': Как Витька Чеснок вёз Лёху Штыря в дом инвалидов
+2025-05-22 16:06:54,591 - INFO - Fetching film details for ID: 909700
+2025-05-22 16:06:54,690 - INFO - Successfully fetched details for film ID: 909700
+2025-05-22 16:06:54,691 - INFO - Poster URL for 'как витька чеснок вез леху штыря в дом инвалидов': https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 16:06:54,692 - INFO - Movie data for 'как витька чеснок вез леху штыря в дом инвалидов' saved to cache
+2025-05-22 16:06:54,692 - INFO - Saved movie data to cache for 'как витька чеснок вез леху штыря в дом инвалидов'
+2025-05-22 16:06:54,693 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:06:54,693 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:06:54,696 - INFO - Updated stats for movie 'Как Витька Чеснок вёз Лёху Штыря в дом инвалидов' for user 1601735530
+2025-05-22 16:06:54,697 - INFO - Добавлена ссылка 1: Как Витька Чеснок вез Леху Штыря в дом инвалидов (2017) (из поиска)
+2025-05-22 16:06:54,697 - INFO - Добавлена ссылка 2: Как Витька Чеснок вез Леху Штыря в дом инвалидов 2017 720p via Skyload (из поиска)
+2025-05-22 16:06:54,697 - INFO - Добавлена ссылка 3: Глубокий смысл фильма «Как Витька Чеснок вёз Лёху Штыря в дом инвалидов» (из поиска)
+2025-05-22 16:06:54,698 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 16:06:54,979 - INFO - Poster for movie 909700 saved to cache
+2025-05-22 16:06:54,980 - INFO - Poster saved to cache and loaded for movie ID: 909700
+2025-05-22 16:06:54,980 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/909700.jpg
+2025-05-22 16:06:55,352 - INFO - Постер успешно отправлен
+2025-05-22 16:06:55,352 - INFO - Update id=965058830 is handled. Duration 1089 ms by bot id=7535140306
+2025-05-22 16:07:03,607 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 16:07:03,609 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 16:07:03,716 - INFO - Special case detected for 'город в котором меня нет' - returning anime series data
+2025-05-22 16:07:03,717 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 16:07:03,717 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:07:03,717 - INFO - Получены видео ссылки (Rutube): 4
+2025-05-22 16:07:03,720 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 16:07:03,721 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 16:07:03,721 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 16:07:03,721 - INFO - Добавлена ссылка 3: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 16:07:03,721 - INFO - Добавлена ссылка 4: Кинопоиск: Город, в котором меня нет (аниме-сериал) (из поиска)
+2025-05-22 16:07:03,721 - INFO - Загружаем постер: https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5724dc33-7105-4c3a-8e48-dd0a297c686a/300x450
+2025-05-22 16:07:03,812 - ERROR - Ошибка загрузки постера, статус: 404, URL: https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5724dc33-7105-4c3a-8e48-dd0a297c686a/300x450
+2025-05-22 16:07:03,813 - WARNING - Не удалось загрузить постер для 'Город, в котором меня нет', создаем дефолтный
+2025-05-22 16:07:03,814 - INFO - Создаем дефолтный постер для: 'Город, в котором меня нет' (2016)
+2025-05-22 16:07:03,835 - INFO - Создан дефолтный постер для 'Город, в котором меня нет'
+2025-05-22 16:07:04,310 - INFO - Постер успешно отправлен
+2025-05-22 16:07:04,310 - INFO - Удален временный файл постера: poster_7715.jpg
+2025-05-22 16:07:04,310 - INFO - Update id=965058831 is handled. Duration 704 ms by bot id=7535140306
+2025-05-22 16:08:15,080 - WARNING - Received SIGINT signal
+2025-05-22 16:08:15,081 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:08:15,081 - INFO - Polling stopped
+2025-05-22 16:08:16,568 - WARNING - Stale PID file found. Previous process (PID 90892) is not running.
+2025-05-22 16:08:16,568 - INFO - PID file created with process ID 90988
+2025-05-22 16:08:16,568 - INFO - Cache directories initialized
+2025-05-22 16:08:16,568 - INFO - Инициализация базы данных
+2025-05-22 16:08:16,570 - INFO - Database initialized
+2025-05-22 16:08:16,752 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 16:08:16,752 - INFO - Запуск бота
+2025-05-22 16:08:16,752 - INFO - Start polling
+2025-05-22 16:08:16,792 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:08:20,715 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 16:08:20,717 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 16:08:20,987 - INFO - Searching Kinopoisk for: 'город в котором меня нет' using URL: https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword
+2025-05-22 16:08:20,987 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 16:08:21,837 - INFO - Kinopoisk API response status: 200
+2025-05-22 16:08:21,838 - INFO - Found 20 films for query 'город в котором меня нет'
+2025-05-22 16:08:21,839 - INFO - Search result #1: Город, в котором меня нет / Boku dake ga inai machi (2016)
+2025-05-22 16:08:21,839 - INFO - Search result #2: Город, в котором меня нет / Boku dake ga inai machi (2017)
+2025-05-22 16:08:21,839 - INFO - Search result #3: Город, в котором меня нет / Bokudake ga inai machi (2016)
+2025-05-22 16:08:21,840 - INFO - Searching for exact matches with terms: ['город в котором меня нет']
+2025-05-22 16:08:21,840 - INFO - No exact match found, using first result
+2025-05-22 16:08:21,840 - INFO - Using first result for 'город в котором меня нет': Город, в котором меня нет
+2025-05-22 16:08:21,840 - INFO - Fetching film details for ID: 957840
+2025-05-22 16:08:21,922 - INFO - Successfully fetched details for film ID: 957840
+2025-05-22 16:08:21,923 - INFO - Poster URL for 'город в котором меня нет': https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 16:08:21,926 - INFO - Movie data for 'город в котором меня нет' saved to cache
+2025-05-22 16:08:21,926 - INFO - Saved movie data to cache for 'город в котором меня нет'
+2025-05-22 16:08:21,926 - INFO - Получены данные с Кинопоиска: Да
+2025-05-22 16:08:21,926 - INFO - Получены видео ссылки (Rutube): 4
+2025-05-22 16:08:21,930 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 16:08:21,930 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 16:08:21,931 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 16:08:21,931 - INFO - Добавлена ссылка 3: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 16:08:21,931 - INFO - Добавлена ссылка 4: Кинопоиск: Город, в котором меня нет (аниме-сериал) (из поиска)
+2025-05-22 16:08:21,931 - INFO - Загружаем постер: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 16:08:22,220 - INFO - Poster for movie 957840 saved to cache
+2025-05-22 16:08:22,220 - INFO - Poster saved to cache and loaded for movie ID: 957840
+2025-05-22 16:08:22,220 - INFO - Постер успешно загружен: https://kinopoiskapiunofficial.tech/images/posters/kp/957840.jpg
+2025-05-22 16:08:22,591 - INFO - Постер успешно отправлен
+2025-05-22 16:08:22,591 - INFO - Update id=965058832 is handled. Duration 1876 ms by bot id=7535140306
+2025-05-22 16:09:33,664 - WARNING - Received SIGINT signal
+2025-05-22 16:09:33,665 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:09:33,666 - INFO - Polling stopped
+2025-05-22 16:09:35,292 - WARNING - Stale PID file found. Previous process (PID 90988) is not running.
+2025-05-22 16:09:35,293 - INFO - PID file created with process ID 91032
+2025-05-22 16:09:35,293 - INFO - Cache directories initialized
+2025-05-22 16:09:35,293 - INFO - Инициализация базы данных
+2025-05-22 16:09:35,294 - INFO - Database initialized
+2025-05-22 16:09:35,423 - INFO - Соединение с Telegram API установлено. Бот: @cinemabyloki_bot (7535140306)
+2025-05-22 16:09:35,423 - INFO - Запуск бота
+2025-05-22 16:09:35,423 - INFO - Start polling
+2025-05-22 16:09:35,464 - INFO - Run polling for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:09:44,105 - INFO - Поиск фильма: 'город в котором меня нет' от пользователя 1601735530
+2025-05-22 16:09:44,107 - INFO - Added search from user 1601735530: город в котором меня нет
+2025-05-22 16:09:44,293 - INFO - 🔄 Используем кэшированные данные для фильма 'Город, в котором меня нет' (ID: 957840)
+2025-05-22 16:09:44,293 - INFO - Returning cached movie data for 'город в котором меня нет'
+2025-05-22 16:09:44,293 - INFO - Special case detected for Rutube search: 'город в котором меня нет' - returning anime-specific links
+2025-05-22 16:09:44,293 - INFO - Получены данные с Кинопоиска (данные из кэша): Да
+2025-05-22 16:09:44,293 - INFO - Получены видео ссылки (Rutube): 3
+2025-05-22 16:09:44,296 - INFO - Updated stats for movie 'Город, в котором меня нет' for user 1601735530
+2025-05-22 16:09:44,296 - INFO - Добавлена ссылка 1: Город, в котором меня нет (Boku dake ga Inai Machi) - Серия 1 (из поиска)
+2025-05-22 16:09:44,296 - INFO - Добавлена ссылка 2: Город, в котором меня нет (Boku dake ga Inai Machi) - Полнометражный фильм (из поиска)
+2025-05-22 16:09:44,296 - INFO - Добавлена ссылка 3: Город, в котором меня нет - Все серии аниме (озвучка) (из поиска)
+2025-05-22 16:09:44,296 - INFO - Using cached poster for movie 957840
+2025-05-22 16:09:44,296 - INFO - Using cached poster for movie: Город, в котором меня нет
+2025-05-22 16:09:44,623 - INFO - Постер успешно отправлен
+2025-05-22 16:09:44,624 - INFO - Update id=965058833 is handled. Duration 519 ms by bot id=7535140306
+2025-05-22 16:09:56,357 - WARNING - Received SIGINT signal
+2025-05-22 16:09:56,359 - INFO - Polling stopped for bot @cinemabyloki_bot id=7535140306 - 'CinemaBot'
+2025-05-22 16:09:56,359 - INFO - Polling stopped
